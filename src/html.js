@@ -36,19 +36,19 @@ module.exports = class HTML extends React.Component {
 
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-          <script src="/js/core/jquery.min.js" type="text/javascript"></script>
-          <script src="/js/core/popper.min.js" type="text/javascript"></script>
-          <script src="/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+          <script src="/js/core/jquery.min.js" type="text/javascript" />
+          <script src="/js/core/popper.min.js" type="text/javascript" />
+          <script src="/js/core/bootstrap-material-design.min.js" type="text/javascript" />
 
-          <script src="/js/plugins/moment.min.js"></script>
+          <script src="/js/plugins/moment.min.js" />
 
-          <script src="/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+          <script src="/js/plugins/bootstrap-datetimepicker.js" type="text/javascript" />
 
-          <script src="js/plugins/nouislider.min.js" type="text/javascript"></script>
+          <script src="js/plugins/nouislider.min.js" type="text/javascript" />
 
-          <script src="/js/material-kit.js?v=2.0.3" type="text/javascript"></script>
+          <script src="/js/material-kit.js?v=2.0.3" type="text/javascript" />
 
-          <script src='https://www.google.com/recaptcha/api.js'></script>
+          <script src='https://www.google.com/recaptcha/api.js' />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

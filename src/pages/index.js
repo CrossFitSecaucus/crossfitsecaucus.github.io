@@ -35,14 +35,14 @@ const Quote = styled.div`
   }
 `;
 
-const Card = ({color, title, buttonLabel, onClick}) => (
+const Card = ({color, title, buttonLabel, url}) => (
   <div className={`card bg-${color}`}>
     <div className="card-body">
       <h4 className="card-title text-center">
         {title}
       </h4>
       <div className="card-stats justify-content-center">
-        <a href="" onClick={onClick} className="btn btn-white btn-lg btn-round">
+        <a href={url} className="btn btn-white btn-lg btn-round">
           {buttonLabel}
           <div className="ripple-container"></div>
         </a>
@@ -60,7 +60,6 @@ const Heading = ({children}) => (
 
 const IndexPage = () => (
   <main>
-
     <section className="section section-basic">
       <div className="container">
         <div className="row">
@@ -68,22 +67,15 @@ const IndexPage = () => (
             <h1 className="title text-center">GET STARTED TODAY</h1>
           </div>
           <div className="col-md-5 ml-auto ">
-
-            <Card
-              color="info"
-              title="If you have never worked out in your life, or you're looking for a workout that is new, fun, exciting and actually works."
-              buttonLabel="I'M NEW TO CROSSFIT"
-              onClick={(e) => {e.preventDefault()} }
-              />
+            <button className="btn btn-success btn-block btn-round" data-toggle="modal" data-target="#signupModal">
+              I'm New to CrossFit
+            </button>
           </div>
 
           <div className="col-md-5  mr-auto">
-            <Card
-              color="success"
-              title="You are already an experienced CrossFitter, and you're looking for a new home. Or you're in town and want to drop in."
-              buttonLabel="NOT MY FIRST RODEO"
-              onClick={(e) => {e.preventDefault()} }
-              />
+            <button className="btn btn-info btn-block btn-round" data-toggle="modal" data-target="#signupModal">
+              Not My First Rodeo
+            </button>
           </div>
         </div>
       </div>

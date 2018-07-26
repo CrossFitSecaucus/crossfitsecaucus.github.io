@@ -4,7 +4,15 @@ import styled from 'styled-components';
 
 const Title = styled.div`
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.4em !important;
+  font-size: 1.6em !important;
+
+  @media (min-width: 576px) {
+    font-size: 2em !important;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2.4em !important;
+  }
 `;
 
 
@@ -28,18 +36,21 @@ const Header = ({ siteTitle }) => (
                             <i className="material-icons">directions_run</i> Getting Started
                         </a>
                         <div className="dropdown-menu dropdown-with-icons">
-                            <a href="./index.html" className="dropdown-item">
-                                <i className="material-icons">fitness_center</i> Trial Class
-                            </a>
-                            <a href="index.html#schedule" className="dropdown-item" data-scroll="true" data-id="#schedule">
+                            <Link to="/index.html#how-it-works" className="dropdown-item">
+                                <i className="material-icons">list</i> How it works
+                            </Link>
+                            <Link to="/index.html#schedule" className="dropdown-item">
                                 <i className="material-icons">calendar_today</i> Schedule
-                            </a>
-                            <a href="index.html#pricing" className="dropdown-item" data-scroll="true" data-id="#pricing">
+                            </Link>
+                            <Link to="/index.html#pricing" className="dropdown-item">
                                 <i className="material-icons">monetization_on</i> Pricing
-                            </a>
-                            <a href="./docs/2.0/getting-started/introduction.html" className="dropdown-item">
+                            </Link>
+                            <Link to="/trial-class.html" className="dropdown-item">
+                                <i className="material-icons">fitness_center</i> Trial Class
+                            </Link>
+                            <Link to="/get-started.html" className="dropdown-item">
                                 <i className="material-icons">shopping_cart</i> Sign-up
-                            </a>
+                            </Link>
                         </div>
                     </li>
                     <li className="dropdown nav-item">

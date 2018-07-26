@@ -19,8 +19,8 @@ const Footer = ({ children }) => (
               © {new Date().getFullYear()} Strength &amp; Conditioning Outlet, llc
           </div>
           <div>
-            <a href="http://journal.crossfit.com/start.tpl?version=CFJ-black123x63">
-              <img src="http://journal.crossfit.com/templates/images/black-300x150.png" width="100px" alt="CrossFit Journal"/>
+            <a href="//journal.crossfit.com/start.tpl?version=CFJ-black123x63">
+              <img src="//journal.crossfit.com/templates/images/black-300x150.png" width="100px" alt="CrossFit Journal"/>
             </a>
           </div>
       </div>

@@ -165,33 +165,35 @@ class Contact extends React.Component {
       phoneValid && textValid && recaptchaComplete;
 
     return (
-      <div className="contactus-1 section-image" style={{backgroundImage: "url('assets/img/examples/city.jpg')"}}>
+      <div className="contactus-1 section-image" style={{backgroundImage: "url('img/contact-bg.jpg')"}}>
           <div className="container">
               <div className="row">
-                  <div className="col-md-4">
+                  <div className="col-md-4 col-sm-12">
                       <h2 className="title">Get in Touch</h2>
-                      <div className="info info-horizontal">
-                          <div className="icon icon-primary">
-                              <i className="material-icons">pin_drop</i>
-                          </div>
-                          <div className="description">
-                              <h4 className="info-title">We are located at:</h4>
-                              <p>
-                                333 Meadowlands Pkwy<br/>
-                                Secaucus NJ 07094<br/>
-                                <a href="#">Map</a>
-
-                              </p>
-                          </div>
-                      </div>
                       <div className="info info-horizontal">
                           <div className="icon icon-primary">
                               <i className="material-icons">phone</i>
                           </div>
                           <div className="description">
                             <h4 className="info-title">
-                              Give us a ring or text us at:<br/>
-                              (201) 503-6326</h4>
+                              Give us a ring or text us at:</h4>
+                              <h3 className="text-primary">(201) 503-6326</h3>
+                          </div>
+                      </div>
+                      <div className="info info-horizontal">
+                          <div className="icon icon-primary">
+                              <i className="material-icons">pin_drop</i>
+                          </div>
+                          <div className="description">
+                              <h4 className="info-title">We are located at:</h4>
+                              <h3>
+                                333 Meadowlands Pkwy<br/>
+                                Secaucus NJ 07094<br/>
+                              </h3>
+                              <p>
+                                <a href="https://www.google.com/maps/place/CrossFit+Secaucus/@40.779335,-74.082018,15z/data=!4m2!3m1!1s0x0:0x53a6798b1e6295e6" target="_blank">Directions</a>
+                              </p>
+                              <img src="http://maps.googleapis.com/maps/api/staticmap?center=333+Meadowland+Parkway,+Secaucus&zoom=12&scale=2&size=300x300&maptype=terrain&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:orange%7C333+Meadowlands+Parkway,+Secaucus" className="img-raised rounded img-fluid" />
                           </div>
                       </div>
                   </div>

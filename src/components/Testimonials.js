@@ -37,7 +37,7 @@ const Testimonials = ({ children }) => (
   <div className="container">
     <div className="row">
       <div className="col-md-6 ml-auto mr-auto text-center">
-        <h1 className="title text-uppercase">Testimonials</h1>
+        <h3 className="title text-uppercase">Testimonials</h3>
         <h5 className="description">
           {'See what our current clients have to say about their experience at CrossFit Secaucus. Read all reviews on '}
           <a href="#" target="_blank">Google</a>

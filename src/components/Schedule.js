@@ -29,11 +29,11 @@ const Schedule = ({ heading }) => (
                 <td rowSpan="4">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit 30</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-rose"><strong>tone+burn</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit 30</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-rose"><strong>tone+burn</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit 30</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
               </tr>
               <tr>
                 <td rowSpan="3">&nbsp;</td>
@@ -44,7 +44,7 @@ const Schedule = ({ heading }) => (
                 <td><strong>8:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
-                <td><strong>9:00am</strong><br/><span className="text-rose"><strong>tone+burn</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
               </tr>
               <tr>
                 <td><strong>10:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
@@ -60,9 +60,9 @@ const Schedule = ({ heading }) => (
               </tr>
               <tr>
                 <td><strong>5:30pm</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
-                <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>tone+burn</strong></span></td>
+                <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>5:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>tone+burn</strong></span></td>
+                <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>5:30pm</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
                 <td rowSpan="3">&nbsp;</td>
               </tr>
@@ -93,7 +93,7 @@ const Schedule = ({ heading }) => (
           (Requires completion fundamentals course or previous CrossFit experience.)
         </p>
 
-        <p>
+        <p className="d-none">
           <strong className="text-info">CrossFit 30</strong> &mdash;
           Our 30 minute CrossFit class ensures that you get the most out of your workout before you start your busy day.
         </p>
@@ -105,9 +105,10 @@ const Schedule = ({ heading }) => (
         </p>
 
         <p>
-          <strong className="text-rose">tone+burn bootcamp</strong> &mdash;
+          <strong className="text-rose">Bootcamp</strong> &mdash;
           The ladies-only bootcamp class consists of workouts specifically designed for toning overall physique and burning calories.
           These fun high-energy classes are great for anyone as the workouts can be scaled up and down to maximize the benefit for each athlete.
+          (<a href="http://tone-burn.com" target="_blank" className="text-rose">See details</a>)
         </p>
 
         <p>
