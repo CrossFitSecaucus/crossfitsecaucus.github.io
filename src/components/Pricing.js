@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, sessionName, sessionsName, description, lastLine, buttonLabel, color, preferred}) => (
-  <div className={`card card-pricing card-plain ${preferred ? 'card-raised bg-' + color : ''}`}>
+  <div className={`card card-pricing card-plain card-raised ${preferred ? 'bg-' + color : ''}`}>
       <div className="card-body">
           <h6 className="card-category text-success text-capitalized">{label}</h6>
           <h1 className="card-title">
