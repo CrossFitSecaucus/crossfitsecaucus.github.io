@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import GetStartedModal from '../components/GetStartedModal'
+import {NewToCrossFitModal} from '../components/Modal'
 import './index.scss'
 
 import styled from 'styled-components';
@@ -32,13 +32,13 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <Cover className="page-header header-filter clear-filter" data-parallax="true">
-    </Cover>
+
+
+    <Cover className="page-header header-filter clear-filter" />
 
     <div className="main main-raised">
       {children()}
     </div>
-    <GetStartedModal />
     <Footer>
       <a href="#">
       Privacy Policy
@@ -51,6 +51,7 @@ const Layout = ({ children, data }) => (
       </a>
     </Footer>
 
+    <NewToCrossFitModal />
   </div>
 )
 

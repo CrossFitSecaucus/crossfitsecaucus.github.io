@@ -67,15 +67,16 @@ const IndexPage = () => (
             <h1 className="title text-center">GET STARTED TODAY</h1>
           </div>
           <div className="col-md-5 ml-auto ">
-            <button className="btn btn-success btn-block btn-round" data-toggle="modal" data-target="#signupModal">
+            <Link to="/get-started#new-to-crossfit" className="btn btn-success btn-block btn-round">
               I'm New to CrossFit
-            </button>
+            </Link>
+
           </div>
 
           <div className="col-md-5  mr-auto">
-            <button className="btn btn-info btn-block btn-round" data-toggle="modal" data-target="#signupModal">
-              Not My First Rodeo
-            </button>
+            <Link to="/get-started#experienced" className="btn btn-info btn-block btn-round">
+              Not my first rodeo
+            </Link>
           </div>
         </div>
       </div>

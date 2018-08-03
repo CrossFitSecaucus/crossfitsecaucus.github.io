@@ -1,1 +1,14 @@
  @import "../css/material-kit";
+
+/* Fixes */
+.modal.show {
+  padding: 5px !important;
+}
+
+.modal .modal-dialog {
+  margin-top: 10px !important;
+}
+
+.fa-in-heading {
+  margin-right: 0.4em;
+}

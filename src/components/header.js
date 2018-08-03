@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-const Title = styled.div`
+const Title = styled(Link)`
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6em !important;
 
@@ -20,8 +20,8 @@ const Header = ({ siteTitle }) => (
   <nav className="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" data-color-on-scroll="150" id="sectionsNav">
         <div className="container">
             <div className="navbar-translate">
-                <Title className="navbar-brand">
-                  {siteTitle}
+                <Title  to="/" className="navbar-brand">
+                    {siteTitle}
                 </Title>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

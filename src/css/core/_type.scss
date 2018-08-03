@@ -48,7 +48,7 @@ h6, .h6{
 p{
     font-size: $font-paragraph;
     margin: 0 0 10px;
-    padding: 1.1em 0;
+    padding: 0.75em 0;
 }
 
 b{
@@ -85,7 +85,7 @@ h2.title{
 .description,
 .card-description,
 .footer-big p{
-    color: $gray-light;
+    color: $gray;
 }
 
 .text-warning {

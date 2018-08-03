@@ -10,9 +10,12 @@ const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, ses
           </h1>
           <ul>
               <li><b>{description}</b></li>
-              <li>
-                  <b>${unitPrice}</b> per {unit}
-              </li>
+              {
+                unit && unitPrice &&
+                  <li>
+                      <b>${unitPrice}</b> per {unit}
+                  </li>
+              }
               <li>
                   <b>{sessions}</b> {sessionsName} inlcuded
               </li>
@@ -40,10 +43,13 @@ const Pricing = ({ children }) => (
                         <div className="col-sm-12">
                             <ul className="nav nav-pills nav-pills-success justify-content-center">
                                 <li className="nav-item">
+                                    <a className="nav-link" href="#personal-training" data-toggle="tab">Personal Training</a>
+                                </li>
+                                <li className="nav-item">
                                     <a className="nav-link active show" href="#group-classes" data-toggle="tab">Group Classes</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#personal-training" data-toggle="tab">Personal Training</a>
+                                    <a className="nav-link" href="#hybrid" data-toggle="tab">Hybrid Option</a>
                                 </li>
                             </ul>
                             <div className="tab-content tab-space">
@@ -105,8 +111,8 @@ const Pricing = ({ children }) => (
                                           </div>
                                       </div>
                                   </div>
-
                                 </div>
+
                                 <div className="tab-pane" id="personal-training">
                                   <p>
                                     Personal training sessions are 1-hour long and they are designed specifically around your individual fitness goals.
@@ -152,7 +158,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="20 session pack"
                                                 buttonLabel="Buy 20 Session Pack"
-                                                url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=5&prodId=10308"
+                                                url="/get-started"
                                                 unitPrice={"1,000"}
                                                 unit="session pack"
                                                 sessions={20}
@@ -167,8 +173,36 @@ const Pricing = ({ children }) => (
                                       </div>
                                   </div>
 
+                                </div>
+                                <div className="tab-pane" id="hybrid">
+                                  <p>
+                                    The hybrid option combines 16 monthly group classes with 2 one-hour personal training sessions.
+                                    As part of this bundle, we will develop a personal workout plan for you with a path to achieving your short and long term goals.
+                                    youour trainer will provide support and accountability to ensure you will achieve them.
+                                  </p>
+                                  <div className="pricing-2">
+                                      <div className="row">
+                                          <div className="col-md-4 offset-md-4">
+                                              <PricingOption
+                                                label="Hybrid"
+                                                buttonLabel="Get Started"
+                                                url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=5&prodId=10307"
+                                                sessions={16}
+                                                sessionName="month"
+                                                sessionsName="group classes"
+                                                sessionPrice={295}
+                                                description="Combines group classes and personal training sessions"
+                                                lastLine="2 one-hour personal training sessions included"
+                                                color="success"
+                                                preferred
+                                                />
+                                          </div>
+                                      </div>
+                                  </div>
+
 
                                 </div>
+
                             </div>
                         </div>
                       </div>

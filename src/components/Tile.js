@@ -21,7 +21,7 @@ const Container = styled.div`
   }
 `
 
-const Tile = ({children, className, style, url}) => {
+const Tile = ({children, className, style, url, columnCount}) => {
   style = style || {};
 
   if (url) {
@@ -32,7 +32,7 @@ const Tile = ({children, className, style, url}) => {
   }
 
   return (
-    <Container className={`col-12 col-lg-4 ${className || ''}`} style={style}>
+    <Container className={`col-12 col-lg-${12/(columnCount || 3)} ${className || ''}`} style={style}>
       {children}
     </Container>
   );

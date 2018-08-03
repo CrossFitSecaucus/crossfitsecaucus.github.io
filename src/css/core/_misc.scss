@@ -54,10 +54,13 @@ label{
     font-weight: 400;
 }
 
-.main-raised{
-    margin: -60px 30px 0px;
+.main-raised {
+  margin: 0 !important;
+  @include media-breakpoint-up(md) {
+    margin: -60px 30px 0px !important;
     border-radius: $border-radius-base * 2;
     @include shadow-16dp();
+  }
 }
 
 /*           Animations              */
