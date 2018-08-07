@@ -8,7 +8,7 @@ import Tile from '../components/Tile'
 const GetStartedPage = () => (
   <main>
 
-    <section className="section section-basic">
+    <section className="section section-basic" id="select-experience-level">
       <div className="container">
         <div className="row">
           <div className="col-md-10 ml-auto mr-auto">
@@ -36,8 +36,8 @@ const GetStartedPage = () => (
 
     <section>
       <div className="row no-gutters">
-        <Tile url="/img/athlete-left.jpg" className="d-sm-none d-lg-block" columnCount={2}/>
-        <Tile url="/img/athlete-right.jpg" columnCount={2} />
+        <Tile url="/img/athlete-4-left.jpg" className="d-none d-sm-none d-lg-block" columnCount={2}/>
+        <Tile url="/img/athlete-4-right.jpg" columnCount={2} />
       </div>
     </section>
 
@@ -62,9 +62,9 @@ const GetStartedPage = () => (
                     Ready to get back to working out?
                     Head over to our pricing section and select the option that best fits your training needs.
                   </p>
-                  <Link to="/index.html#pricing" className="btn btn-info btn-round">
-                    View Options
-                  </Link>
+                  <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40" target="_blank" className="btn btn-info btn-round">
+                    Purchase
+                  </a>
               </div>
             </div>
           </div>
@@ -79,9 +79,9 @@ const GetStartedPage = () => (
                   <p className="card-description">
                     <strong>CrossFit experience is required!</strong>
                   </p>
-                  <Link to="/index.html#pricing" className="btn btn-info btn-round">
+                  <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=29&prodId=10278" target="_blank" className="btn btn-info btn-round">
                     Purchase
-                  </Link>
+                  </a>
               </div>
             </div>
           </div>
@@ -115,8 +115,8 @@ const GetStartedPage = () => (
 
     <section>
       <div className="row no-gutters">
-        <Tile url="/img/athlete-left.jpg" className="d-sm-none d-lg-block" columnCount={2}/>
-        <Tile url="/img/athlete-right.jpg" columnCount={2} />
+        <Tile url="/img/athlete-5-left.jpg" columnCount={2}/>
+        <Tile url="/img/athlete-5-right.jpg" className="d-none d-sm-none d-lg-block" columnCount={2} />
       </div>
     </section>
 

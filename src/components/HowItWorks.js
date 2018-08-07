@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 
 const Step = ({ number, title, imageUrl, children }) => (
@@ -27,17 +28,24 @@ const HowItworks = ({ heading }) => (
 
     <Step
       number="1"
-      title="Learn the basic CrossFit movements"
+      title="Learn the basics of CrossFit"
       imageUrl="/img/personal-training.jpg"
     >
       <p>
-        If you are new to CrossFit, you first complete our 4-session fundamentals course with your own personal trainer.
+        If you are new to CrossFit, you first complete our 4-session fundamentals course with your dedicated personal trainer.
         We want you to be safe and efficient when you squat, jump, lift, run, row, push, pull and climb during a workout.
         Therefore, we put a lot of emphasis on teaching you proper form.
       </p>
       <p>
         Your trainer will get to know you, your goals, your abilities and even limitations in order to teach you exactly
         what you need to have fun, be safe and be successful when working out.
+      </p>
+      <p>
+        <Link to="/get-started#fundamentals" className="text-info">
+          <strong>
+            Ready to get started with your personalized fundamentals course?
+          </strong>
+        </Link>
       </p>
     </Step>
 
@@ -53,8 +61,16 @@ const HowItworks = ({ heading }) => (
       <ul className="fa-ul">
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span><strong>Personal Training only</strong> &mdash; for when you want to fast-track your progress and target your specific problem areas.</li>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span><strong>Group Classes</strong> &mdash; perfect choice for when you are self-motivated and comfortable working out in a group setting.</li>
-        <li><span className="fa-li"><i className="material-icons text-success">done</i></span><strong>Hybrid Membership</strong> &mdash; mix personal training sessions and group classes for the best of both worlds.</li>
+        <li><span className="fa-li"><i className="material-icons text-success">done</i></span><strong>Hybrid Option</strong> &mdash; mix personal training sessions and group classes for the best of both worlds.</li>
       </ul>
+
+      <p>
+        <Link to="/#pricing" className="text-info">
+          <strong>
+            Check out our pricing options.
+          </strong>
+        </Link>
+      </p>
 
     </Step>
 
@@ -67,7 +83,7 @@ const HowItworks = ({ heading }) => (
         Personal training sessions can be booked throughout the day based on your availability; early mornings to late evenings.
       </p>
       <p>
-        After completing the fundamentals course, you can conveniently schedule yourself for our group classes via our website or mobile app.
+        Upon completion of the fundamentals course, you can conveniently schedule yourself for our group classes via our website or mobile app.
       </p>
     </Step>
    </div>

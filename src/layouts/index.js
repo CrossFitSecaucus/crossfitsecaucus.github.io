@@ -40,15 +40,6 @@ const Layout = ({ children, data }) => (
       {children()}
     </div>
     <Footer>
-      <a href="#">
-      Privacy Policy
-      </a>
-      <a href="#">
-      Membership Agreement
-      </a>
-      <a href="#">
-        Cancelation/Hold Request
-      </a>
     </Footer>
 
     <NewToCrossFitModal />

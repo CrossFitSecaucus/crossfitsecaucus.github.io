@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 
 const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, sessionName, sessionsName, description, lastLine, buttonLabel, color, preferred}) => (
   <div className={`card card-pricing card-plain card-raised ${preferred ? 'bg-' + color : ''}`}>
@@ -24,9 +25,18 @@ const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, ses
                   <li>{lastLine}</li>
               }
           </ul>
-          <a href={url} target={/^(https?:)?\/\//.test(url) ? '_blank' : '_self'} className={`btn btn-raised btn-round ${preferred ? 'btn-white' : 'btn-' + color}`}>
-              {buttonLabel}
-          </a>
+          {
+            url && /^(https?:)?\/\//.test(url) &&
+              <a href={url} target="_blank" className={`btn btn-raised btn-round ${preferred ? 'btn-white' : 'btn-' + color}`}>
+                {buttonLabel}
+              </a>
+          }
+          {
+            url && !/^(https?:)?\/\//.test(url) &&
+              <Link to={url} className={`btn btn-raised btn-round ${preferred ? 'btn-white' : 'btn-' + color}`}>
+                {buttonLabel}
+              </Link>
+          }
       </div>
   </div>
 )
@@ -64,7 +74,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="Maintenance"
                                                 buttonLabel="Get Started"
-                                                url="/get-started"
+                                                url="/get-started#select-experience-level"
                                                 unitPrice={180}
                                                 unit="month"
                                                 sessions={12}
@@ -80,7 +90,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="Transformation"
                                                 buttonLabel="Get Started"
-                                                url="/get-started"
+                                                url="/get-started#select-experience-level"
                                                 unitPrice={220}
                                                 unit="month"
                                                 sessions={20}
@@ -97,7 +107,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="Competitor"
                                                 buttonLabel="Get Started"
-                                                url="/get-started"
+                                                url="/get-started#select-experience-level"
                                                 unitPrice={260}
                                                 unit="month"
                                                 sessions={30}
@@ -158,7 +168,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="20 session pack"
                                                 buttonLabel="Buy 20 Session Pack"
-                                                url="/get-started"
+                                                url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=5&prodId=10308"
                                                 unitPrice={"1,000"}
                                                 unit="session pack"
                                                 sessions={20}

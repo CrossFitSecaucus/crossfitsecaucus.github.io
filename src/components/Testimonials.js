@@ -40,9 +40,9 @@ const Testimonials = ({ children }) => (
         <h3 className="title text-uppercase">Testimonials</h3>
         <h5 className="description">
           {'See what our current clients have to say about their experience at CrossFit Secaucus. Read all reviews on '}
-          <a href="#" target="_blank">Google</a>
+          <a href="https://www.google.com/search?q=crossfit+secaucus" target="_blank">Google</a>
           {' and '}
-          <a href="#" target="_blank">Facebook</a>.
+          <a href="https://www.facebook.com/CrossFitSecaucus/reviews/" target="_blank">Facebook</a>.
           </h5>
       </div>
     </div>
