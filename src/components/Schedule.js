@@ -42,7 +42,7 @@ const Schedule = ({ heading }) => (
                 <td><strong>8:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
-                <td><strong>9:00am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-rose"><strong>Buti Yoga</strong></span></td>
               </tr>
               <tr>
                 <td><strong>10:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
@@ -105,6 +105,12 @@ const Schedule = ({ heading }) => (
           The ladies-only bootcamp class consists of workouts specifically designed for toning overall physique and burning calories.
           These fun high-energy classes are great for anyone as the workouts can be scaled up and down to maximize the benefit for each athlete.
           (<a href="http://tone-burn.com" target="_blank" className="text-rose">See details</a>)
+        </p>
+
+        <p>
+          <strong className="text-rose">Buti Yoga</strong> &mdash;
+          Buti yoga is a style of yoga that combines jump training (plyometrics), cardio-intensive tribal dancing, dynamic yoga asanas and deep abdominal toning into an intense workout.
+          In Marathi, the language spoken in parts of western India, buti means "a secret remedy or cure."
         </p>
 
         <p>

@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components';
 
 import Tile from '../components/Tile'
-import Testimonials from '../components/Testimonials'
 import HowItWorks from '../components/HowItWorks'
 import Schedule from '../components/Schedule'
 import Pricing from '../components/Pricing'
@@ -92,10 +91,6 @@ const IndexPage = () => (
         </Tile>
         <Tile url="/img/athlete-right.jpg" />
       </div>
-    </section>
-
-    <section id="testimonials" className="section-image" style={{backgroundImage: "url('/img/testimonials-bg.jpg')"}}>
-      <Testimonials />
     </section>
 
     <section id="how-it-works">

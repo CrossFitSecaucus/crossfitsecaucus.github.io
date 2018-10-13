@@ -45,10 +45,10 @@ const Header = ({ siteTitle }) => (
                             <Link to="/index.html#pricing" className="dropdown-item">
                                 <i className="material-icons">monetization_on</i> Pricing
                             </Link>
-                            <Link to="/trial-class.html" className="dropdown-item">
+                            <Link to="/trial-class" className="dropdown-item">
                                 <i className="material-icons">fitness_center</i> Trial Class
                             </Link>
-                            <Link to="/get-started.html" className="dropdown-item">
+                            <Link to="/get-started" className="dropdown-item">
                                 <i className="material-icons">shopping_cart</i> Sign-up
                             </Link>
                         </div>

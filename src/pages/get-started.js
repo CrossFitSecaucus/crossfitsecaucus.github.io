@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
 
+import Testimonials from '../components/Testimonials'
+
 import Tile from '../components/Tile'
 
 
@@ -60,11 +62,17 @@ const GetStartedPage = () => (
                   <h4 className="card-title">Sign-up Now</h4>
                   <p className="card-description">
                     Ready to get back to working out?
-                    Head over to our pricing section and select the option that best fits your training needs.
                   </p>
                   <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40" target="_blank" className="btn btn-info btn-round">
-                    Purchase
+                    Sign-up
                   </a>
+                  <hr/>
+                  <p>
+                    For more information about your options, head over to our pricing section to find what best fits your training needs.
+                  </p>
+                  <Link to="/index.html#pricing" className="btn btn-info btn-round">
+                    View Options
+                  </Link>
               </div>
             </div>
           </div>
@@ -72,7 +80,7 @@ const GetStartedPage = () => (
           <div className="col-lg-4">
             <div className="card card-profile">
               <div className="card-body ">
-                  <h4 className="card-title">Dropping in?</h4>
+                  <h4 className="card-title">Dropping In?</h4>
                   <p className="card-description">
                     You can purchase one or more class passes online and directly book yourself for any group class on the schedule.
                   </p>
@@ -262,9 +270,9 @@ const GetStartedPage = () => (
           </div>
           <div className="col-md-10 ml-auto mr-auto text-center">
 
-            <Link to="/index.html#pricing" className="btn btn-primary btn-lg btn-block btn-round">
+            <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=5&prodId=10304" target="_blank" className="btn btn-primary btn-lg btn-block btn-round">
               Purchase Fundamentals Course
-            </Link>
+            </a>
             <p className="text-muted">
               After purchasing, we will email you to schedule your sessions.
             </p>
@@ -273,6 +281,10 @@ const GetStartedPage = () => (
         </div>
 
       </div>
+    </section>
+
+    <section id="testimonials" className="section-image" style={{backgroundImage: "url('/img/testimonials-bg.jpg')"}}>
+      <Testimonials/>
     </section>
 
   </main>

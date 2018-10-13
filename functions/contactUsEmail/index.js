@@ -52,7 +52,7 @@ exports.contactUsEmail = (req, res) => {
 
       .then(() => {
         const message = {
-          to: 'trainers@crossfit-secaucus.com',
+          to: 'manuel@crossfit-secaucus.com',
           from: 'CS Website <noreply@crossfit-secaucus.com>',
           subject: `Contact Form: ${firstName || ''} ${lastName || ''}`,
           reply_to: email || '',

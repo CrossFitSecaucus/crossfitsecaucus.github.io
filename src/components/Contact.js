@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Recaptcha from './Recaptcha';
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -18,26 +20,20 @@ class Contact extends React.Component {
       inflight: false,
       successMessage: null,
       errorMessage: null,
+      formVersion: 0,
     };
-    this.recaptchaListener = null;
     this.successMessageTimeout = null;
     this.errorMessageTimeout = null;
-    this.listenForRecaptchaComplete = this.listenForRecaptchaComplete.bind(this);
     this.successMessage = this.successMessage.bind(this);
     this.errorMessage = this.errorMessage.bind(this);
     this.resetForm = this.resetForm.bind(this);
+    this.handleRecaptchaChange = this.handleRecaptchaChange.bind(this);
     this.handleFirstNameChange = this.handleFirstNameChange.bind(this);
     this.handleLastNameChange = this.handleLastNameChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handlePhoneChange = this.handlePhoneChange.bind(this);
     this.handleTextChange = this.handleTextChange.bind(this);
     this.handleFormSubmission = this.handleFormSubmission.bind(this);
-  }
-
-  componentWillUnmount() {
-    if (this.recaptchaListener) {
-      clearInterval(this.recaptchaListener);
-    }
   }
 
   resetForm() {
@@ -54,10 +50,8 @@ class Contact extends React.Component {
       textValid: false,
       recaptchaComplete: false,
       inflight: false,
+      formVersion: this.state.formVersion + 1,
     });
-    if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.reset === 'function') {
-      grecaptcha.reset();
-    }
   }
 
   successMessage(successMessage) {
@@ -86,17 +80,8 @@ class Contact extends React.Component {
     this.setState({ errorMessage, successMessage: null });
   }
 
-  listenForRecaptchaComplete() {
-    if (!this.recaptchaListener) {
-      this.recaptchaListener = setInterval(() => {
-        const recaptchaField = document.getElementById('g-recaptcha-response');
-        const recaptcha = String(recaptchaField && recaptchaField.value) || '';
-        const recaptchaComplete = recaptcha.length > 0;
-        if (recaptchaComplete !== this.state.recaptchaComplete || recaptcha !== this.state.recaptcha) {
-          this.setState({ recaptchaComplete, recaptcha });
-        }
-      }, 500);
-    }
+  handleRecaptchaChange(recaptcha) {
+    this.setState({ recaptcha, recaptchaComplete: recaptcha !== null });
   }
 
   handleFirstNameChange(event) {
@@ -124,9 +109,6 @@ class Contact extends React.Component {
     const text = event.target.value;
     const textValid = text.trim().length > 10;
     this.setState({ text, textValid })
-    if (textValid) {
-      this.listenForRecaptchaComplete();
-    }
   }
 
   handleFormSubmission(event) {
@@ -146,7 +128,10 @@ class Contact extends React.Component {
       },
       dataType: 'json',
       contentType: 'application/json'
-    }).fail(({responseJSON}) => this.errorMessage(responseJSON.message))
+    }).fail(({responseJSON}) => {
+      this.errorMessage(responseJSON.message);
+      window.scrollTo(0, 0);
+    })
     .always(() => this.setState({ inflight: false }));
 
   }
@@ -193,7 +178,7 @@ class Contact extends React.Component {
                               <p>
                                 <a href="https://www.google.com/maps/place/CrossFit+Secaucus/@40.779335,-74.082018,15z/data=!4m2!3m1!1s0x0:0x53a6798b1e6295e6" target="_blank">Directions</a>
                               </p>
-                              <img src="http://maps.googleapis.com/maps/api/staticmap?center=333+Meadowland+Parkway,+Secaucus&zoom=12&scale=2&size=300x300&maptype=terrain&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:orange%7C333+Meadowlands+Parkway,+Secaucus" className="img-raised rounded img-fluid" />
+                              <img src="/img/map.png" className="img-raised rounded img-fluid" />
                           </div>
                       </div>
                   </div>
@@ -267,7 +252,11 @@ class Contact extends React.Component {
                                       <span className="material-input"></span>
                                   </div>
                                   <div className="row">
-                                    <div className="g-recaptcha" data-sitekey="6LcNJmUUAAAAAKJXj6v238WrsmD-Nf4au_XKmxF3" style={{height: 100, marginLeft: 15}}></div>
+                                    <Recaptcha
+                                      formVersion={this.state.formVersion}
+                                      id="g-recaptcha-contact"
+                                      sitekey="6LcNJmUUAAAAAKJXj6v238WrsmD-Nf4au_XKmxF3"
+                                      onRecaptchaChange={this.handleRecaptchaChange} />
                                   </div>
                                 </div>
                               <div className="card-footer pull-right">

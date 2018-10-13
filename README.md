@@ -1,7 +1,8 @@
 # gcloud auth login
 # gcloud config set project cs-site-209414
 # gcloud functions
-# gcloud beta functions deploy contactUsEmail --trigger-http --source ./functions --env-vars-file env.yml
+# gcloud beta functions deploy contactUsEmail --trigger-http --source ./functions/contactUsEmail --env-vars-file env.yml
+# gcloud beta functions deploy trialClassEmail --trigger-http --source ./functions/trialClassEmail --env-vars-file env.yml
 
 # Deployemnt
 `firebase deploy --only functions:contactUs`
