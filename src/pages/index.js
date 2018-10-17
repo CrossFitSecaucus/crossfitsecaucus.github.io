@@ -81,7 +81,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section>
+    <section className="section">
       <div className="row no-gutters">
         <Tile url="/img/athlete-left.jpg" className="d-sm-none d-lg-block"/>
         <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
@@ -109,7 +109,7 @@ const IndexPage = () => (
       <Schedule heading={ <Heading>Schedule</Heading> } />
     </section>
 
-    <section>
+    <section className="section">
       <div className="row no-gutters">
         <Tile url="/img/athlete-3-center.jpg" className="d-none d-lg-block" />
         <Tile url="/img/athletes-center.jpg" />

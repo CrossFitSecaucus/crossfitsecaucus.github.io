@@ -191,7 +191,7 @@ class TrialClass extends React.Component {
       }),
       success: response => {
         this.resetForm();
-        this.successMessage('Your trial class was successfully booked!');
+        this.successMessage('Your trial class appointment was successfully booked!');
         window.scrollTo(0, 0);
       },
       dataType: 'json',
@@ -223,7 +223,7 @@ class TrialClass extends React.Component {
     <div className="card card-contact">
       <form id="trial-form" method="post">
         <div className="card-header card-header-raised card-header-success text-center">
-          <h3 className="card-title">Schedule A Free Trial Class</h3>
+          <h3 className="card-title">Schedule Your Free Trial Class</h3>
         </div>
 
 

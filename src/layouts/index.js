@@ -11,7 +11,8 @@ import styled from 'styled-components';
 
 const Cover = styled.div`
   background-image: url("/img/cover.jpg");
-  transform: translate3d(0px, 0px, 0px);
+  // transform: translate3d(0px, 0px, 0px);
+  height: 20vh;
 `;
 
 
@@ -36,7 +37,7 @@ const Layout = ({ children, data }) => (
 
     <Cover className="page-header header-filter clear-filter" />
 
-    <div className="main main-raised">
+    <div className="main">
       {children()}
     </div>
     <Footer>

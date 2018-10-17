@@ -52,6 +52,7 @@ const GetStartedPage = () => (
           <div className="col-md-10 ml-auto mr-auto">
             <p>
               Whether you are ready to join us today or would like to try us out first, we've got you covered. Select the option that suits you best.
+              (Experienced athletes will undergo a brief assessement of their understanding of the basic movements of CrossFit.)
             </p>
           </div>
         </div>
@@ -66,13 +67,6 @@ const GetStartedPage = () => (
                   <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40" target="_blank" className="btn btn-info btn-round">
                     Sign-up
                   </a>
-                  <hr/>
-                  <p>
-                    For more information about your options, head over to our pricing section to find what best fits your training needs.
-                  </p>
-                  <Link to="/index.html#pricing" className="btn btn-info btn-round">
-                    View Options
-                  </Link>
               </div>
             </div>
           </div>
@@ -88,7 +82,10 @@ const GetStartedPage = () => (
                     <strong>CrossFit experience is required!</strong>
                   </p>
                   <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=29&prodId=10278" target="_blank" className="btn btn-info btn-round">
-                    Purchase
+                    Purchase Single Drop-in
+                  </a>
+                  <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=24" target="_blank" className="btn btn-default btn-round">
+                    Purchase Punch Card
                   </a>
               </div>
             </div>
@@ -108,7 +105,7 @@ const GetStartedPage = () => (
                       CrossFit experience is required!
                     </strong>
                   </p>
-                  <Link to="/index.html#pricing" className="btn btn-info btn-round">
+                  <Link to="/trial-class" className="btn btn-info btn-round">
                     Schedule
                   </Link>
               </div>
@@ -147,7 +144,7 @@ const GetStartedPage = () => (
               <div className="card-body ">
                   <h4 className="card-title">Fundamentals</h4>
                   <p className="card-description">
-                    Prior to starting classes, one of our trainers will lead you through a private four-session personal training course to teach you the basics.
+                    Prior to starting group classes, one of our trainers will lead you through a private four-session personal training course to teach you the basics.
                   </p>
                   <p className="card-description">
                     <strong>
@@ -174,7 +171,7 @@ const GetStartedPage = () => (
                       No prior fitness experience is required.
                     </strong>
                   </p>
-                  <Link to="/index.html#pricing" className="btn btn-success btn-round">
+                  <Link to="/trial-class" className="btn btn-success btn-round">
                     Schedule
                   </Link>
               </div>

@@ -6,8 +6,10 @@ import TrialClass from '../components/TrialClass'
 
 
 const GetStartedPage = () => (
-  <main>
+  <main className="row">
+    <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
       <TrialClass />
+    </div>
   </main>
 )
 

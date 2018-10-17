@@ -19,7 +19,7 @@ class Recaptcha extends React.Component {
     };
 
     const i = setInterval(() => {
-      if (typeof grecaptcha !== 'undefined') {
+      if (typeof grecaptcha !== 'undefined' && typeof grecaptcha.render == 'function') {
         clearInterval(i);
         this._id = grecaptcha.render(this.props.id, {
           sitekey: this.props.sitekey,

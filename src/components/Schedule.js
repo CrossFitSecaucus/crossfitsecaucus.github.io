@@ -27,11 +27,11 @@ const Schedule = ({ heading }) => (
                 <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit 30</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
                 <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit 30</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
                 <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit 30</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
               </tr>
               <tr>
                 <td rowSpan="3">&nbsp;</td>
@@ -87,11 +87,6 @@ const Schedule = ({ heading }) => (
           Great for <em>new</em> and <em>seasoned athletes</em>.
           All movements are scaled to <em>every</em> athlete's skill, endurance and ability level.
           (Requires completion fundamentals course or previous CrossFit experience.)
-        </p>
-
-        <p>
-          <strong className="text-info">CrossFit 30</strong> &mdash;
-          Our 30 minute CrossFit class ensures that you get the most out of your workout before you start your busy day.
         </p>
 
         <p>

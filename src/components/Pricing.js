@@ -11,15 +11,15 @@ const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, ses
           </h1>
           <ul>
               <li><b>{description}</b></li>
+              <li>
+                  <b>{sessions}</b> {sessionsName} inlcuded
+              </li>
               {
                 unit && unitPrice &&
                   <li>
                       <b>${unitPrice}</b> per {unit}
                   </li>
               }
-              <li>
-                  <b>{sessions}</b> {sessionsName} inlcuded
-              </li>
               {
                 lastLine &&
                   <li>{lastLine}</li>
@@ -58,7 +58,7 @@ const Pricing = ({ children }) => (
                                 <li className="nav-item">
                                     <a className="nav-link active show" href="#group-classes" data-toggle="tab">Group Classes</a>
                                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item d-none">
                                     <a className="nav-link" href="#hybrid" data-toggle="tab">Hybrid Option</a>
                                 </li>
                             </ul>
@@ -74,7 +74,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="Maintenance"
                                                 buttonLabel="Get Started"
-                                                url="/get-started#select-experience-level"
+                                                url="/get-started"
                                                 unitPrice={180}
                                                 unit="month"
                                                 sessions={12}
@@ -90,7 +90,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="Transformation"
                                                 buttonLabel="Get Started"
-                                                url="/get-started#select-experience-level"
+                                                url="/get-started"
                                                 unitPrice={220}
                                                 unit="month"
                                                 sessions={20}
@@ -107,7 +107,7 @@ const Pricing = ({ children }) => (
                                               <PricingOption
                                                 label="Competitor"
                                                 buttonLabel="Get Started"
-                                                url="/get-started#select-experience-level"
+                                                url="/get-started"
                                                 unitPrice={260}
                                                 unit="month"
                                                 sessions={30}
@@ -142,7 +142,7 @@ const Pricing = ({ children }) => (
                                                 sessionName="session"
                                                 sessionsName="sessions"
                                                 sessionPrice={80}
-                                                description="For maintaining body composition"
+                                                description="Give personal training a try"
                                                 lastLine="One session is 60 minutes"
                                                 color="primary"
                                                 />
@@ -158,7 +158,7 @@ const Pricing = ({ children }) => (
                                                 sessionName="session"
                                                 sessionsName="sessions"
                                                 sessionPrice={60}
-                                                description="For weight loss and muscle gain"
+                                                description="Get about a month of PT"
                                                 lastLine="One session is 60 minutes"
                                                 color="primary"
                                                 preferred
@@ -175,7 +175,7 @@ const Pricing = ({ children }) => (
                                                 sessionName="session"
                                                 sessionsName="sessions"
                                                 sessionPrice={50}
-                                                description="For competitive performance athletes"
+                                                description="Make PT your primary workout"
                                                 lastLine="One session is 60 minutes"
                                                 color="primary"
                                                 />

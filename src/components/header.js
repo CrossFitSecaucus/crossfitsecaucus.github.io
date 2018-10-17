@@ -17,7 +17,7 @@ const Title = styled(Link)`
 
 
 const Header = ({ siteTitle }) => (
-  <nav className="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" data-color-on-scroll="150" id="sectionsNav">
+  <nav className="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" data-color-on-scroll="100" id="sectionsNav">
         <div className="container">
             <div className="navbar-translate">
                 <Title  to="/" className="navbar-brand">
@@ -53,40 +53,10 @@ const Header = ({ siteTitle }) => (
                             </Link>
                         </div>
                     </li>
-                    <li className="dropdown nav-item">
-                        <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i className="material-icons">people</i> Members Zone
-                        </a>
-                        <div className="dropdown-menu dropdown-with-icons">
-                            <a href="./sections.html#headers" className="dropdown-item">
-                                <i className="material-icons">dns</i> Headers
-                            </a>
-                            <a href="./sections.html#features" className="dropdown-item">
-                                <i className="material-icons">build</i> Features
-                            </a>
-                            <a href="./sections.html#blogs" className="dropdown-item">
-                                <i className="material-icons">list</i> Blogs
-                            </a>
-                            <a href="./sections.html#teams" className="dropdown-item">
-                                <i className="material-icons">people</i> Teams
-                            </a>
-                            <a href="./sections.html#projects" className="dropdown-item">
-                                <i className="material-icons">assignment</i> Projects
-                            </a>
-                            <a href="./sections.html#pricing" className="dropdown-item">
-                                <i className="material-icons">monetization_on</i> Pricing
-                            </a>
-                            <a href="./sections.html#testimonials" className="dropdown-item">
-                                <i className="material-icons">chat</i> Testimonials
-                            </a>
-                            <a href="./sections.html#contactus" className="dropdown-item">
-                                <i className="material-icons">call</i> Contacts
-                            </a>
-                        </div>
-                    </li>
+
                     <li className="button-container nav-item iframe-extern">
-                        <a href="#" target="_blank" className="btn  btn-warning   btn-round btn-block">
-                            <i className="material-icons">fitness_center</i> Try Class
+                        <a href="/trial-class" className="btn  btn-warning   btn-round btn-block">
+                            <i className="material-icons">fitness_center</i> Try A Class
                         </a>
                     </li>
                 </ul>

@@ -54,7 +54,7 @@ exports.trialClassEmail = (req, res) => {
 
     .then(() => {
     const message = {
-      to: 'manuel@crossfit-secaucus.com',
+      to: 'trainers@crossfit-secaucus.com',
       from: 'CS Website <noreply@crossfit-secaucus.com>',
       subject: `Trial Class: ${firstName || ''} ${lastName || ''}`,
       reply_to: email || '',

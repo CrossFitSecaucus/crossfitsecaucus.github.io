@@ -20,7 +20,7 @@ const Testimonial = ({name, photoUrl, joinDate, children, active}) => (
       </div>
       <div className="card-footer ">
         <h4 className="card-title">{name}</h4>
-        <h6 className="card-category">Member since {joinDate}</h6>
+        <h6 className="card-category">Joined {joinDate}</h6>
         {
           false &&
             <div className="card-avatar">
