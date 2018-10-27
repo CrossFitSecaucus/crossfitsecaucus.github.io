@@ -193,6 +193,9 @@ class TrialClass extends React.Component {
         this.resetForm();
         this.successMessage('Your trial class appointment was successfully booked!');
         window.scrollTo(0, 0);
+        if (typeof gtag == 'function') {
+          gtag('event', 'generate_lead');
+        }
       },
       dataType: 'json',
       contentType: 'application/json'

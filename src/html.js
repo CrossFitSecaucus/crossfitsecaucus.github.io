@@ -49,6 +49,10 @@ module.exports = class HTML extends React.Component {
           <script src="/js/material-kit.js?v=2.0.3" type="text/javascript" />
 
           <script src='https://www.google.com/recaptcha/api.js' />
+          {
+            process.env.NODE_ENV === `production` &&
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50754912-1" />
+          }
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
