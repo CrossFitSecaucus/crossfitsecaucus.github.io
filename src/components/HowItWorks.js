@@ -41,7 +41,7 @@ const HowItworks = ({ heading }) => (
         what you need to have fun, be safe and be successful when working out.
       </p>
       <p>
-        <Link to="/get-started#fundamentals" className="text-info">
+        <Link to="/get-started.html#fundamentals" className="text-info">
           <strong>
             Ready to get started with your personalized fundamentals course?
           </strong>
