@@ -32,6 +32,11 @@ module.exports = class HTML extends React.Component {
           {this.props.headComponents}
           {css}
 
+          <link rel="shortcut icon" href="/img/icon/favicon.png" />
+          <link rel="apple-touch-icon" href="/img/icon/CrossFit-Secaucus.png" />
+          <link rel="apple-touch-icon" sizes="72x72" href="/img/icon/CrossFit-Secaucus-72.png" />
+          <link rel="apple-touch-icon" sizes="114x114" href="/img/icon/CrossFit-Secaucus-144.png" />
+
           <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons|Montserrat" rel="stylesheet" />
 
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />

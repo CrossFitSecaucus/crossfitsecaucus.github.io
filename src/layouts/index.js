@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import {NewToCrossFitModal} from '../components/Modal'
 import './index.scss'
 
 import styled from 'styled-components';
@@ -21,6 +20,7 @@ class Layout extends React.Component {
     if (process.env.NODE_ENV === `production`) {
       window.dataLayer = window.dataLayer || [];
       const gtag = () => dataLayer.push(arguments);
+      window.gtag = gtag;
       gtag('js', new Date());
       gtag('config', 'UA-50754912-1');
     }
@@ -42,21 +42,17 @@ class Layout extends React.Component {
 
             { name: 'googformat-detection', content: 'telephone=yes' },
 
-            { property: 'og:title', content: 'CrossFit Secaucus' },
+            { name: 'google', content: 'nositelinkssearchbox' },
+
+            { property: 'og:title', content: data.site.siteMetadata.title },
             { property: 'og:type', content: 'website' },
             { property: 'og:url', content: 'https://crossfit-secaucus.com' },
-            { property: 'og:url', content: 'https://crossfit-secaucus.com/img/cover.jpg' },
+            { property: 'og:image', content: 'https://crossfit-secaucus.com/img/group-class.jpg' },
 
           ]}
         >
-
-                        <meta property="og:type" content="website" />
-                        <meta property="og:url" content="http://example.com" />
-                        <meta property="og:image" content="http://example.com/images/image.jpg" />
-
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-
 
         <Cover className="page-header header-filter clear-filter" />
 
@@ -64,8 +60,6 @@ class Layout extends React.Component {
           {children()}
         </div>
         <Footer/>
-
-        <NewToCrossFitModal />
       </div>
       );
   }
