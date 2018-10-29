@@ -17,23 +17,23 @@ const Title = styled(Link)`
 
 
 const Header = ({ siteTitle }) => (
-  <nav className="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" data-color-on-scroll="100" id="sectionsNav">
+  <nav className="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" data-color-on-scroll="50" id="sectionsNav">
         <div className="container">
             <div className="navbar-translate">
                 <Title  to="/" className="navbar-brand">
-                    {siteTitle}
+                  {siteTitle}
                 </Title>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                    <span className="navbar-toggler-icon"></span>
-                    <span className="navbar-toggler-icon"></span>
+                  <span className="navbar-toggler-icon"></span>
+                  <span className="navbar-toggler-icon"></span>
+                  <span className="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div className="collapse navbar-collapse">
                 <ul className="navbar-nav ml-auto">
                     <li className="dropdown nav-item">
                         <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i className="material-icons">directions_run</i> Getting Started
+                          Getting Started
                         </a>
                         <div className="dropdown-menu dropdown-with-icons">
                             <Link to="/index.html#how-it-works" className="dropdown-item">
@@ -50,6 +50,17 @@ const Header = ({ siteTitle }) => (
                             </Link>
                             <Link to="/get-started" className="dropdown-item">
                                 <i className="material-icons">shopping_cart</i> Sign-up
+                            </Link>
+                        </div>
+                    </li>
+
+                    <li className="dropdown nav-item">
+                        <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
+                          Members
+                        </a>
+                        <div className="dropdown-menu dropdown-with-icons">
+                            <Link to="/wod" className="dropdown-item">
+                                <i className="material-icons">fitness_center</i> WOD
                             </Link>
                         </div>
                     </li>

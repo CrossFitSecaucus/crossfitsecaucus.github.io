@@ -1,6 +1,11 @@
  @import "../css/material-kit";
 
 /* Fixes */
+
+.main {
+  min-height: 550px;
+}
+
 .modal.show {
   padding: 5px !important;
 }

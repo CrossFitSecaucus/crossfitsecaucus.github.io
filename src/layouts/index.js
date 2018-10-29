@@ -11,7 +11,8 @@ import styled from 'styled-components';
 const Cover = styled.div`
   background-image: url("/img/cover.jpg");
   // transform: translate3d(0px, 0px, 0px);
-  height: 20vh;
+  height: 30vw;
+  max-height: 200px;
 `;
 
 class Layout extends React.Component {
