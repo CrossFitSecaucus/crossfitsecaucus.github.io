@@ -17,8 +17,8 @@
       "path----c3ffa66f9086c2b73ca7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-fb0e2b796ba37f596515.js",
-      "component---src-layouts-index-js-fb0e2b796ba37f596515.js.map"
+      "component---src-layouts-index-js-725637db4b38eae2bdf1.js",
+      "component---src-layouts-index-js-725637db4b38eae2bdf1.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -40,6 +40,10 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-wod-js": [
+      "component---src-pages-wod-js-a99c90e1f358cbb30514.js",
+      "component---src-pages-wod-js-a99c90e1f358cbb30514.js.map"
+    ],
     "component---src-pages-service-agreement-js": [
       "component---src-pages-service-agreement-js-12052089a2ec343b433f.js",
       "component---src-pages-service-agreement-js-12052089a2ec343b433f.js.map"
@@ -49,8 +53,8 @@
       "component---src-pages-get-started-js-74c6bfc7d0e6a2e7a2bc.js.map"
     ],
     "app": [
-      "app-59336b06c25a182b29b7.js",
-      "app-59336b06c25a182b29b7.js.map"
+      "app-967e5a60bf03cebfd360.js",
+      "app-967e5a60bf03cebfd360.js.map"
     ],
     "path---get-started": [
       "path---get-started-a0e39f21c11f6a62c5ab.js",
@@ -59,6 +63,10 @@
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---wod": [
+      "path---wod-a0e39f21c11f6a62c5ab.js",
+      "path---wod-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
