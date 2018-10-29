@@ -13,6 +13,9 @@ const GetStartedPage = () => (
       <title>Trial Class</title>
       <meta name="description" content="Try a class for free with a personal trainer at your side to guide you through the group workout." />
       <link rel="canonical" href="https://crossfit-secaucus.com/trial-class" />
+      <meta property="og:title" content="CrossFit Secaucus Trial Class" />
+      <meta property="og:url" content="https://crossfit-secaucus.com/trial-class" />
+      <meta property="og:image" content="https://crossfit-secaucus.com/img/personal-training.jpg" />
     </Helmet>
 
     <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
