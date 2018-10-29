@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
+import { Helmet } from "react-helmet"
 
 import Testimonials from '../components/Testimonials'
 
@@ -9,6 +10,12 @@ import Tile from '../components/Tile'
 
 const GetStartedPage = () => (
   <main>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Get Started</title>
+      <meta name="description" content="New to CrossFit? Experience CrossFitter? We've got an individualized plan to get started for every athlete." />
+      <link rel="canonical" href="https://crossfit-secaucus.com/get-started" />
+    </Helmet>
 
     <section className="section section-basic" id="select-experience-level">
       <div className="container">

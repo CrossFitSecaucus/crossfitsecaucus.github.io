@@ -1,10 +1,15 @@
 import React from 'react'
 import Link from "gatsby-link"
+import { Helmet } from "react-helmet"
 
 import Tile from '../components/Tile'
 
 const NotFoundPage = () => (
   <main>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Page Not Found</title>
+    </Helmet>
     <section className="section section-basic">
       <div className="container">
         <div className="row">

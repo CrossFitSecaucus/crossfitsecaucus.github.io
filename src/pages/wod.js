@@ -1,5 +1,6 @@
 import React from 'react'
 // import 'whatwg-fetch'
+import { Helmet } from "react-helmet"
 
 class WodPage extends React.Component {
   constructor(props) {
@@ -24,6 +25,12 @@ class WodPage extends React.Component {
     const {content} = this.state;
     return (
       <main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>WOD - Workout of the Day</title>
+        <meta name="description" content="View a basic summary of today's workout, so you can come to class prepared." />
+        <link rel="canonical" href="https://crossfit-secaucus.com/wod" />
+      </Helmet>
         <section className="section section-basic">
           <div className="container">
             <div className="row">

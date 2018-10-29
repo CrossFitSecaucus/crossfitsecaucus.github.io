@@ -34,7 +34,6 @@ class Layout extends React.Component {
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Crossfit Secaucus is a world-class fitness facility located in Secaucus, NJ, and also serves the areas around Lyndhurst, North Arlington, Kearny, Harrison, Rutherford, Union City, Weehawken, West New York, Hoboken and Jersey City.' },
             { name: 'keywords', content: 'crossfit, fitness, personal training, bootcamp, weight loss, slim down, tone, burn, barbell, trainer' },
 
             { name: 'google-site-verification', content: 'N_htigC_3PxYoand2Bcb1VY_MRTDbLscdlswaMThVNQ' },
@@ -49,7 +48,6 @@ class Layout extends React.Component {
             { property: 'og:type', content: 'website' },
             { property: 'og:url', content: 'https://crossfit-secaucus.com' },
             { property: 'og:image', content: 'https://crossfit-secaucus.com/img/group-class.jpg' },
-
           ]}
         >
         </Helmet>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
+import { Helmet } from "react-helmet"
 
 import Tile from '../components/Tile'
 import HowItWorks from '../components/HowItWorks'
@@ -59,6 +60,13 @@ const Heading = ({children}) => (
 
 const IndexPage = () => (
   <main>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>CrossFit Secaucus - The best hour of your day</title>
+      <meta name="description" content="Crossfit Secaucus is a world-class fitness facility located in Secaucus, NJ, and also serves the areas around Lyndhurst, North Arlington, Kearny, Harrison, Rutherford, Union City, Weehawken, West New York, Hoboken and Jersey City." />
+      <link rel="canonical" href="https://crossfit-secaucus.com/" />
+    </Helmet>
+
     <section className="section section-basic">
       <div className="container">
         <div className="row">
