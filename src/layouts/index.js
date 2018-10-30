@@ -34,7 +34,7 @@ class Layout extends React.Component {
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'keywords', content: 'crossfit, fitness, personal training, bootcamp, weight loss, slim down, tone, burn, barbell, trainer' },
+            { name: 'keywords', content: 'crossfit, gym, box, fitness, calisthenics, circuit training, barbell, olympic lifting, weightlifting, power lifting, classes, course, personal training, bootcamp, weight loss, slim down, tone, burn, trainer, beginners, intro' },
 
             { name: 'google-site-verification', content: 'N_htigC_3PxYoand2Bcb1VY_MRTDbLscdlswaMThVNQ' },
             { name: 'google-site-verification', content: 'd7EUGM_PxsNYot-o4oBXr41zfoL0rJK9tqFwQkqVhUo' },
