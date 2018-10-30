@@ -80,7 +80,11 @@ const Schedule = ({ heading }) => (
           </table>
 
         </div>
+      </div>
+    </div>
 
+    <div className="row">
+      <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
         <p>
           <strong className="text-info">CrossFit</strong> &mdash;
           Functional movements at high intensity combining gymnastics, plyometrics, calisthenics, weightlifting, running, rowing and more.

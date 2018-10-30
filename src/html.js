@@ -51,10 +51,6 @@ module.exports = class HTML extends React.Component {
           <script src="/js/core/popper.min.js" type="text/javascript" />
           <script src="/js/core/bootstrap-material-design.min.js" type="text/javascript" />
 
-          <script src="/js/plugins/moment.min.js" />
-
-          <script src="/js/plugins/bootstrap-datetimepicker.js" type="text/javascript" />
-
           <script src="js/plugins/nouislider.min.js" type="text/javascript" />
 
           <script src="/js/material-kit.js?v=2.0.3" type="text/javascript" />
