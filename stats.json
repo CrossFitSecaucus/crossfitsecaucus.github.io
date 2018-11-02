@@ -4,6 +4,10 @@
       "component---src-pages-index-js-51b51978b89f69b792d5.js",
       "component---src-pages-index-js-51b51978b89f69b792d5.js.map"
     ],
+    "component---src-pages-free-class-js": [
+      "component---src-pages-free-class-js-0a72efb8339fb64ca0a6.js",
+      "component---src-pages-free-class-js-0a72efb8339fb64ca0a6.js.map"
+    ],
     "path---trial-class": [
       "path---trial-class-a0e39f21c11f6a62c5ab.js",
       "path---trial-class-a0e39f21c11f6a62c5ab.js.map"
@@ -16,17 +20,21 @@
       "path----c3ffa66f9086c2b73ca7.js",
       "path----c3ffa66f9086c2b73ca7.js.map"
     ],
+    "path---free-class": [
+      "path---free-class-a0e39f21c11f6a62c5ab.js",
+      "path---free-class-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-c858cb21342ba718db38.js",
-      "component---src-layouts-index-js-c858cb21342ba718db38.js.map"
+      "component---src-layouts-index-js-f53d1215ad5247af6d52.js",
+      "component---src-layouts-index-js-f53d1215ad5247af6d52.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-trial-class-js": [
-      "component---src-pages-trial-class-js-9cea98b56c9f8e753ffb.js",
-      "component---src-pages-trial-class-js-9cea98b56c9f8e753ffb.js.map"
+      "component---src-pages-trial-class-js-0861750a9a060828b167.js",
+      "component---src-pages-trial-class-js-0861750a9a060828b167.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-e802d48bcbbc350c49d3.js",
@@ -49,12 +57,12 @@
       "component---src-pages-service-agreement-js-12052089a2ec343b433f.js.map"
     ],
     "component---src-pages-get-started-js": [
-      "component---src-pages-get-started-js-1095979bf7d1537e1b9f.js",
-      "component---src-pages-get-started-js-1095979bf7d1537e1b9f.js.map"
+      "component---src-pages-get-started-js-56c5bcd207f69c419ec0.js",
+      "component---src-pages-get-started-js-56c5bcd207f69c419ec0.js.map"
     ],
     "app": [
-      "app-967e5a60bf03cebfd360.js",
-      "app-967e5a60bf03cebfd360.js.map"
+      "app-c12e9e90b58fd79df354.js",
+      "app-c12e9e90b58fd79df354.js.map"
     ],
     "path---get-started": [
       "path---get-started-a0e39f21c11f6a62c5ab.js",
