@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 import TrialClass from '../components/TrialClass'
 
 
-const GetStartedPage = () => (
+const TrialClassPage = () => (
   <main className="row">
     <Helmet>
       <meta charSet="utf-8" />
@@ -24,4 +24,4 @@ const GetStartedPage = () => (
   </main>
 )
 
-export default GetStartedPage
+export default TrialClassPage
