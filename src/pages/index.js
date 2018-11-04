@@ -65,6 +65,52 @@ const IndexPage = () => (
       <title>CrossFit Secaucus - The best hour of your day</title>
       <meta name="description" content="Crossfit Secaucus is a world-class fitness facility located in Secaucus, NJ, and also serves the areas around Lyndhurst, North Arlington, Kearny, Harrison, Rutherford, Union City, Weehawken, West New York, Hoboken and Jersey City." />
       <link rel="canonical" href="https://crossfit-secaucus.com/" />
+
+      <script type="application/ld+json">
+      {`
+        {
+          "@context": "http://schema.org",
+          "@type": "HealthClub",
+          "@id": "https://crossfit-secaucus.com/",
+          "name": "CrossFit Secaucus",
+          "image": [
+            "https://crossfit-secaucus.com/img/cover.jpg",
+            "https://crossfit-secaucus.com/img/athlete-4-right.jpg"
+           ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "333 Meadowlands Pkwy",
+            "addressLocality": "Secaucus",
+            "addressRegion": "NJ",
+            "postalCode": "07094",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.779334,
+            "longitude": -74.0820209
+          },
+          "telephone": "+12015036326",
+          "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://crossfit-secaucus.com/trial-class",
+              "inLanguage": "en-US",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/IOSPlatform",
+                "http://schema.org/AndroidPlatform"
+              ]
+            },
+            "result": {
+              "@type": "Reservation",
+              "name": "Try A Class"
+            }
+          }
+        }
+      `}
+      </script>
     </Helmet>
 
     <section className="section section-basic">
