@@ -6,23 +6,33 @@ class WodPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      content: 'Loading ...'
+      content: null,
+      failedFetch: false,
     }
   }
 
+  static defaultProps = {
+    wodUrl: 'https://storage.googleapis.com/cs-site/wod.html'
+  }
+
   componentDidMount() {
-    window.fetch('https://storage.googleapis.com/cs-site/wod.html')
+    window.fetch(this.props.wodUrl)
       .then(res => {
         const {status} = res;
         return status >= 200 && status < 400 ?
           res.text() : null;
       })
       .then(content => this.setState({content}))
-      .catch(err => this.setState({content: null}))
+      .catch(err => this.setState({failedFetch: true}))
   }
 
   render() {
-    const {content} = this.state;
+    const {content, failedFetch} = this.state;
+    const wodDescription = content != null  ?
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+      :
+      <h2>No WODs currently posted.</h2>
+
     return (
       <main>
       <Helmet>
@@ -36,10 +46,10 @@ class WodPage extends React.Component {
             <div className="row">
               <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
                 {
-                  content != null  ?
-                    <div dangerouslySetInnerHTML={{ __html: content }} />
+                  failedFetch ?
+                    <iframe src={this.props.wodUrl} style={{border: 0, width: '100%', height: 1000}}></iframe>
                     :
-                    <h2>No WODs currently posted.</h2>
+                    wodDescription
                 }
                 <hr/>
                 <p class="text-muted text-small">
