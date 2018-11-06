@@ -37,19 +37,19 @@ const Header = ({ siteTitle }) => (
                         </a>
                         <div className="dropdown-menu dropdown-with-icons">
                             <Link to="/index.html#how-it-works" className="dropdown-item">
-                                <i className="material-icons">list</i> How it works
+                                <i className="material-icons">&#xe896;</i> How it works
                             </Link>
                             <Link to="/index.html#schedule" className="dropdown-item">
-                                <i className="material-icons">calendar_today</i> Schedule
+                                <i className="material-icons">&#xe614;</i> Schedule
                             </Link>
                             <Link to="/index.html#pricing" className="dropdown-item">
-                                <i className="material-icons">monetization_on</i> Pricing
+                                <i className="material-icons">&#xe263;</i> Pricing
                             </Link>
                             <Link to="/trial-class" className="dropdown-item">
-                                <i className="material-icons">fitness_center</i> Trial Class
+                                <i className="material-icons">&#xeb43;</i> Trial Class
                             </Link>
                             <Link to="/get-started" className="dropdown-item">
-                                <i className="material-icons">shopping_cart</i> Sign-up
+                                <i className="material-icons">&#xe8cc;</i> Sign-up
                             </Link>
                         </div>
                     </li>
@@ -60,20 +60,20 @@ const Header = ({ siteTitle }) => (
                         </a>
                         <div className="dropdown-menu dropdown-with-icons">
                             <Link to="/wod" className="dropdown-item">
-                                <i className="material-icons">fitness_center</i> WOD
+                                <i className="material-icons">&#xeb43;</i> WOD
                             </Link>
                             <a href="http://schedule.crossfit-secaucus.com" target="_blank" className="dropdown-item">
-                                <i className="material-icons">event_available</i> Book Class
+                                <i className="material-icons">&#xe614;</i> Book Class
                             </a>
                             <a href="http://hoodie.crossfit-secaucus.com" target="_blank" className="dropdown-item d-none">
-                                <i className="material-icons">local_offer</i> Apparel
+                                <i className="material-icons">&#xe54e;</i> Apparel
                             </a>
                         </div>
                     </li>
 
                     <li className="button-container nav-item iframe-extern">
                         <a href="/trial-class" className="btn  btn-warning   btn-round btn-block">
-                            <i className="material-icons">fitness_center</i> Try A Class
+                            <i className="material-icons">&#xeb43;</i> Try A Class
                         </a>
                     </li>
                 </ul>

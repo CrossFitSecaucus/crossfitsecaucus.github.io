@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Star = () => (
-  <i className="material-icons text-warning">star</i>
+  <i className="material-icons text-warning">&#xe838;</i>
 )
 
 const Testimonial = ({name, photoUrl, joinDate, children, active}) => (
