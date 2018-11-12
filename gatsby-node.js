@@ -9,7 +9,7 @@ exports.createPages = ({ boundActionCreators }) => {
     ['/wp/classes/crossfit-personal-training', '/index.html#how-it-works'],
     ['/wp/contact-us', '/index.html#contact'],
     ['/wp/frequently-asked-questions', '/index.html#how-it-works'],
-    ['/wp/our-classes', '/index.html#schedule'],
+    ['/wp/our-classes', '/index.html#classes'],
     ['/wp/policies', '/service-agreement'],
     ['/wp/pricing', '/index.html#pricing'],
     ['/wp/schedule', '/index.html#schedule'],

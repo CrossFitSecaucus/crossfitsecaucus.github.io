@@ -83,7 +83,7 @@ const Schedule = ({ heading }) => (
       </div>
     </div>
 
-    <div className="row">
+    <div className="row" id="classes">
       <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
         <p>
           <strong className="text-info">CrossFit</strong> &mdash;
