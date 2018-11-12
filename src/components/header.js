@@ -35,7 +35,7 @@ const Header = ({ siteTitle }) => (
                         <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
                           Getting Started
                         </a>
-                        <div className="dropdown-menu dropdown-with-icons">
+                        <div className="dropdown-menu dropdown-with-icons"  onClick={() => {$(".navbar-toggler").first().click()}}>
                             <Link to="/index.html#how-it-works" className="dropdown-item">
                                 <i className="material-icons">&#xe896;</i> How it works
                             </Link>
@@ -55,10 +55,14 @@ const Header = ({ siteTitle }) => (
                     </li>
 
                     <li className="dropdown nav-item">
-                        <a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <div
+                          className="dropdown-toggle nav-link"
+                          style={{cursor: 'pointer'}}
+                          data-toggle="dropdown"
+                        >
                           Members
-                        </a>
-                        <div className="dropdown-menu dropdown-with-icons">
+                        </div>
+                        <div className="dropdown-menu dropdown-with-icons" onClick={() => {$(".navbar-toggler").first().click()}}>
                             <Link to="/wod" className="dropdown-item">
                                 <i className="material-icons">&#xeb43;</i> WOD
                             </Link>
