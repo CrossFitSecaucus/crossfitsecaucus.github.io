@@ -5,7 +5,7 @@ exports.createPages = ({ boundActionCreators }) => {
     ['/wp', '/index.html'],
     ['/wp/about-us', '/index.html'],
     ['/wp/classes/crossfit', '/index.html#schedule'],
-    ['/wp/classes/crossfit-fundamentals', '/get-started.html#fundamentals'],
+    ['/wp/classes/crossfit-fundamentals', '/get-started#fundamentals'],
     ['/wp/classes/crossfit-personal-training', '/index.html#how-it-works'],
     ['/wp/contact-us', '/index.html#contact'],
     ['/wp/frequently-asked-questions', '/index.html#how-it-works'],
