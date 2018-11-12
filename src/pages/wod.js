@@ -52,7 +52,7 @@ class WodPage extends React.Component {
                     wodDescription
                 }
                 <hr/>
-                <p class="text-muted text-small">
+                <p className="text-muted text-small">
                 Workouts are subject to change without prior notice.
                 </p>
               </div>
