@@ -69,7 +69,7 @@ const Header = ({ siteTitle }) => (
                             <a href="http://schedule.crossfit-secaucus.com" target="_blank" className="dropdown-item">
                                 <i className="material-icons">&#xe614;</i> Book Class
                             </a>
-                            <a href="http://hoodie.crossfit-secaucus.com" target="_blank" className="dropdown-item d-none">
+                            <a href="http://hoodie.crossfit-secaucus.com" target="_blank" className="dropdown-item">
                                 <i className="material-icons">&#xe54e;</i> Apparel
                             </a>
                         </div>
