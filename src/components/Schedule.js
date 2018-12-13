@@ -35,9 +35,9 @@ const Schedule = ({ heading }) => (
               </tr>
               <tr>
                 <td>&nbsp;</td>
+                <td rowSpan="3">&nbsp;</td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td rowSpan="3">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td><strong>8:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
@@ -45,13 +45,9 @@ const Schedule = ({ heading }) => (
                 <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>9:00am</strong><br/><span className="text-rose"><strong>Buti Yoga</strong></span></td>
               </tr>
               <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
