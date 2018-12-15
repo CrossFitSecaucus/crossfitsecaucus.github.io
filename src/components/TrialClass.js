@@ -112,8 +112,9 @@ class TrialClass extends React.Component {
     const trialTimes = {
       1: '7:30pm', // Monday
       2: '4:30pm', // Tuesday
+      3: '9:00am', // Wednesday
       4: '7:30pm', // Thursday
-      5: '6:30pm', // Friday
+      5: '4:30pm', // Friday
       6: '10am', // Saturday
     };
 
