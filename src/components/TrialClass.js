@@ -118,10 +118,47 @@ class TrialClass extends React.Component {
       6: '10am', // Saturday
     };
 
-    const appointmentTimes = [];
+    const closedDays = [
+      '2018-12-19',
+      '2018-12-20',
+      '2018-12-21',
+      '2018-12-22',
+      '2018-12-23',
+      '2018-12-24',
+      '2018-12-25',
+      '2018-12-26',
+      '2018-12-27',
+      '2018-12-28',
+      '2018-12-29',
+      '2018-12-31',
+      '2019-01-01',
+      '2019-05-27',
+      '2019-07-04',
+      '2019-09-02',
+      '2019-11-27',
+      '2019-11-28',
+      '2019-11-29',
+      '2019-11-30',
+      '2019-12-24',
+      '2019-12-25',
+      '2019-12-26',
+      '2019-12-27',
+      '2019-12-28',
+      '2019-12-29',
+      '2019-12-30',
+      '2019-12-31',
+      '2020-01-01',
+    ].map(d => moment(d, "YYYY-MM-DD").startOf('day'));
 
-    for (let offset = 1 ; offset <= 9; offset++) {
-      const day = moment().add(offset, 'days');
+    const appointmentTimes = [];
+    let maxFutureDays = 9;
+
+    for (let offset = 1 ; offset <= maxFutureDays; offset++) {
+      const day = moment().startOf('day').add(offset, 'days');
+      if (closedDays.find(d => d.valueOf() == day.valueOf())) {
+        maxFutureDays++;
+        continue;
+      }
       const time = trialTimes[day.day()];
       if (time) {
         appointmentTimes.push({
