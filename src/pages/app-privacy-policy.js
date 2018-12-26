@@ -1,9 +1,18 @@
 import React from 'react'
+import { Helmet } from "react-helmet"
 
 const AppPrivacyPolicyPage = () => (
   <main className="row">
-    <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>App Privacy Policy</title>
+      <meta name="description" content="Privacy policy for CrossFit Secaucus app." />
+      <link rel="canonical" href="https://crossfit-secaucus.com/app-privacy-policy" />
+      <meta property="og:title" content="App Privacy Policy" />
+      <meta property="og:url" content="https://crossfit-secaucus.com/app-privacy-policy" />
+    </Helmet>
 
+    <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
       <h2>Privacy Policy</h2>
 
       <p>Manuel Neuhauser built the CrossFit Secaucus app as a Free app. This SERVICE is provided by

@@ -1,7 +1,17 @@
 import React from 'react'
+import { Helmet } from "react-helmet"
 
 const ServiceAgreementPage = () => (
   <main className="row">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Service Agreement</title>
+      <meta name="description" content="Service agreement for athletes at CrossFit Secaucus." />
+      <link rel="canonical" href="https://crossfit-secaucus.com/service-agreement" />
+      <meta property="og:title" content="CrossFit Secaucus Service Agreement" />
+      <meta property="og:url" content="https://crossfit-secaucus.com/service-agreement" />
+    </Helmet>
+
     <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
 
       <h2>Service Agreement</h2>
