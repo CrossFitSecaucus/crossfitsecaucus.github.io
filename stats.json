@@ -68,9 +68,17 @@
       "component---src-pages-get-started-js-75a821842fbb79380033.js",
       "component---src-pages-get-started-js-75a821842fbb79380033.js.map"
     ],
+    "path---app-privacy-policy": [
+      "path---app-privacy-policy-a0e39f21c11f6a62c5ab.js",
+      "path---app-privacy-policy-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "app": [
-      "app-54340919d13ea4dacb26.js",
-      "app-54340919d13ea4dacb26.js.map"
+      "app-bfc952a6ee81fd41f43c.js",
+      "app-bfc952a6ee81fd41f43c.js.map"
+    ],
+    "component---src-pages-app-privacy-policy-js": [
+      "component---src-pages-app-privacy-policy-js-dea623809cb52c157de9.js",
+      "component---src-pages-app-privacy-policy-js-dea623809cb52c157de9.js.map"
     ],
     "path---get-started": [
       "path---get-started-a0e39f21c11f6a62c5ab.js",
