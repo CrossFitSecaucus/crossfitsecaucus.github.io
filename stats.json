@@ -28,6 +28,10 @@
       "component---src-pages-90-day-full-body-transformation-js-468b068b060445f9d038.js",
       "component---src-pages-90-day-full-body-transformation-js-468b068b060445f9d038.js.map"
     ],
+    "path---app": [
+      "path---app-a0e39f21c11f6a62c5ab.js",
+      "path---app-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-6bac7f840dffa014ec2e.js",
       "component---src-layouts-index-js-6bac7f840dffa014ec2e.js.map"
@@ -72,9 +76,13 @@
       "path---app-privacy-policy-a0e39f21c11f6a62c5ab.js",
       "path---app-privacy-policy-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-app-js": [
+      "component---src-pages-app-js-aa927411cd48ef35363f.js",
+      "component---src-pages-app-js-aa927411cd48ef35363f.js.map"
+    ],
     "app": [
-      "app-bfc952a6ee81fd41f43c.js",
-      "app-bfc952a6ee81fd41f43c.js.map"
+      "app-2c407e77d60daa2dea68.js",
+      "app-2c407e77d60daa2dea68.js.map"
     ],
     "component---src-pages-app-privacy-policy-js": [
       "component---src-pages-app-privacy-policy-js-42d3b3b1109f1a688bba.js",
