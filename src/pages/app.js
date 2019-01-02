@@ -7,12 +7,12 @@ const AppPage = () => (
       <meta charSet="utf-8" />
       <title>CrossFit Secaucus App</title>
       <meta name="description" content="Download the CrossFit Secaucus mobile app for your phone now." />
-      <link rel="canonical" href="https://crossfit-secaucus.com/app" />
       <meta property="og:title" content="CrossFit Secaucus App" />
+      <meta property="og:description" content="Download the CrossFit Secaucus mobile app for your phone now." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://crossfit-secaucus.com/app" />
       <meta property="og:image" content="https://crossfit-secaucus.com/img/iphone-x-og.png" />
-      <meta property="apple-itunes-app" content="app-id=1447284609" />
+      <meta name="apple-itunes-app" content="app-id=1447284609" />
     </Helmet>
 
     <div className="features-4">

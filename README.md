@@ -14,3 +14,8 @@
   <strong>The best hour of your day!</strong><br>
   Experience an amazing workout at every fitness level.
 </p>
+
+<p>
+  Material Icons:
+  https://material-icons.herokuapp.com/
+</p>
