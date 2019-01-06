@@ -43,6 +43,31 @@ class WodPage extends React.Component {
       </Helmet>
         <section className="section section-basic">
           <div className="container">
+            <div className="card bg-info">
+                <div className="card-body">
+                    <h5 className="card-category card-category-social">
+                        <i className="material-icons">&#xe884;</i>
+                        <strong>{` Get the CrossFit Secaucus app today!`}</strong>
+                    </h5>
+                    <h4 className="card-title text-center" style={{marginBottom: 20}}>
+                      View upcoming and historic workouts conventiently on your phone,<br/>
+                      and access your personal set weights for strength training sessions.
+                    </h4>
+                </div>
+                <div className="card-footer justify-content-center">
+                  <a href="https://itunes.apple.com/us/app/crossfit-secaucus/id1447284609" className="btn btn-white btn-round" style={{margin: '0 20px'}} target="_blank">
+                    <i className="fa fa-apple"></i>
+                    <span style={{paddingLeft: 10}}>Download for iOS</span>
+                  </a>
+
+                  <a href="https://play.google.com/store/apps/details?id=com.rokatu.burpee" className="btn btn-white btn-round" style={{margin: '0 20px'}} target="_blank">
+                    <i className="material-icons">android</i>
+                    <span style={{paddingLeft: 10}}>Download for android</span>
+                  </a>
+                </div>
+            </div>
+
+
             <div className="row">
               <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
                 {
