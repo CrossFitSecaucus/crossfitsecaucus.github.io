@@ -13,7 +13,7 @@ exports.trialClassEmail = (req, res) => {
   res.status(204).send('');
   } else {
 
-  const { firstName, lastName, email, phone, text, appointment, experience, recaptcha } = req.body;
+  const { firstName, lastName, email, phone, text, appointment, experience, fundamentals, plan, recaptcha } = req.body;
 
   res.json({ status: 'success' })
 
@@ -63,8 +63,10 @@ exports.trialClassEmail = (req, res) => {
       Appointment: ${appointment || ''}
 
       Name: ${firstName || ''} ${lastName || ''}
-      ${email || ''}
-      ${phone || ''}
+      Email: ${email || ''}
+      Phone: ${phone || ''}
+      Fundamentals: ${fundamentals || ''}
+      Plan: ${plan || ''}
       ---
       ${text || ''}
       `,

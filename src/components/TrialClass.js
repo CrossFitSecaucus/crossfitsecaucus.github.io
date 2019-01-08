@@ -40,6 +40,10 @@ class TrialClass extends React.Component {
       emailValid: false,
       phone: '',
       phoneValid: false,
+      fundamentals: '',
+      fundamentalsValid: false,
+      plan: '',
+      planValid: false,
       text: '',
       recaptchaComplete: false,
       inflight: false,
@@ -60,6 +64,8 @@ class TrialClass extends React.Component {
     this.handleTextChange = this.handleTextChange.bind(this);
     this.handleExperienceChange = this.handleExperienceChange.bind(this);
     this.handleAppointmentChange = this.handleAppointmentChange.bind(this);
+    this.handleFundamentalsChange = this.handleFundamentalsChange.bind(this);
+    this.handlePlanChange = this.handlePlanChange.bind(this);
     this.handleFormSubmission = this.handleFormSubmission.bind(this);
     this.buildAppointmentTimes = this.buildAppointmentTimes.bind(this);
   }
@@ -110,12 +116,12 @@ class TrialClass extends React.Component {
 
   buildAppointmentTimes() {
     const trialTimes = {
-      1: '7:30pm', // Monday
-      2: '4:30pm', // Tuesday
-      3: '9:00am', // Wednesday
-      4: '7:30pm', // Thursday
-      5: '4:30pm', // Friday
-      6: '10am', // Saturday
+      1: '7:20pm', // Monday
+      2: '4:20pm', // Tuesday
+      3: '8:50am', // Wednesday
+      4: '7:20pm', // Thursday
+      5: '4:20pm', // Friday
+      6: '9:50am', // Saturday
     };
 
     const closedDays = [
@@ -148,7 +154,7 @@ class TrialClass extends React.Component {
       '2019-12-30',
       '2019-12-31',
       '2020-01-01',
-    ].map(d => moment(d, "YYYY-MM-DD").startOf('day'));
+    ].map(d => moment(d, 'YYYY-MM-DD').startOf('day'));
 
     const appointmentTimes = [];
     let maxFutureDays = 9;
@@ -215,17 +221,27 @@ class TrialClass extends React.Component {
     this.setState({experience, experienceValid: !!experience});
   }
 
+  handleFundamentalsChange(event) {
+    const fundamentals = event.target.value;
+    this.setState({fundamentals, fundamentalsValid: !!fundamentals});
+  }
+
+  handlePlanChange(event) {
+    const plan = event.target.value;
+    this.setState({plan, planValid: !!plan});
+  }
+
   handleFormSubmission(event) {
     event.preventDefault();
     this.setState({ inflight: true });
     const { firstName, lastName, email, phone, text,
-      appointment, experience, recaptcha } = this.state;
+      appointment, experience, fundamentals, plan, recaptcha } = this.state;
 
     $.ajax({
       type: "POST",
       url: 'https://us-central1-cs-site-209414.cloudfunctions.net/trialClassEmail',
       data: JSON.stringify({
-        firstName, lastName, email, phone, text, appointment, experience, recaptcha
+        firstName, lastName, email, phone, text, appointment, experience, fundamentals, plan, recaptcha
       }),
       success: response => {
         this.resetForm();
@@ -242,7 +258,6 @@ class TrialClass extends React.Component {
       window.scrollTo(0, 0);
     })
     .always(() => this.setState({ inflight: false }));
-
   }
 
   render() {
@@ -251,6 +266,7 @@ class TrialClass extends React.Component {
       lastName, lastNameValid,
       email, emailValid,
       phone, phoneValid,
+      fundamentalsValid, planValid,
       text,
       experience, experienceValid,
       appointment, appointmentValid,
@@ -258,7 +274,8 @@ class TrialClass extends React.Component {
   } = this.state;
 
   const formValid = firstNameValid && lastNameValid && emailValid &&
-    phoneValid && experienceValid && appointmentValid && recaptchaComplete;
+    phoneValid && experienceValid && appointmentValid && fundamentalsValid
+    && planValid && recaptchaComplete;
 
   return (
     <div className="card card-contact">
@@ -296,7 +313,14 @@ class TrialClass extends React.Component {
           <div className="row">
             <div className="col">
               <p className="text-muted">
-                Please complete all form fields.
+                <strong>
+                {`
+                  Free trial classes are available for local residents only.
+                  Please bring your driver's license or an ID with your home address.
+                  If you're from out of town, you may be interested in
+                `}
+                <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=29&prodId=10278" target="_blank">purchasing a drop-in pass</a>.
+                </strong>
               </p>
             </div>
           </div>
@@ -318,7 +342,7 @@ class TrialClass extends React.Component {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row bmd-form-group">
             <div className="col-md-6">
               <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && email.length > 0 ? (emailValid ? 'has-success' : 'has-danger') : ''}`}>
                   <label className="bmd-label-floating">Email address</label>
@@ -335,62 +359,224 @@ class TrialClass extends React.Component {
             </div>
           </div>
 
-          <div className="row">
-            <div className="col-md-6">
-              <h4>Experience Level</h4>
+            {
+              firstNameValid && lastNameValid && emailValid && phoneValid &&
+                <div className="row bmd-form-group">
+                  <div className="col-12">
+                    <h3>What's your experience level?</h3>
 
-              <div className="form-check">
-                <label className="form-check-label">
-                  <input className="form-check-input"
-                    type="radio" name="experience"
-                    value="New to CrossFit"
-                    onChange={this.handleExperienceChange}
-                    />
-                    New to CrossFit
-                  <span className="circle">
-                      <span className="check"></span>
-                  </span>
-                </label>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input className="form-check-input"
+                          type="radio" name="experience"
+                          value="New to CrossFit"
+                          onChange={this.handleExperienceChange}
+                          />
+                          I'm New to CrossFit
+                        <span className="circle">
+                            <span className="check"></span>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input className="form-check-input"
+                          type="radio"
+                          name="experience"
+                          value="Experienced CrossFitter"
+                          onChange={this.handleExperienceChange}
+                          /> I'm an Experienced CrossFitter (3+ months)
+                        <span className="circle">
+                          <span className="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+            }
+
+            {
+              experienceValid &&
+                <div className="row bmd-form-group">
+                  <div className="col-12">
+                    <h3>Appointment Date and Time</h3>
+                    <p>
+                      Please arrive at the time selected below to get the most out
+                      of your trial class.
+                    </p>
+                    <OptionsList
+                      name="appointment"
+                      options={this.buildAppointmentTimes()}
+                      onChange={this.handleAppointmentChange}
+                      />
+                  </div>
+                </div>
+            }
+
+
+
+          {
+            appointmentValid &&
+              <div className="row bmd-form-group">
+                <div className="col-12">
+                  <h3>Fundamentals Program</h3>
+                  <p>
+                    After your trial class, you have the opportunity to sign up for
+                    our fundamentals program, which is required before starting with
+                    CrossFit group classes. The program consists of at least 4 one-hour
+                    personal training sessions ($75/each) during which you will
+                    learn the basics of CrossFit and proper movement patterns to
+                    be safe and efficient in our group workouts.
+                  </p>
+                  <p>
+                    <strong>
+                    What times would you be available to start fundamentals after
+                    your trial class?
+                    </strong>
+                  </p>
+
+                  <div className="form-check">
+                    <label className="form-check-label">
+                      <input className="form-check-input"
+                        type="radio" name="fundamentals"
+                        value="mornings"
+                        onChange={this.handleFundamentalsChange}
+                        />
+                        Mornings
+                      <span className="circle">
+                          <span className="check"></span>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div className="form-check">
+                    <label className="form-check-label">
+                      <input className="form-check-input"
+                        type="radio" name="fundamentals"
+                        value="evenings"
+                        onChange={this.handleFundamentalsChange}
+                        />
+                        Evenings
+                      <span className="circle">
+                          <span className="check"></span>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div className="form-check">
+                    <label className="form-check-label">
+                      <input className="form-check-input"
+                        type="radio" name="fundamentals"
+                        value="varies"
+                        onChange={this.handleFundamentalsChange}
+                        />
+                        Not sure yet, it varies
+                      <span className="circle">
+                          <span className="check"></span>
+                      </span>
+                    </label>
+                  </div>
+
+                </div>
               </div>
+            }
 
-              <div className="form-check">
-                <label className="form-check-label">
-                  <input className="form-check-input"
-                    type="radio"
-                    name="experience"
-                    value="Experienced CrossFitter"
-                    onChange={this.handleExperienceChange}
-                    /> Experienced CrossFitter (3+ months)
-                  <span className="circle">
-                    <span className="check"></span>
-                  </span>
-                </label>
+            {
+              fundamentalsValid &&
+                <div className="row bmd-form-group">
+                  <div className="col-12">
+                    <h3>Monthly Pricing Options</h3>
+                    <p>
+                      <strong>
+                      Once you graduate from fundamentals, you're ready for group classes.
+                      Which plan would work best for you?
+                      </strong>
+                    </p>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input className="form-check-input"
+                          type="radio" name="plan"
+                          value="12 classes/month"
+                          onChange={this.handlePlanChange}
+                          />
+                          Maintenance - 12 classes/month (2-3 classes/week) @ $15/class ($180/month)
+                        <span className="circle">
+                            <span className="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input className="form-check-input"
+                          type="radio" name="plan"
+                          value="20 classes/month"
+                          onChange={this.handlePlanChange}
+                          />
+                          Transformation - 20 classes/month (4-5 classes/week) @ $11/class ($220/month)
+                        <span className="circle">
+                            <span className="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input className="form-check-input"
+                          type="radio" name="plan"
+                          value="30 classes/month"
+                          onChange={this.handlePlanChange}
+                          />
+                          Competitor - 30 classes/month (6-7 classes/week) @ $8.67/class ($260/month)
+                        <span className="circle">
+                            <span className="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div className="form-check">
+                      <label className="form-check-label">
+                        <input className="form-check-input"
+                          type="radio" name="plan"
+                          value="Not sure"
+                          onChange={this.handlePlanChange}
+                          />
+                          Not sure. Please consult me during my trial class
+                        <span className="circle">
+                            <span className="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  <p>
+                    <strong>{`Pro Tip: `}</strong>
+                    Pay via bank draft and save 3% on reoccurring charges.
+                    Bring a blank check or provide us with your routing and
+                    account numbers when you sign up.
+                  </p>
+                  </div>
               </div>
-            </div>
+            }
 
-            <div className="col-md-6">
-              <h4>Appointment Date and Time</h4>
-              <OptionsList
-                name="appointment"
-                options={this.buildAppointmentTimes()}
-                onChange={this.handleAppointmentChange}
-                />
-            </div>
-          </div>
 
-          <div className="form-group label-floating is-filled bmd-form-group">
-              <label htmlFor="exampleMessage1" className="bmd-label-floating">What are your goals? Do you have any questions, or is there anything you'd like us to know?</label>
-              <textarea name="message" className="form-control" id="exampleMessage1" rows="6" value={text} onChange={this.handleTextChange} disabled={inflight}></textarea>
-              <span className="material-input"></span>
-          </div>
-
-          <div className="row">
-            <Recaptcha
-              formVersion={this.state.formVersion}
-              id="g-recaptcha-trial-class"
-              sitekey="6LcNJmUUAAAAAKJXj6v238WrsmD-Nf4au_XKmxF3"
-              onRecaptchaChange={this.handleRecaptchaChange} />
-          </div>
+          {
+            planValid &&
+              <div className="form-group bmd-form-group">
+                <h3>What are your goals?</h3>
+                  <p>
+                    What are your goals? Do you have any questions, or is there anything you'd like us to know?
+                  </p>
+                  <textarea name="message" className="form-control" id="exampleMessage1" rows="6" value={text} onChange={this.handleTextChange} disabled={inflight}></textarea>
+                  <span className="material-input"></span>
+              </div>
+          }
+          {
+            planValid &&
+              <div className="row bmd-form-group">
+                <Recaptcha
+                  formVersion={this.state.formVersion}
+                  id="g-recaptcha-trial-class"
+                  sitekey="6LcNJmUUAAAAAKJXj6v238WrsmD-Nf4au_XKmxF3"
+                  onRecaptchaChange={this.handleRecaptchaChange} />
+              </div>
+          }
         </div>
 
         <div className="card-footer pull-right">

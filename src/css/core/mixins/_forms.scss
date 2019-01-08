@@ -263,7 +263,8 @@
   .checkbox label,
   .radio label,
   label {
-    font-size: $font-size-sm;
+    font-size: 1.1em;
+    color: #888;
   }
 
   // floating/placeholder default (no focus)
