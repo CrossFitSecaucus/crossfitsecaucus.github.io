@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link'
 
 import Recaptcha from './Recaptcha';
 
@@ -217,10 +218,19 @@ class Contact extends React.Component {
 
                                   <div className="row">
                                       <div className="col">
-                                      <p className="text-muted">Please complete all form fields, and elaborate on your inquiry. We will get back to you within a day.</p>
+                                      <p className="text-muted">For general inquieries please complete all form fields. We will get back to you within a day.</p>
+                                      <p className="text-muted">
+                                        <strong>
+                                          Want to sign up for a free trial class? Please
+                                           <Link to="/trial-class">
+                                          {` go here instead`}
+                                          </Link>
+                                          .
+                                        </strong>
+                                      </p>
                                       </div>
                                   </div>
-                                  <div className="row">
+                                  <div className="row bmd-form-group">
                                       <div className="col-md-6">
                                           <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && firstName.length > 0 ? (firstNameValid ? 'has-success' : 'has-danger') : ''}`}>
                                               <label className="bmd-label-floating">First name</label>
@@ -251,7 +261,7 @@ class Contact extends React.Component {
                                       <textarea name="message" className="form-control" id="exampleMessage1" rows="6" value={text} onChange={this.handleTextChange} disabled={inflight}></textarea>
                                       <span className="material-input"></span>
                                   </div>
-                                  <div className="row">
+                                  <div className="row bmd-form-group">
                                     <Recaptcha
                                       formVersion={this.state.formVersion}
                                       id="g-recaptcha-contact"
