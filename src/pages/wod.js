@@ -67,8 +67,7 @@ class WodPage extends React.Component {
                 </div>
             </div>
 
-
-            <div className="row">
+            <div className="row d-none">
               <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
                 {
                   failedFetch ?

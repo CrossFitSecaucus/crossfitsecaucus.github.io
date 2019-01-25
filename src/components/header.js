@@ -66,13 +66,13 @@ const Header = ({ siteTitle }) => (
                             <Link to="/app" className="dropdown-item">
                                 <i className="material-icons">&#xe884;</i> App
                             </Link>
-                            <Link to="/wod" className="dropdown-item">
+                            <Link to="/wod" className="dropdown-item d-none">
                                 <i className="material-icons">&#xeb43;</i> WOD
                             </Link>
                             <a href="http://schedule.crossfit-secaucus.com" target="_blank" className="dropdown-item">
                                 <i className="material-icons">&#xe614;</i> Book Class
                             </a>
-                            <a href="http://hoodie.crossfit-secaucus.com" target="_blank" className="dropdown-item">
+                            <a href="http://hoodie.crossfit-secaucus.com" target="_blank" className="dropdown-item d-done">
                                 <i className="material-icons">&#xe54e;</i> Apparel
                             </a>
                         </div>
