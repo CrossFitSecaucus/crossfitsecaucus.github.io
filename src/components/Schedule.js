@@ -107,9 +107,8 @@ const Schedule = ({ heading }) => (
 
         <p>
           <strong className="text-rose">Bootcamp</strong> &mdash;
-          The ladies-only bootcamp class consists of workouts specifically designed for toning overall physique and burning calories.
+          The bootcamp class consists of workouts specifically designed for toning overall physique and burning calories.
           These fun high-energy classes are great for anyone as the workouts can be scaled up and down to maximize the benefit for each athlete.
-          (<a href="http://tone-burn.com" target="_blank" className="text-rose">See details</a>)
         </p>
 
         <p>
@@ -122,7 +121,6 @@ const Schedule = ({ heading }) => (
           <strong className="text-success">Open Gym</strong> &mdash;
           Missed a workout this week? Wanna practice a movement? That's what open gym is for.
         </p>
-
 
       </div>
     </div>
