@@ -51,7 +51,7 @@ const Schedule = ({ heading }) => (
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td><strong>10:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>10:15am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
                 <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
