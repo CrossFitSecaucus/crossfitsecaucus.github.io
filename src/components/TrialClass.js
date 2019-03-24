@@ -250,6 +250,9 @@ class TrialClass extends React.Component {
         if (typeof gtag == 'function') {
           gtag('event', 'generate_lead');
         }
+        if (typeof fbq == 'function') {
+          fbq('track', 'Schedule');
+        }
       },
       dataType: 'json',
       contentType: 'application/json'
