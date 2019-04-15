@@ -19,11 +19,11 @@ const Schedule = ({ heading }) => (
             </thead>
             <tbody>
               <tr>
-                <td><strong>5:30am</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
+                <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-primary"><strong>Barbell</strong></span></td>
                 <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>5:30am</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
+                <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-primary"><strong>Barbell</strong></span></td>
                 <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
