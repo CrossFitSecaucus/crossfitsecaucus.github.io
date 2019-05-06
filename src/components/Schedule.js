@@ -27,11 +27,11 @@ const Schedule = ({ heading }) => (
                 <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong style={{whiteSpace: 'nowrap'}}>CrossFit</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
@@ -45,7 +45,7 @@ const Schedule = ({ heading }) => (
                 <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-rose"><strong>Buti Yoga</strong></span></td>
+                <td>&nbsp;</td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
@@ -92,29 +92,24 @@ const Schedule = ({ heading }) => (
     <div className="row" id="classes">
       <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
         <p>
+          <strong className="text-rose">Bootcamp</strong> &mdash;
+          The bootcamp class consists of circuit workouts specifically designed for toning overall physique and burning calories.
+          These fun high-energy classes are great for anyone as the workouts can be scaled up and down to maximize the benefit for each athlete.
+        </p>
+
+        <p>
           <strong className="text-info">CrossFit</strong> &mdash;
           Functional movements at high intensity combining gymnastics, plyometrics, calisthenics, weightlifting, running, rowing and more.
           Great for <em>new</em> and <em>seasoned athletes</em>.
-          All movements are scaled to <em>every</em> athlete's skill, endurance and ability level.
-          (Requires completion fundamentals course or previous CrossFit experience.)
+          All movements are scaled to <em>every</em> athlete's skill, endurance and ability level.<br/>
+          (Requires completion CrossFit fundamentals course.)
         </p>
 
         <p>
           <strong className="text-warning">Barbell</strong> &mdash;
           Specialized class that focuses on the Olympic lifts (<em>snatch</em> and <em>clean &amp; jerk</em>) and accessory movements.
-          Focuses on the very basics for novice lifters to the smallest details for advanced lifters to ensure continuous progress.
-        </p>
-
-        <p>
-          <strong className="text-rose">Bootcamp</strong> &mdash;
-          The bootcamp class consists of workouts specifically designed for toning overall physique and burning calories.
-          These fun high-energy classes are great for anyone as the workouts can be scaled up and down to maximize the benefit for each athlete.
-        </p>
-
-        <p>
-          <strong className="text-rose">Buti Yoga</strong> &mdash;
-          Buti yoga is a style of yoga that combines jump training (plyometrics), cardio-intensive tribal dancing, dynamic yoga asanas and deep abdominal toning into an intense workout.
-          In Marathi, the language spoken in parts of western India, buti means "a secret remedy or cure."
+          Focuses on the very basics for novice lifters to the smallest details for advanced lifters to ensure continuous progress.<br/>
+          (Requires completion Barbell fundamentals course.)
         </p>
 
         <p>
