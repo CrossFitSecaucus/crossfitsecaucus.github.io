@@ -42,9 +42,9 @@ const Schedule = ({ heading }) => (
                 <td><strong>8:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
@@ -54,11 +54,11 @@ const Schedule = ({ heading }) => (
                 <td><strong>10:15am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
+                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td rowSpan="4">&nbsp;</td>
               </tr>
               <tr>
@@ -76,11 +76,11 @@ const Schedule = ({ heading }) => (
                 <td><strong>6:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
+                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
               </tr>
             </tbody>
           </table>
