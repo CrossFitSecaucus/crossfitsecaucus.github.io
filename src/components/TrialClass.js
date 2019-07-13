@@ -121,7 +121,7 @@ class TrialClass extends React.Component {
       3: '7:20pm', // Wednesday
       // 4: '7:20pm', // Thursday
       5: '4:20pm', // Friday
-      6: '10:05am', // Saturday
+      6: '8:00am', // Saturday
     };
 
     const closedDays = [
