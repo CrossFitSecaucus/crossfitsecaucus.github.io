@@ -62,8 +62,8 @@ const IndexPage = () => (
   <main>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>CrossFit Secaucus - The best hour of your day</title>
-      <meta name="description" content="Crossfit Secaucus is a world-class fitness facility located in Secaucus, NJ, and also serves the areas around Lyndhurst, North Arlington, Kearny, Harrison, Rutherford, Union City, Weehawken, West New York, Hoboken and Jersey City." />
+      <title>CrossFit Secaucus - Cost-effective, Small Group Personal Training</title>
+      <meta name="description" content="Crossfit Secaucus is cost-effective small group personal training located in Secaucus, NJ. We also serves the areas around Lyndhurst, North Arlington, Kearny, Harrison, Rutherford, Union City, Weehawken, West New York, Hoboken and Jersey City." />
       <link rel="canonical" href="https://crossfit-secaucus.com/" />
 
       <script type="application/ld+json">

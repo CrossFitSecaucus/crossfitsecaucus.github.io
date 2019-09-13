@@ -48,7 +48,7 @@ class Layout extends React.Component {
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'keywords', content: 'crossfit, gym, box, fitness, calisthenics, circuit training, barbell, olympic lifting, weightlifting, power lifting, classes, course, personal training, bootcamp, weight loss, slim down, tone, burn, trainer, beginners, intro' },
+            { name: 'keywords', content: 'crossfit, cross fit, gym, near me, box, fitness, Secaucus, NJ, Lyndhurst, Rutherford, Union City, Weehawken, Hoboken, Jersey City, calisthenics, circuit training, barbell, olympic lifting, weightlifting, power lifting, classes, course, personal training, bootcamp, weight loss, slim down, tone, burn, trainer, beginners, intro, private, kids, children, teens, teenagers, sport, performance' },
 
             { name: 'google-site-verification', content: 'N_htigC_3PxYoand2Bcb1VY_MRTDbLscdlswaMThVNQ' },
             { name: 'google-site-verification', content: 'd7EUGM_PxsNYot-o4oBXr41zfoL0rJK9tqFwQkqVhUo' },
