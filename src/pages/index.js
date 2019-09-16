@@ -11,27 +11,35 @@ import Contact from '../components/Contact'
 
 const Quote = styled.div`
   padding: 0.7em;
-  font-size: 1.7em;
+  font-size: 2em;
   line-height: 1.2em;
+  color: #fff;
 
   @media (min-width: 576px) {
     padding: 1em;
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   @media (min-width: 768px) {
-    padding: 1.6em 1em;
-    font-size: 2.2em;
+    padding: 2em 1em;
+    font-size: 2.5em;
   }
 
   @media (min-width: 992px) {
     padding: 1em;
-    font-size: 1.8em;
   }
 
   @media (min-width: 1200px) {
-    padding: 0.9em;
-    font-size: 2.1em;
+    padding: 1.5em;
+  }
+
+  @media (min-width: 1500px) {
+    font-size: 2.8em;
+  }
+
+  @media (min-width: 2000px) {
+    padding: 2em;
+    font-size: 3em;
   }
 `;
 
@@ -140,7 +148,7 @@ const IndexPage = () => (
         <Tile url="/img/athlete-left.jpg" className="d-sm-none d-lg-block"/>
         <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
           <Quote>
-            WE BELIEVE IN GREATNESS, PUSHING OURSELVES BEYOND EXPECTATIONS, AND THROUGH THIS BECOMING BETTER EVERYDAY.
+            Crossfit Secaucus offers cost-effective small group personal training.
           </Quote>
         </Tile>
         <Tile url="/img/athlete-right.jpg" />
