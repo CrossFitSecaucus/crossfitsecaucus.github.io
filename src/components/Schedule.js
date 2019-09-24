@@ -64,7 +64,7 @@ const Schedule = ({ heading }) => (
               <tr>
                 <td><strong>5:30pm</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
                 <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>5:30pm</strong><br/><span className="text-success"><strong>Open Gym</strong></span></td>
+                <td><strong>5:30pm</strong><br/><span className="text-success"><strong>Individual Skill Development</strong></span></td>
                 <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>5:30pm</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
               </tr>
@@ -113,8 +113,8 @@ const Schedule = ({ heading }) => (
         </p>
 
         <p>
-          <strong className="text-success">Open Gym</strong> &mdash;
-          Missed a workout this week? Wanna practice a movement? That's what open gym is for.
+          <strong className="text-success">Individual Skill Development</strong> &mdash;
+          Class for working on skill development.
         </p>
 
       </div>
