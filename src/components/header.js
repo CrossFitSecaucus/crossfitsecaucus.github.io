@@ -51,6 +51,9 @@ const Header = ({ siteTitle }) => (
                             <Link to="/get-started" className="dropdown-item">
                                 <i className="material-icons">&#xe8cc;</i> Sign-up
                             </Link>
+                            <Link to="/teens" className="dropdown-item">
+                                <i className="material-icons">&#xe7ef;</i> CrossFit Teens
+                            </Link>
                         </div>
                     </li>
 
