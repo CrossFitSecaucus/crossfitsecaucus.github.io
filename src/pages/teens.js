@@ -8,10 +8,10 @@ const TeensPage = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>Athlete Performance Development Program - CrossFit Teens</title>
-      <meta name="description" content="Athlete Performance Development Program at CrossFit Secaucus." />
+      <meta name="description" content="Our Athlete Performance Development Program delivers a positive training experience for youth ages 12 to 18 that improves speed of movement, maximizes overall strength and develops unsurpassed conditioning." />
       <link rel="canonical" href="https://crossfit-secaucus.com/teens" />
       <meta property="og:title" content="Athlete Performance Development Program - CrossFit Teens" />
-      <meta property="og:url" content="https://crossfit-secaucus.com/teens" />
+      <meta property="og:url" content="https://crossfit-secaucus.com/teens/" />
       <meta property="og:image" content="https://crossfit-secaucus.com/img/teens-2.jpg" />
     </Helmet>
 
