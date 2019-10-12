@@ -43,7 +43,7 @@ const TeensPage = () => (
 
       </ul>
 
-      <h3>Schedule</h3>
+      <h3><br/>Schedule</h3>
       <p>
         The program consists of 3-week units called cycles, which are composed of nine sessions.
         Athletes are encouraged to complete multiple cycles for continuous progress.
@@ -60,24 +60,22 @@ const TeensPage = () => (
       <p>
         <em>Session Times:</em> Monday/Wednesday/Friday from 3:15pm to 4:30pm
       </p>
-      <h3>Registration</h3>
+      <h3><br/>Registration</h3>
       <p>
-        To sign up your child, <Link to="/#contact">email us</Link> and provide:
+        Purchase the Athlete Performance Development Program package online for a single cycle using the link below.
       </p>
-      <ul>
-        <li>Your full name and phone number</li>
-        <li>Your child’s name, age, and the sports your child is participating in</li>
-        <li>Your desired start date</li>
-      </ul>
-      <p>
-        Alternatively, you may book an appointment to complete the registration in person
-        by calling us at 201-503-6326.
-      </p>
+      <a href="http://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&prodid=10625" target="_blank" className="btn btn-success btn-round">
+        Register Online
+      </a>
       <p>
         We’ll reach out to you within 24 hours to complete the registration, and confirm
         your child’s spot in the program.
       </p>
-      <h3>Price</h3>
+
+      <p>
+        Alternatively, you may sign up over the phone by calling 201-503-6326.
+      </p>
+      <h3><br/>Price</h3>
       <p>
         Registration for a cycle must be completed by Friday before the start date.
         The full amount is due by the deadline. Credit cards and checks are accepted.
@@ -87,7 +85,7 @@ const TeensPage = () => (
         <br/>
         <strong>$189/cycle</strong> for Non-Residents
       </p>
-      <h3>Location</h3>
+      <h3><br/>Location</h3>
       <p>
         CrossFit Secaucus<br/>
         333 Meadowlands Pkwy<br/>
