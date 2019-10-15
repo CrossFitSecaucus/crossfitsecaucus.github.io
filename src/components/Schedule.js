@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link'
 
 const Schedule = ({ heading }) => (
   <div className="container-fluid">
@@ -27,24 +28,24 @@ const Schedule = ({ heading }) => (
                 <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td rowSpan="3">&nbsp;</td>
+                <td rowSpan="4">&nbsp;</td>
                 <td>&nbsp;</td>
-                <td rowSpan="3">&nbsp;</td>
+                <td rowSpan="4">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td><strong>8:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
@@ -54,12 +55,17 @@ const Schedule = ({ heading }) => (
                 <td><strong>10:15am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>3:15pm</strong><br/><span className="text-success"><strong>CrossFit Teens</strong></span></td>
+                <td><strong>3:15pm</strong><br/><span className="text-success"><strong>CrossFit Teens</strong></span></td>
+                <td><strong>3:15pm</strong><br/><span className="text-success"><strong>CrossFit Teens</strong></span></td>
+                <td rowSpan="5">&nbsp;</td>
+              </tr>
+              <tr>
                 <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td rowSpan="4">&nbsp;</td>
+                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
                 <td><strong>5:30pm</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
@@ -76,11 +82,11 @@ const Schedule = ({ heading }) => (
                 <td><strong>6:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
               <tr>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
                 <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-rose"><strong>Bootcamp</strong></span></td>
+                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
             </tbody>
           </table>
@@ -95,6 +101,12 @@ const Schedule = ({ heading }) => (
           <strong className="text-rose">Bootcamp</strong> &mdash;
           The bootcamp class consists of circuit workouts specifically designed for toning overall physique and burning calories.
           These fun high-energy classes are great for anyone as the workouts can be scaled up and down to maximize the benefit for each athlete.
+        </p>
+
+        <p>
+          <strong className="text-success">CrossFit Teens</strong> &mdash;
+          A program that delivers a positive training experience for youth ages 12 to 18 that improves speed of movement, maximizes overall strength
+          and develops unsurpassed conditioning. (<Link to="/teens/" className="text-success">Read more information</Link>.)
         </p>
 
         <p>
