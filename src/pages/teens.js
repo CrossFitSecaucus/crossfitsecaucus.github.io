@@ -64,17 +64,25 @@ const TeensPage = () => (
       <p>
         Purchase the Athlete Performance Development Program package online for a single cycle using the link below.
       </p>
-      <a href="http://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&prodid=10625" target="_blank" className="btn btn-success btn-round">
-        Register Online
-      </a>
       <p>
         We’ll reach out to you within 24 hours to complete the registration, and confirm
         your child’s spot in the program.
       </p>
+      <p>
+        <a href="http://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&prodid=10625" target="_blank" className="btn btn-success btn-round">
+          Register Online
+        </a>
+      </p>
 
       <p>
-        Alternatively, you may sign up over the phone by calling 201-503-6326.
+        <br/>Alternatively, you may sign up your kid by printing and completing the registration form below.
       </p>
+      <p>
+        <a href="/CrossFitSecaucusTeensRegistration.pdf" target="_blank" className="btn btn-info btn-round">
+          Download Registration Form
+        </a>
+      </p>
+
       <h3><br/>Price</h3>
       <p>
         Registration for a cycle must be completed by Friday before the start date.
