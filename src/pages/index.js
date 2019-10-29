@@ -43,6 +43,24 @@ const Quote = styled.div`
   }
 `;
 
+const YouTubeRow = styled.div`
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  flex: none !important;
+  max-width: none !important;
+`;
+
+const YouTube = styled.iframe`
+  border: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+`;
+
 const Card = ({color, title, buttonLabel, url}) => (
   <div className={`card bg-${color}`}>
     <div className="card-body">
@@ -123,6 +141,11 @@ const IndexPage = () => (
 
     <section className="section section-basic">
       <div className="container">
+        <div className="row">
+          <YouTubeRow className="col-md-10 ml-auto mr-auto">
+            <YouTube width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/U-a3vMFRlLA?modestbranding=1&rel=0&showsearch=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></YouTube>
+          </YouTubeRow>
+        </div>
         <div className="row">
           <div className="col-md-10 ml-auto mr-auto">
             <h1 className="title text-center">GET STARTED TODAY</h1>
