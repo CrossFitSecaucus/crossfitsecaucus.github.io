@@ -69,9 +69,6 @@ const Header = ({ siteTitle }) => (
                           Members
                         </div>
                         <div className="dropdown-menu dropdown-with-icons" onClick={() => {$(".navbar-toggler").first().click()}}>
-                            <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&catid=100009&prodGroupId=10626" target="_blank" className="dropdown-item">
-                                <i className="material-icons">&#xe540;</i> Winter Fest Ticket
-                            </a>
                             <Link to="/app" className="dropdown-item">
                                 <i className="material-icons">&#xe884;</i> App
                             </Link>
