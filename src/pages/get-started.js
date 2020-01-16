@@ -71,6 +71,9 @@ const GetStartedPage = () => (
                   <p className="card-description">
                     Ready to get back to working out?
                   </p>
+                  <p className="card-description">
+                    <strong>CrossFit experience is required!</strong>
+                  </p>
                   <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40" target="_blank" className="btn btn-info btn-round">
                     Sign-up
                   </a>
@@ -101,15 +104,15 @@ const GetStartedPage = () => (
           <div className="col-lg-4">
             <div className="card card-profile">
               <div className="card-body ">
-                  <h4 className="card-title">Try A Free Class</h4>
+                  <h4 className="card-title">I'm New</h4>
                   <p className="card-description">
-                    Not ready to commit just yet? Join us for any of our CrossFit or bootcamp classes.
+                    No worries! We've got you covered. Stop by for a trial class, and we'll give you a taste of what our CrossFit classes are like.
                   </p>
                   <p className="card-description">
                     <strong>
                       Must provide ID with local address.
                       <br/>
-                      CrossFit experience is required!
+                      No CrossFit experience is required.
                     </strong>
                   </p>
                   <Link to="/trial-class" className="btn btn-info btn-round">
@@ -137,7 +140,7 @@ const GetStartedPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-10 ml-auto mr-auto">
-            <h2 className="title text-center">I am new to this style of training</h2>
+            <h2 className="title text-center">I am new to CrossFit</h2>
           </div>
           <div className="col-md-10 ml-auto mr-auto">
             <p>
@@ -199,7 +202,7 @@ const GetStartedPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-10 ml-auto mr-auto">
-            <h2 className="title text-center">Get primed and ready for class</h2>
+            <h2 className="title text-center">Take the plunge and start your transformation</h2>
           </div>
           <div className="col-md-10 ml-auto mr-auto">
             <p>
@@ -270,7 +273,7 @@ const GetStartedPage = () => (
 
         <div className="row">
           <div className="col-md-10 ml-auto mr-auto">
-            <h3 className="title text-center">Sounds like a good fit for you?</h3>
+            <h3 className="title text-center">What are you waiting for? Sign up below!</h3>
           </div>
           <div className="col-md-10 ml-auto mr-auto text-center">
 
