@@ -147,12 +147,11 @@ class TrialClass extends React.Component {
     ].map(d => moment(d, 'YYYY-MM-DD').startOf('day'));
 
     const appointmentTimes = [];
-    let maxFutureDays = 9;
+    let daysShown = 4;
 
-    for (let offset = 1 ; offset <= maxFutureDays; offset++) {
+    for (let offset = 2 ; appointmentTimes.length < daysShown; offset++) {
       const day = moment().startOf('day').add(offset, 'days');
       if (closedDays.find(d => d.valueOf() == day.valueOf())) {
-        maxFutureDays++;
         continue;
       }
       const time = trialTimes[day.day()];
@@ -231,7 +230,7 @@ class TrialClass extends React.Component {
       type: "POST",
       url: 'https://us-central1-cs-site-209414.cloudfunctions.net/trialClassEmail',
       data: JSON.stringify({
-        firstName, lastName, email, phone, text, appointment, experience, fundamentals, plan, recaptcha
+        firstName, lastName, email, phone, text, appointment, experience, fundamentals, onramp, plan, recaptcha
       }),
       success: response => {
         this.resetForm();
@@ -356,7 +355,7 @@ class TrialClass extends React.Component {
               firstNameValid && lastNameValid && emailValid && phoneValid &&
                 <div className="row bmd-form-group">
                   <div className="col-12">
-                    <h3>What's your experience level?</h3>
+                    <h3>What's Your Experience Level?</h3>
 
                     <div className="form-check">
                       <label className="form-check-label">
@@ -379,7 +378,7 @@ class TrialClass extends React.Component {
                           name="experience"
                           value="Experienced CrossFitter"
                           onChange={this.handleExperienceChange}
-                          /> I'm an Experienced CrossFitter (3+ months)
+                          /> I'm an Experienced CrossFitter (6+ months)
                         <span className="circle">
                           <span className="check"></span>
                         </span>
@@ -413,19 +412,16 @@ class TrialClass extends React.Component {
             appointmentValid &&
               <div className="row bmd-form-group">
                 <div className="col-12">
-                  <h3>Fundamentals Program</h3>
+                  <h3>After Your Trial:<em> OnRamp Program</em></h3>
                   <p>
-                    After your trial class, you have the opportunity to sign up for
-                    our fundamentals program, which is required before starting with
-                    CrossFit group classes. The program consists of at least 4 one-hour
-                    personal training sessions ($75/each) during which you will
-                    learn the basics of CrossFit and proper movement patterns to
-                    be safe and efficient in our group workouts.
+                    To prepare you for our group workouts, you will complete
+                    our OnRamp program which covers the basics of CrossFit. The
+                    completion of this program is mandatory prior to participating
+                    in any group class.
                   </p>
                   <p>
                     <strong>
-                    What times would you be available to start fundamentals after
-                    your trial class?
+                    What times will you be available to start with the OnRamp program?
                     </strong>
                   </p>
 
@@ -482,7 +478,7 @@ class TrialClass extends React.Component {
                     <h3>Monthly Pricing Options</h3>
                     <p>
                       <strong>
-                      Once you graduate from fundamentals, you're ready for group classes.
+                      Once you graduate from the OnRamp program, you're ready for group classes.
                       Which plan would work best for you?
                       </strong>
                     </p>
