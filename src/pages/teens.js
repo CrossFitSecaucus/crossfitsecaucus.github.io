@@ -45,54 +45,24 @@ const TeensPage = () => (
 
       <h3><br/>Schedule</h3>
       <p>
-        The program consists of 3-week units called cycles, which are composed of nine sessions.
-        Athletes are encouraged to complete multiple cycles for continuous progress.
-        The training sessions vary each cycle to achieve the maximum adaptation in skill
-        development, strength and conditioning.
+        Monday/Wednesday/Friday from 3:30pm to 4:25pm
       </p>
-      <p><em>Upcoming Cycles:</em></p>
-      <ul>
-        <li><strong>October 14th – November 1st</strong> <span className="text-muted">(Registration Deadline: October 11th)</span></li>
-        <li><strong>November 4th – November 22nd</strong> <span className="text-muted">(Registration Deadline: November 1st)</span></li>
-        <li><strong>December 2nd – December 20th</strong> <span className="text-muted">(Registration Deadline: November 29th)</span></li>
 
-      </ul>
+      <h3><br/>Get Started</h3>
       <p>
-        <em>Session Times:</em> Monday/Wednesday/Friday from 3:15pm to 4:30pm
-      </p>
-      <h3><br/>Registration</h3>
-      <p>
-        Purchase the Athlete Performance Development Program package online for a single cycle using the link below.
+        Purchase one month for your child online now. Please use your name when
+        setting up the account, and not your child's.
       </p>
       <p>
         We’ll reach out to you within 24 hours to complete the registration, and confirm
         your child’s spot in the program.
       </p>
       <p>
-        <a href="http://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&prodid=10625" target="_blank" className="btn btn-success btn-round">
-          Register Online
+        <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&catid=100003&prodGroupId=10633" target="_blank" className="btn btn-success btn-round">
+          Purchase Online
         </a>
       </p>
 
-      <p>
-        <br/>Alternatively, you may sign up your kid by printing and completing the registration form below.
-      </p>
-      <p>
-        <a href="/CrossFitSecaucusTeensRegistration.pdf" target="_blank" className="btn btn-info btn-round">
-          Download Registration Form
-        </a>
-      </p>
-
-      <h3><br/>Price</h3>
-      <p>
-        Registration for a cycle must be completed by Friday before the start date.
-        The full amount is due by the deadline. Credit cards and checks are accepted.
-      </p>
-      <p>
-        <strong>$162/cycle</strong> for Secaucus Residents
-        <br/>
-        <strong>$189/cycle</strong> for Non-Residents
-      </p>
       <h3><br/>Location</h3>
       <p>
         CrossFit Secaucus<br/>
