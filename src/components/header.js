@@ -15,7 +15,6 @@ const Title = styled(Link)`
   }
 `;
 
-
 const Header = ({ siteTitle }) => (
   <nav className="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" data-color-on-scroll="50" id="sectionsNav">
         <div className="container">
@@ -79,7 +78,7 @@ const Header = ({ siteTitle }) => (
                                 <i className="material-icons">&#xe614;</i> Book Class
                             </a>
                             <a href="http://apparel.crossfit-secaucus.com" target="_blank" className="dropdown-item d-done">
-                                <i className="material-icons">&#xe54e;</i> Apparel
+                                <i className="material-icons">&#xe54e;</i> Store
                             </a>
                         </div>
                     </li>
