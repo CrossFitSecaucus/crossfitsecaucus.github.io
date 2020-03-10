@@ -51,23 +51,39 @@ const HowItworks = ({ heading }) => (
 
     <Step
       number="2"
-      title="Choose a training strategy"
+      title="Choose a Package"
       imageUrl="/img/group-class.jpg"
     >
       <p>
-        Based on your goals and fitness level, your personal trainer will recommend recurring personal training sessions,
-        group classes or a hybrid of both for making maximum progress.
+        Based on your goals and fitness level, your trainer will recommend
+        a monthly class package for making maximum progress.
       </p>
       <ul className="fa-ul">
-        <li><span className="fa-li"><i className="material-icons text-success">done</i></span><strong>Personal Training only</strong> &mdash; for when you want to fast-track your progress and target your specific problem areas.</li>
-        <li><span className="fa-li"><i className="material-icons text-success">done</i></span><strong>Group Classes</strong> &mdash; perfect choice for when you are self-motivated and comfortable working out in a group setting.</li>
-        <li><span className="fa-li"><i className="material-icons text-success">done</i></span><strong>Hybrid Option</strong> &mdash; mix personal training sessions and group classes for the best of both worlds.</li>
+        <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
+        <strong>Maintenance</strong>
+          &mdash;
+          For athletes new to fitness and athletes interested
+          in adding CrossFit to an existing workout routine, this package is works
+          well with 2-3 classes per week.
+        </li>
+        <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
+        <strong>Transformation (recommended)</strong>
+          &mdash;
+          Our most popular option for athletes that aspire to become physically fit,
+          get rid of unwanted body fat and tone overall physique, this package is ideal
+          as it allows for 4-5 classes per week.
+        </li>
+        <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
+        <strong>Competitor</strong>
+          &mdash;
+          This package supports athletes who made CrossFit a major part of their lifestyle.
+        </li>
       </ul>
 
       <p>
         <Link to="/#pricing" className="text-info">
           <strong>
-            Check out our pricing options.
+            View more details about our pricing options.
           </strong>
         </Link>
       </p>

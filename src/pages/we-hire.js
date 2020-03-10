@@ -110,7 +110,7 @@ const WeHirePage = () => (
 
         <h4>Required license or certification:</h4>
         <ul>
-          <li>Crossfit Level 1</li>
+          <li>CrossFit Level 1</li>
         </ul>
 
         <hr/>

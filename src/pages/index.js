@@ -142,11 +142,6 @@ const IndexPage = () => (
     <section className="section section-basic">
       <div className="container">
         <div className="row">
-          <YouTubeRow className="col-md-10 ml-auto mr-auto">
-            <YouTube width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/U-a3vMFRlLA?modestbranding=1&rel=0&showsearch=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></YouTube>
-          </YouTubeRow>
-        </div>
-        <div className="row">
           <div className="col-md-10 ml-auto mr-auto">
             <h1 className="title text-center">GET STARTED TODAY</h1>
           </div>
@@ -171,7 +166,7 @@ const IndexPage = () => (
         <Tile url="/img/athlete-left.jpg" className="d-sm-none d-lg-block"/>
         <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
           <Quote>
-            Crossfit Secaucus offers cost-effective small group personal training.
+            CrossFit Secaucus offers cost-effective small group personal training.
           </Quote>
         </Tile>
         <Tile url="/img/athlete-right.jpg" />
@@ -204,6 +199,16 @@ const IndexPage = () => (
 
     <section id="pricing">
       <Pricing />
+    </section>
+
+    <section className="section">
+      <div className="container">
+        <div className="row">
+          <YouTubeRow className="col-md-4 ml-auto mr-auto">
+            <YouTube width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/U-a3vMFRlLA?modestbranding=1&rel=0&showsearch=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></YouTube>
+          </YouTubeRow>
+        </div>
+      </div>
     </section>
 
     <section id="contact">

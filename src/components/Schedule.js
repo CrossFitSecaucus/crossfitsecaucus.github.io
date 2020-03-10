@@ -114,14 +114,12 @@ const Schedule = ({ heading }) => (
           Functional movements at high intensity combining gymnastics, plyometrics, calisthenics, weightlifting, running, rowing and more.
           Great for <em>new</em> and <em>seasoned athletes</em>.
           All movements are scaled to <em>every</em> athlete's skill, endurance and ability level.<br/>
-          (Requires completion CrossFit fundamentals course.)
         </p>
 
         <p>
           <strong className="text-warning">Barbell</strong> &mdash;
           Specialized class that focuses on the Olympic lifts (<em>snatch</em> and <em>clean &amp; jerk</em>) and accessory movements.
           Focuses on the very basics for novice lifters to the smallest details for advanced lifters to ensure continuous progress.<br/>
-          (Requires completion Barbell fundamentals course.)
         </p>
 
         <p>

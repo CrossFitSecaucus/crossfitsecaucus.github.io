@@ -115,7 +115,7 @@ class Pricing extends React.Component {
                         sessionName="class"
                         sessionsName="classes"
                         sessionPrice={8.67}
-                        description="For competitive performance athletes"
+                        description="For performance athletes"
                         lastLine="Renews on first of every month"
                         color="info"
                       />
