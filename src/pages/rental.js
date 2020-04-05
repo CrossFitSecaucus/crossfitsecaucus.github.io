@@ -40,13 +40,23 @@ class RentalsPage extends React.Component {
     super(props);
     this.state = {
       rentalItems: [
+        {label: 'rings (2)', cost: 5},
         {label: '18 lbs kettlebell', cost: 5},
         {label: '26 lbs kettlebell', cost: 5},
         {label: '35 lbs kettlebell', cost: 5},
         {label: '53 lbs kettlebell', cost: 5},
-        {label: '15 lbs plates (set)', cost: 5},
-        {label: '25 lbs plates (set)', cost: 10},
-        {label: '45 lbs plates (set)', cost: 15, multiple: true},
+        {label: '10 lbs med ball', cost: 5},
+        {label: '12 lbs med ball', cost: 5},
+        {label: '14 lbs med ball', cost: 5},
+        {label: '16 lbs med ball', cost: 5},
+        {label: '20 lbs med ball', cost: 5},
+        {label: '12" box', cost: 5},
+        {label: '20" box', cost: 5},
+        {label: '24" box', cost: 5},
+        {label: '15 lbs plates (2)', cost: 5},
+        {label: '25 lbs plates (2)', cost: 10},
+        {label: '35 lbs plates (2)', cost: 13},
+        {label: '45 lbs plates (2)', cost: 15, multiple: true},
         {label: 'barbell with clips', cost: 20},
         {label: 'squat rack', cost: 15},
         {label: 'Concept2 rower', cost: 100},
@@ -114,11 +124,9 @@ class RentalsPage extends React.Component {
                   step to get your hands on what you need.
                 </p>
                 <hr/>
-                <h3>
-                  Rental Overview
-                </h3>
+                <h3>Rental Overview</h3>
                 <ul>
-                  <li>Free home delivery and pick-up within local area</li>
+                  <li>Free home delivery within local area for rental of $50+/week</li>
                   <li>Rentals are week-to-week</li>
                   <li>Minimum rental period is 3 weeks</li>
                   <li>Equipment subject to availability. First come, first serve.</li>
@@ -152,15 +160,31 @@ class RentalsPage extends React.Component {
                         </tbody>
                     </table>
                     {total > 0 && (
-                      <h3 className="text-right">
-                        ${total}/week
-                      </h3>
+                      <div>
+                        <hr/>
+                        <h3 className="text-center">
+                          Rate for all selected equipment: <strong>${total}/week</strong>
+                        </h3>
+                        <p className="text-center">
+                          <strong>
+                            {total >= 50 ? '🚚 Free home delivery' : '🏢 Pick-up Only'}
+                          </strong>
+                        </p>
+                        <hr/>
+                      </div>
                     )}
 
                     <Contact
-                      noCard
-                      submitLabel="Send Rental Request"
                       messageAddition={rentalItems.filter(r => r.selected).map(r => `${r.quantity || 1}x ${r.label}`).join("\n")}
+                      noCard
+                      header={
+                        <div>
+                          <h3>Rental Request</h3>
+                          <p>Please also include the delivery address, and the date and 2 hour time
+                          window during which we may deliver the equipment.</p>
+                        </div>
+                      }
+                      submitLabel="Send Rental Request"
                     />
                 </div>
               </div>
