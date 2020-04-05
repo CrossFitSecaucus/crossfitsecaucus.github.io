@@ -32,17 +32,17 @@
       "component---src-pages-90-day-full-body-transformation-js-468b068b060445f9d038.js",
       "component---src-pages-90-day-full-body-transformation-js-468b068b060445f9d038.js.map"
     ],
-    "component---src-pages-rentals-js": [
-      "component---src-pages-rentals-js-9e2b796b00d760caaebc.js",
-      "component---src-pages-rentals-js-9e2b796b00d760caaebc.js.map"
-    ],
     "path---app": [
       "path---app-a0e39f21c11f6a62c5ab.js",
       "path---app-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-rental-js": [
+      "component---src-pages-rental-js-83f7964ebf41b3f6d478.js",
+      "component---src-pages-rental-js-83f7964ebf41b3f6d478.js.map"
+    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-47366f0d945ebb41c90a.js",
-      "component---src-layouts-index-js-47366f0d945ebb41c90a.js.map"
+      "component---src-layouts-index-js-cd3bc74e9bf7fe962c86.js",
+      "component---src-layouts-index-js-cd3bc74e9bf7fe962c86.js.map"
     ],
     "path---we-hire": [
       "path---we-hire-a0e39f21c11f6a62c5ab.js",
@@ -93,8 +93,8 @@
       "component---src-pages-app-js-39a2ff60f267799be063.js.map"
     ],
     "app": [
-      "app-b31abdb61b73f1b7b2c6.js",
-      "app-b31abdb61b73f1b7b2c6.js.map"
+      "app-2a868aa5f8438b44b871.js",
+      "app-2a868aa5f8438b44b871.js.map"
     ],
     "component---src-pages-app-privacy-policy-js": [
       "component---src-pages-app-privacy-policy-js-42d3b3b1109f1a688bba.js",
@@ -112,9 +112,9 @@
       "path---wod-a0e39f21c11f6a62c5ab.js",
       "path---wod-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---rentals": [
-      "path---rentals-a0e39f21c11f6a62c5ab.js",
-      "path---rentals-a0e39f21c11f6a62c5ab.js.map"
+    "path---rental": [
+      "path---rental-a0e39f21c11f6a62c5ab.js",
+      "path---rental-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
