@@ -53,6 +53,8 @@ class RentalsPage extends React.Component {
         {label: '12" box', cost: 5},
         {label: '20" box', cost: 5},
         {label: '24" box', cost: 5},
+        {label: '20 lbs dumbbell (1)', cost: 5, multiple: true},
+        {label: '25 lbs dumbbell (1)', cost: 5, multiple: true},
         {label: '15 lbs plates (2)', cost: 5},
         {label: '25 lbs plates (2)', cost: 10},
         {label: '35 lbs plates (2)', cost: 13},
