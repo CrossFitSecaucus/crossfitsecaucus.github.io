@@ -49,8 +49,8 @@ class RentalsPage extends React.Component {
         {label: '45 lbs plates (set)', cost: 15, multiple: true},
         {label: 'barbell with clips', cost: 20},
         {label: 'squat rack', cost: 15},
-        {label: 'Concept2 Rower', cost: 100},
-        {label: 'Rogue Echo Bike', cost: 100},
+        {label: 'Concept2 rower', cost: 100},
+        {label: 'Rogue Echo bike', cost: 100},
       ],
     }
     this._handleSelectChange = this._handleSelectChange.bind(this);
@@ -107,7 +107,7 @@ class RentalsPage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h2>Equipment Rental Request</h2>
+                <h2 className="title text-center">Equipment Rental</h2>
                 <p>
                   During the mandatory shutdown, we are making our training
                   equipment available for rent. Complete this form as a first
@@ -118,7 +118,7 @@ class RentalsPage extends React.Component {
                   Rental Overview
                 </h3>
                 <ul>
-                  <li>Free delivery and pick-up within local area</li>
+                  <li>Free home delivery and pick-up within local area</li>
                   <li>Rentals are week-to-week</li>
                   <li>Minimum rental period is 3 weeks</li>
                   <li>Equipment subject to availability. First come, first serve.</li>

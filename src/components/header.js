@@ -68,8 +68,8 @@ const Header = ({ siteTitle }) => (
                           Members
                         </div>
                         <div className="dropdown-menu dropdown-with-icons" onClick={() => {$(".navbar-toggler").first().click()}}>
-                            <Link to="/app" className="dropdown-item">
-                                <i className="material-icons">&#xe52f;</i> Rent Equipment
+                            <Link to="/rental" className="dropdown-item">
+                                <i className="material-icons">&#xe52f;</i> Equipment Rental
                             </Link>
                             <Link to="/app" className="dropdown-item">
                                 <i className="material-icons">&#xe884;</i> App
