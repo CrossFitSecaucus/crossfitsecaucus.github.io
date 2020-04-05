@@ -99,9 +99,9 @@ class RentalsPage extends React.Component {
       <main>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>WOD - Workout of the Day</title>
-        <meta name="description" content="View a basic summary of today's workout, so you can come to class prepared." />
-        <link rel="canonical" href="https://crossfit-secaucus.com/wod" />
+        <title>Equipment Rental</title>
+        <meta name="description" content="Rent barbells, weights, rowers and air bikes." />
+        <link rel="canonical" href="https://crossfit-secaucus.com/rental" />
       </Helmet>
         <section className="section section-basic">
           <div className="container">
@@ -128,10 +128,10 @@ class RentalsPage extends React.Component {
                     <table className="table table-striped">
                         <thead>
                             <tr>
-                                <th>Selected</th>
-                                <th>Item Name</th>
+                                <th></th>
+                                <th>Item</th>
                                 <th className="text-center">Quantity</th>
-                                <th className="text-right">Weekly Cost</th>
+                                <th className="text-right">Cost</th>
                             </tr>
                         </thead>
                         <tbody>
