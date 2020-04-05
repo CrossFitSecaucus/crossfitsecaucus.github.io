@@ -7,7 +7,7 @@ import Tile from '../components/Tile'
 import HowItWorks from '../components/HowItWorks'
 import Schedule from '../components/Schedule'
 import Pricing from '../components/Pricing'
-import Contact from '../components/Contact'
+import ContactSection from '../components/ContactSection'
 
 const Quote = styled.div`
   padding: 0.7em;
@@ -212,7 +212,7 @@ const IndexPage = () => (
     </section>
 
     <section id="contact">
-      <Contact />
+      <ContactSection />
     </section>
 
   </main>

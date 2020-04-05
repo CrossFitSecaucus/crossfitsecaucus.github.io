@@ -121,7 +121,7 @@ class Contact extends React.Component {
       type: "POST",
       url: 'https://us-central1-cs-site-209414.cloudfunctions.net/contactUsEmail',
       data: JSON.stringify({
-        firstName, lastName, email, phone, text, recaptcha
+        firstName, lastName, email, phone, text: (text || '') + "\n\n\n" + (this.props.messageAddition || ''), recaptcha
       }),
       success: response => {
         this.resetForm();
@@ -151,139 +151,96 @@ class Contact extends React.Component {
       phoneValid && textValid && recaptchaComplete;
 
     return (
-      <div className="contactus-1 section-image" style={{backgroundImage: "url('img/contact-bg.jpg')"}}>
-          <div className="container">
-              <div className="row">
-                  <div className="col-md-4 col-sm-12">
-                      <h2 className="title">Get in Touch</h2>
-                      <div className="info info-horizontal">
-                          <div className="icon icon-primary">
-                              <i className="material-icons">phone</i>
-                          </div>
-                          <div className="description">
-                            <h4 className="info-title">
-                              Give us a ring or text us at:</h4>
-                              <h3 className="text-primary">(201) 503-6326</h3>
-                          </div>
-                      </div>
-                      <div className="info info-horizontal">
-                          <div className="icon icon-primary">
-                              <i className="material-icons">pin_drop</i>
-                          </div>
-                          <div className="description">
-                              <h4 className="info-title">We are located at:</h4>
-                              <h3>
-                                333 Meadowlands Pkwy<br/>
-                                Secaucus NJ 07094<br/>
-                              </h3>
-                              <p>
-                                <a href="https://www.google.com/maps/place/CrossFit+Secaucus/@40.779335,-74.082018,15z/data=!4m2!3m1!1s0x0:0x53a6798b1e6295e6" target="_blank">Directions</a>
-                              </p>
-                              <img src="/img/map.png" className="img-raised rounded img-fluid" />
-                          </div>
-                      </div>
-                  </div>
-                  <div className="col-md-7 ml-auto">
-                      <div className="card card-contact">
-                          <form id="contact-form" method="post">
-                              <div className="card-header card-header-raised card-header-primary text-center">
-                                  <h4 className="card-title">Contact Us</h4>
-                              </div>
+      <div className={this.props.noCard ? "": "card card-contact"}>
+          <form id="contact-form" method="post">
 
-
-                              <div className="card-body">
-                                {
-                                  successMessage &&
-                                      <div className="alert alert-info">
-                                          <div className="container">
-                                              <div className="alert-icon">
-                                                  <i className="material-icons">info_outline</i>
-                                              </div>
-                                              <b>{successMessage}</b>
-                                          </div>
-                                      </div>
-                                }
-
-                                {
-                                  errorMessage &&
-                                      <div className="alert alert-danger">
-                                          <div className="container">
-                                              <div className="alert-icon">
-                                                  <i className="material-icons">error_outline</i>
-                                              </div>
-                                              <b>{errorMessage}</b>
-                                          </div>
-                                      </div>
-                                }
-
-                                  <div className="row">
-                                      <div className="col">
-                                      <p className="text-muted">For general inquieries please complete all form fields. We will get back to you within a day.</p>
-                                      <p className="text-muted">
-                                        <strong>
-                                          Want to sign up for a free trial class? Please
-                                           <Link to="/trial-class">
-                                          {` go here instead`}
-                                          </Link>
-                                          .
-                                        </strong>
-                                      </p>
-                                      </div>
-                                  </div>
-                                  <div className="row bmd-form-group">
-                                      <div className="col-md-6">
-                                          <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && firstName.length > 0 ? (firstNameValid ? 'has-success' : 'has-danger') : ''}`}>
-                                              <label className="bmd-label-floating">First name</label>
-                                              <input type="text" name="name" className="form-control" value={firstName} onChange={this.handleFirstNameChange} disabled={inflight} />
-                                              <span className="material-input"></span>
-                                          </div>
-                                      </div>
-                                      <div className="col-md-6">
-                                          <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && lastName.length > 0 ? (lastNameValid ? 'has-success' : 'has-danger') : ''}`}>
-                                              <label className="bmd-label-floating">Last name</label>
-                                              <input type="text" name="name" className="form-control" value={lastName} onChange={this.handleLastNameChange} disabled={inflight} />
-                                              <span className="material-input"></span>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && email.length > 0 ? (emailValid ? 'has-success' : 'has-danger') : ''}`}>
-                                      <label className="bmd-label-floating">Email address</label>
-                                      <input type="text" name="email" className="form-control" value={email} onChange={this.handleEmailChange} disabled={inflight} />
-                                      <span className="material-input"></span>
-                                  </div>
-                                  <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && phone.length > 0 ? (phoneValid ? 'has-success' : 'has-danger') : ''}`}>
-                                      <label className="bmd-label-floating">Phone number</label>
-                                      <input type="text" name="phone" className="form-control" value={phone} onChange={this.handlePhoneChange} disabled={inflight} />
-                                      <span className="material-input"></span>
-                                  </div>
-                                  <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && text.length > 0 ? (textValid ? 'has-success' : 'has-danger') : ''}`}>
-                                      <label htmlFor="exampleMessage1" className="bmd-label-floating">Your Message {text.length > 0 && !textValid && ' - Please elaborate on your request.' }</label>
-                                      <textarea name="message" className="form-control" id="exampleMessage1" rows="6" value={text} onChange={this.handleTextChange} disabled={inflight}></textarea>
-                                      <span className="material-input"></span>
-                                  </div>
-                                  <div className="row bmd-form-group">
-                                    <Recaptcha
-                                      formVersion={this.state.formVersion}
-                                      id="g-recaptcha-contact"
-                                      sitekey="6LcNJmUUAAAAAKJXj6v238WrsmD-Nf4au_XKmxF3"
-                                      onRecaptchaChange={this.handleRecaptchaChange} />
-                                  </div>
-                                </div>
-                              <div className="card-footer pull-right">
-                                <button type="submit" className="btn btn-primary pull-right" disabled={!formValid || inflight} onClick={this.handleFormSubmission}>
-                                  { !inflight ? 'Send Message' : 'Sending ...'}
-                                </button>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
+            {this.props.title && (
+              <div className="card-header card-header-raised card-header-primary text-center">
+                  <h4 className="card-title">{this.props.title || 'Contact Us'}</h4>
               </div>
-          </div>
+            )}
+
+
+              <div className="card-body">
+                {
+                  successMessage &&
+                      <div className="alert alert-info">
+                          <div className="container">
+                              <div className="alert-icon">
+                                  <i className="material-icons">info_outline</i>
+                              </div>
+                              <b>{successMessage}</b>
+                          </div>
+                      </div>
+                }
+
+                {
+                  errorMessage &&
+                      <div className="alert alert-danger">
+                          <div className="container">
+                              <div className="alert-icon">
+                                  <i className="material-icons">error_outline</i>
+                              </div>
+                              <b>{errorMessage}</b>
+                          </div>
+                      </div>
+                }
+
+                  <div className="row">
+                      <div className="col">
+                      {this.props.header || ''}
+                      </div>
+                  </div>
+                  <div className="row bmd-form-group">
+                      <div className="col-md-6">
+                          <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && firstName.length > 0 ? (firstNameValid ? 'has-success' : 'has-danger') : ''}`}>
+                              <label className="bmd-label-floating">First name</label>
+                              <input type="text" name="name" className="form-control" value={firstName} onChange={this.handleFirstNameChange} disabled={inflight} />
+                              <span className="material-input"></span>
+                          </div>
+                      </div>
+                      <div className="col-md-6">
+                          <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && lastName.length > 0 ? (lastNameValid ? 'has-success' : 'has-danger') : ''}`}>
+                              <label className="bmd-label-floating">Last name</label>
+                              <input type="text" name="name" className="form-control" value={lastName} onChange={this.handleLastNameChange} disabled={inflight} />
+                              <span className="material-input"></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && email.length > 0 ? (emailValid ? 'has-success' : 'has-danger') : ''}`}>
+                      <label className="bmd-label-floating">Email address</label>
+                      <input type="text" name="email" className="form-control" value={email} onChange={this.handleEmailChange} disabled={inflight} />
+                      <span className="material-input"></span>
+                  </div>
+                  <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && phone.length > 0 ? (phoneValid ? 'has-success' : 'has-danger') : ''}`}>
+                      <label className="bmd-label-floating">Phone number</label>
+                      <input type="text" name="phone" className="form-control" value={phone} onChange={this.handlePhoneChange} disabled={inflight} />
+                      <span className="material-input"></span>
+                  </div>
+                  <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && text.length > 0 ? (textValid ? 'has-success' : 'has-danger') : ''}`}>
+                      <label htmlFor="exampleMessage1" className="bmd-label-floating">Your Message {text.length > 0 && !textValid && ' - Please elaborate on your request.' }</label>
+                      <textarea name="message" className="form-control" id="exampleMessage1" rows="6" value={text} onChange={this.handleTextChange} disabled={inflight}></textarea>
+                      <span className="material-input"></span>
+                  </div>
+                  <div className="row bmd-form-group">
+                    <Recaptcha
+                      formVersion={this.state.formVersion}
+                      id="g-recaptcha-contact"
+                      sitekey="6LcNJmUUAAAAAKJXj6v238WrsmD-Nf4au_XKmxF3"
+                      onRecaptchaChange={this.handleRecaptchaChange} />
+                  </div>
+                </div>
+              <div className="card-footer pull-right">
+                <button type="submit" className="btn btn-primary pull-right" disabled={!formValid || inflight} onClick={this.handleFormSubmission}>
+                  { !inflight ? (this.props.submitLabel || 'Send Message') : 'Sending ...'}
+                </button>
+              </div>
+          </form>
       </div>
     )
   }
 }
 
 
-export default Contact
+export default Contact;
 
