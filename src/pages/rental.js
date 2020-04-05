@@ -165,11 +165,18 @@ class RentalsPage extends React.Component {
                         <h3 className="text-center">
                           Rate for all selected equipment: <strong>${total}/week</strong>
                         </h3>
-                        <p className="text-center">
+                        <p className="text-center" style={{padding: 0}}>
                           <strong>
                             {total >= 50 ? '🚚 Free home delivery' : '🏢 Pick-up Only'}
                           </strong>
                         </p>
+                        {total >= 150 && (
+                          <p className="text-center" style={{padding: 0}}>
+                            <strong>
+                              {'📦 1 free case of 24 FitAid drinks ($72 value)'}
+                            </strong>
+                          </p>
+                        )}
                         <hr/>
                       </div>
                     )}
@@ -180,8 +187,8 @@ class RentalsPage extends React.Component {
                       header={
                         <div>
                           <h3>Rental Request</h3>
-                          <p>Please also include the delivery address, and the date and 2 hour time
-                          window during which we may deliver the equipment.</p>
+                          <p>After entering your contact information, please also include the delivery address, and the date and 2 hour time
+                          window during which we may deliver the equipment in the message field.</p>
                         </div>
                       }
                       submitLabel="Send Rental Request"
