@@ -59,6 +59,7 @@ class RentalsPage extends React.Component {
         {label: '25 lbs plates (2)', cost: 10},
         {label: '35 lbs plates (2)', cost: 13},
         {label: '45 lbs plates (2)', cost: 15, multiple: true},
+        {label: 'silencer mats (2)', cost: 10},
         {label: 'barbell with clips', cost: 20},
         {label: 'squat rack', cost: 15},
         {label: 'Concept2 rower', cost: 100},
