@@ -62,6 +62,7 @@ class RentalsPage extends React.Component {
         {label: 'silencer mats (2)', cost: 10},
         {label: 'barbell with clips', cost: 20},
         {label: 'squat rack', cost: 15},
+        {label: 'bench', cost: 15},
         {label: 'Concept2 rower', cost: 100},
         {label: 'Rogue Echo bike', cost: 100},
       ],
