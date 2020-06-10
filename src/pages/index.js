@@ -166,7 +166,7 @@ const IndexPage = () => (
         <Tile url="/img/athlete-left.jpg" className="d-sm-none d-lg-block"/>
         <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
           <Quote>
-            CrossFit Secaucus offers cost-effective small group personal training.
+            Train in your own <strong>personal station</strong> with a safety distance to your fellow athletes.
           </Quote>
         </Tile>
         <Tile url="/img/athlete-right.jpg" />
