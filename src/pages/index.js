@@ -141,33 +141,6 @@ const IndexPage = () => (
 
     <section className="section section-basic">
       <div className="container">
-        <div className="alert alert-info">
-          <div className="container text-center">
-            <h2>
-              Gym Equipment Rental - <em>Now Available</em>
-            </h2>
-            <p>
-              <strong>
-                We're supporting the local fitness community with our equipment rental program.
-              </strong>
-            </p>
-            <p>
-              <strong>
-                Review our inventory now and set yourself up with weights and cardio machines.
-              </strong>
-            </p>
-            <p>
-              <strong>
-                You do <em>not</em> need to be a member to take advantage of this service. Rentals are weekly.
-              </strong>
-            </p>
-            <p></p>
-            <Link to="/rental" className="btn btn-info btn-block btn-round">
-              View Equipment Inventory
-            </Link>
-          </div>
-        </div>
-        <hr style={{marginTop: 100}}/>
         <div className="row">
           <div className="col-md-10 ml-auto mr-auto">
             <h1 className="title text-center">GET STARTED TODAY</h1>
