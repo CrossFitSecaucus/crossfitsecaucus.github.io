@@ -6,6 +6,21 @@ const Schedule = ({ heading }) => (
     <div className="row">
       <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
         {heading}
+
+        <div className="alert alert-danger">
+          <div className="container">
+            <div className="alert-icon">
+              <i className="material-icons">error_outline</i>
+            </div>
+            <b>COVID19: </b>
+
+            Temporarily reduced schedule due to mandated restrictions.
+            All classes will be held outside to ensure the safety of our athletes.
+
+          </div>
+        </div>
+
+
         <div className="table-responsive">
           <table className="table table-bordered text-center">
             <thead>
@@ -20,73 +35,31 @@ const Schedule = ({ heading }) => (
             </thead>
             <tbody>
               <tr>
-                <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-primary"><strong>Barbell</strong></span></td>
-                <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>5:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span> / <span className="text-primary"><strong>Barbell</strong></span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
                 <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td><strong>8:00am</strong><br/><span className="badge badge-warning">@ Gym Parking Lot</span></td>
               </tr>
               <tr>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>6:30am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
+                <td><strong>10:00am</strong><br/><span className="badge badge-warning">@ Gym Parking Lot</span></td>
               </tr>
               <tr>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
                 <td>&nbsp;</td>
-                <td rowSpan="4">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td rowSpan="4">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td><strong>8:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-              </tr>
-              <tr>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>9:00am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td><strong>10:15am</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-              </tr>
-              <tr>
-                <td><strong>3:15pm</strong><br/><span className="text-success"><strong>CrossFit Teens</strong></span></td>
-                <td><strong>3:15pm</strong><br/><span className="text-success"><strong>CrossFit Teens</strong></span></td>
-                <td><strong>3:15pm</strong><br/><span className="text-success"><strong>CrossFit Teens</strong></span></td>
-                <td rowSpan="5">&nbsp;</td>
-              </tr>
-              <tr>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>4:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-              </tr>
-              <tr>
-                <td><strong>5:30pm</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
-                <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>5:30pm</strong><br/><span className="text-success"><strong>Individual Skill Development</strong></span></td>
-                <td><strong>5:30pm</strong><br/><span className="text-rose"><strong>Bootcamp</strong></span></td>
-                <td><strong>5:30pm</strong><br/><span className="text-primary"><strong>Barbell</strong></span></td>
-              </tr>
-              <tr>
-                <td><strong>6:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>6:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>6:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>6:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>6:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-              </tr>
-              <tr>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
-                <td><strong>7:30pm</strong><br/><span className="text-info"><strong>CrossFit</strong></span></td>
               </tr>
             </tbody>
           </table>
@@ -97,35 +70,34 @@ const Schedule = ({ heading }) => (
 
     <div className="row" id="classes">
       <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-        <p>
-          <strong className="text-rose">Bootcamp</strong> &mdash;
-          The bootcamp class consists of circuit workouts specifically designed for toning overall physique and burning calories.
-          These fun high-energy classes are great for anyone as the workouts can be scaled up and down to maximize the benefit for each athlete.
+        <h2>Out-door Locations</h2>
+        <p className="text-muted">
+          While gyms and fitness facilties are mandated to be close,
+          classes will be held outdoors.
         </p>
 
-        <p>
-          <strong className="text-success">CrossFit Teens</strong> &mdash;
-          A program that delivers a positive training experience for youth ages 12 to 18 that improves speed of movement, maximizes overall strength
-          and develops unsurpassed conditioning. (<Link to="/teens/" className="text-success">Read more information</Link>.)
-        </p>
+        <hr/>
 
+        <h3 className="text-info">Kane Stadium</h3>
         <p>
-          <strong className="text-info">CrossFit</strong> &mdash;
-          Functional movements at high intensity combining gymnastics, plyometrics, calisthenics, weightlifting, running, rowing and more.
-          Great for <em>new</em> and <em>seasoned athletes</em>.
-          All movements are scaled to <em>every</em> athlete's skill, endurance and ability level.<br/>
+          Workouts are conducted on the field, which offers artificial turf (surface of synthetic fibers and rubber granulate).
+          Plenty of parking spots are available.
         </p>
+        <address>
+          Address: 100 Dorigo Ln, Secaucus, NJ 07094
+          (<a className="text-success" href="https://www.google.com/maps/dir//kane+stadium+secaucus/" target="_blank">Directions</a>)
+        </address>
 
-        <p>
-          <strong className="text-warning">Barbell</strong> &mdash;
-          Specialized class that focuses on the Olympic lifts (<em>snatch</em> and <em>clean &amp; jerk</em>) and accessory movements.
-          Focuses on the very basics for novice lifters to the smallest details for advanced lifters to ensure continuous progress.<br/>
-        </p>
+        <hr/>
 
+        <h3 className="text-warning">Gym Parking Lot</h3>
         <p>
-          <strong className="text-success">Individual Skill Development</strong> &mdash;
-          Class for working on skill development.
+          On Saturdays, we hold classes right outside of the CrossFit Secaucus gym, where we have access to additional training equipment.
         </p>
+        <address>
+          Address: 333 Meadowlands Pkwy, Secaucus, NJ 07094
+          (<a className="text-success" href="https://www.google.com/maps/dir//crossfit+secaucus/" target="_blank">Directions</a>)
+        </address>
 
       </div>
     </div>
