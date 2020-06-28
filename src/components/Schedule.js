@@ -61,6 +61,14 @@ const Schedule = ({ heading }) => (
                 <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
                 <td>&nbsp;</td>
               </tr>
+              <tr>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td>&nbsp;</td>
+              </tr>
             </tbody>
           </table>
 
