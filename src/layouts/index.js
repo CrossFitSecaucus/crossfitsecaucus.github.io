@@ -61,7 +61,7 @@ class Layout extends React.Component {
             { property: 'og:title', content: data.site.siteMetadata.title },
             { property: 'og:type', content: 'website' },
             { property: 'og:url', content: 'https://crossfit-secaucus.com' },
-            { property: 'og:image', content: 'https://crossfit-secaucus.com/img/group-class.jpg' },
+            { property: 'og:image', content: 'https://crossfit-secaucus.com/img/athlete-left-outside.jpg' },
           ]}
         >
         </Helmet>
