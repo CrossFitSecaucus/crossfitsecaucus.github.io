@@ -13,7 +13,7 @@ const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, ses
               <li><b>{description}</b></li>
               {sessions && (
                 <li>
-                    <b>{sessions}</b> {sessionsName} inlcuded
+                    <b>{sessions}</b> {sessionsName} included
                 </li>
               )}
               {
@@ -66,57 +66,40 @@ class Pricing extends React.Component {
 
               <div className="row">
                 <div className="col-sm-12">
-                  <h2 className="title text-center">Group Classes</h2>
-                  <p id="group-classes">
-                      Group class pricing options are based on the minimum classes per month. If you use up all class credits before the end of the month, you can purchases additional ones at a discounted rate.
+                  <p id="group-classes" className="text-center">
+                    Whether you are ready to commit or if you want to keep it casual,
+                    we have both options for you.
                   </p>
                   <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-6 col-lg-4 offset-lg-2">
                       <PricingOption
-                        label="Maintenance"
-                        buttonLabel="Get Started"
-                        url="/get-started"
+                        label="Ready to Commit"
+                        buttonLabel="Purchase"
+                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40&prodid=161"
                         unitPrice={180}
-                        unit="month"
+                        unit="4-weeks"
                         sessions={12}
                         sessionName="class"
                         sessionsName="classes"
                         sessionPrice={15}
-                        description="For maintaining body composition"
-                        lastLine="Renews on first of every month"
-                        color="info"
+                        description="Membership with Auto-Renewal"
+                        lastLine="Renews every 4 weeks"
+                        color="warning"
                        />
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-6 col-lg-4">
                       <PricingOption
-                        label="Transformation"
-                        buttonLabel="Get Started"
-                        url="/get-started"
-                        unitPrice={220}
-                        unit="month"
-                        sessions={20}
+                        label="Keepin' It Casual"
+                        buttonLabel="Purchase"
+                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=24&prodId=10223"
+                        unitPrice={199}
+                        unit="punch card"
+                        sessions={10}
                         sessionName="class"
                         sessionsName="classes"
-                        sessionPrice={11}
-                        description="For weight loss and muscle gain"
-                        lastLine="Renews on first of every month"
-                        color="info"
-                        preferred
-                      />
-                    </div>
-                    <div className="col-md-4">
-                      <PricingOption
-                        label="Competitor"
-                        buttonLabel="Get Started"
-                        url="/get-started"
-                        unitPrice={260}
-                        unit="month"
-                        sessions={30}
-                        sessionName="class"
-                        sessionsName="classes"
-                        sessionPrice={8.67}
-                        description="For performance athletes"
-                        lastLine="Renews on first of every month"
+                        sessionPrice="19.90"
+                        description="Punch Card"
+                        lastLine="Valid for 3 months"
                         color="info"
                       />
                     </div>
@@ -189,7 +172,7 @@ class Pricing extends React.Component {
                     <div className="col-md-4 offset-md-4">
                       <PricingOption
                         label="Hybrid"
-                        buttonLabel="Get Started"
+                        buttonLabel="Purchase"
                         url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=5&prodId=10307"
                         sessions={16}
                         sessionName="month"

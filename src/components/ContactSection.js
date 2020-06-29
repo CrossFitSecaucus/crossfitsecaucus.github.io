@@ -45,16 +45,7 @@ class ContactSection extends React.Component {
                       title="Contact Us"
                       header={
                         <div>
-                          <p className="text-muted">For general inquieries please complete all form fields. We will get back to you within a day.</p>
-                          <p className="text-muted">
-                            <strong>
-                              Want to sign up for a free trial class? Please
-                               <Link to="/trial-class">
-                              {` go here instead`}
-                              </Link>
-                              .
-                            </strong>
-                          </p>
+                          <p className="text-muted">For general inquiries please complete all form fields. We will get back to you within a day.</p>
                         </div>
                       }
                     />

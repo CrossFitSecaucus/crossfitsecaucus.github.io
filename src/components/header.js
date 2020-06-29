@@ -44,17 +44,8 @@ const Header = ({ siteTitle }) => (
                             <Link to="/index.html#pricing" className="dropdown-item">
                                 <i className="material-icons">&#xe263;</i> Pricing
                             </Link>
-                            <Link to="/trial-class" className="dropdown-item">
-                                <i className="material-icons">&#xeb43;</i> Trial Class
-                            </Link>
-                            <Link to="/get-started" className="dropdown-item">
-                                <i className="material-icons">&#xe8cc;</i> Sign-up
-                            </Link>
                             <Link to="/index.html#contact" className="dropdown-item">
                                 <i className="material-icons">&#xe325;</i> Contact Us
-                            </Link>
-                            <Link to="/teens" className="dropdown-item">
-                                <i className="material-icons">&#xe7ef;</i> CrossFit Teens
                             </Link>
                         </div>
                     </li>
@@ -68,9 +59,6 @@ const Header = ({ siteTitle }) => (
                           Members
                         </div>
                         <div className="dropdown-menu dropdown-with-icons" onClick={() => {$(".navbar-toggler").first().click()}}>
-                            <Link to="/rental" className="dropdown-item">
-                                <i className="material-icons">&#xe52f;</i> Equipment Rental
-                            </Link>
                             <Link to="/app" className="dropdown-item">
                                 <i className="material-icons">&#xe884;</i> App
                             </Link>
@@ -85,13 +73,9 @@ const Header = ({ siteTitle }) => (
                             </a>
                         </div>
                     </li>
-
-                    <li className="button-container nav-item iframe-extern">
-                        <a href="/trial-class" className="btn  btn-warning   btn-round btn-block">
-                            <i className="material-icons">&#xeb43;</i> Try A Class
-                        </a>
-                    </li>
                 </ul>
+
+                <h4 style={{paddingLeft: 30}}><strong>Call or Text:</strong> 201-503-6326</h4>
             </div>
         </div>
     </nav>

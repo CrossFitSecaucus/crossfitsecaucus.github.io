@@ -28,58 +28,30 @@ const HowItworks = ({ heading }) => (
 
     <Step
       number="1"
-      title="Learn the basics of CrossFit"
-      imageUrl="/img/personal-training.jpg"
+      title="Purchase a Membership or Punch Card"
+      imageUrl="/img/group-class-outside.jpg"
     >
       <p>
-        If you are new to CrossFit, you first complete our 4-session fundamentals course with your dedicated personal trainer.
-        We want you to be safe and efficient when you squat, jump, lift, run, row, push, pull and climb during a workout.
-        Therefore, we put a lot of emphasis on teaching you proper form.
-      </p>
-      <p>
-        Your trainer will get to know you, your goals, your abilities and even limitations in order to teach you exactly
-        what you need to have fun, be safe and be successful when working out.
-      </p>
-      <p>
-        <Link to="/get-started#fundamentals" className="text-info">
-          <strong>
-            Ready to get started with your personalized fundamentals course?
-          </strong>
-        </Link>
-      </p>
-    </Step>
-
-    <Step
-      number="2"
-      title="Choose a Package"
-      imageUrl="/img/group-class.jpg"
-    >
-      <p>
-        Based on your goals and fitness level, your trainer will recommend
-        a monthly class package for making maximum progress.
+        So you have decided to start CrossFit with us.
+        Select a pricing option that best suits your needs.
       </p>
       <ul className="fa-ul">
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
-        <strong>Maintenance</strong>
+        <strong>Membership (recommended)</strong>
           &mdash;
-          For athletes new to fitness and athletes interested
-          in adding CrossFit to an existing workout routine, this package is works
-          well with 2-3 classes per week.
+          With a membership, you may attend 12 classes within a 4 week period.
+          Typically, our athletes attend 3 classes per week, but you may split
+          up your 12 classes any way you see fit between the 4 weeks.
+          The membership automatically renews every 4 weeks, until you cancel.
+          No annual or long term contracts. 30 day cancelation notice required.
         </li>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
-        <strong>Transformation (recommended)</strong>
+        <strong>Punch Card</strong>
           &mdash;
-          Our most popular option for athletes that aspire to become physically fit,
-          get rid of unwanted body fat and tone overall physique, this package is ideal
-          as it allows for 4-5 classes per week.
-        </li>
-        <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
-        <strong>Competitor</strong>
-          &mdash;
-          This package supports athletes who made CrossFit a major part of their lifestyle.
+          A punch card is valid for 3 months or until all classes are used up,
+          and it does not automatically renew.
         </li>
       </ul>
-
       <p>
         <Link to="/#pricing" className="text-info">
           <strong>
@@ -87,19 +59,63 @@ const HowItworks = ({ heading }) => (
           </strong>
         </Link>
       </p>
+      <p>
+        If you are unsure what's best for you, we'll gladly give you a recommendation
+        based on your fitness goals. Call us at 201-503-6326 for a chat.
+      </p>
+    </Step>
 
+    <Step
+      number="2"
+      title="Book Your Class"
+      imageUrl="/img/apps.jpg"
+    >
+      <p>
+      We seamlessly integrate with your digital lifestyle.
+      For the best experience, download the following two apps from your phone's app store:
+      </p>
+      <ul className="fa-ul">
+        <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
+        <strong>"Mindbody Connect" app</strong>
+          &mdash;
+          Quickly and easily manage your class sign-ups.
+        </li>
+        <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
+        <strong>"CrossFit Secaucus" app</strong>
+          &mdash;
+          Get a sneak preview of the day's workout, so you know what extra equipment to pack
+          (i.e. jump rope, running sneakers)
+        </li>
+      </ul>
     </Step>
 
     <Step
       number="3"
-      title="Work out and make progress"
-      imageUrl="/img/schedule.jpg"
+      title="Attend Your First Workout"
+      imageUrl="/img/group-class-2-outside.jpg"
     >
       <p>
-        Personal training sessions can be booked throughout the day based on your availability; early mornings to late evenings.
+        It's finally here! Your first workout. Be sure to book yourself
+        for the desired class time in the <em>Mindbody Connect</em> app
+        and arrive at least 10 minutes before class start.
       </p>
       <p>
-        Upon completion of the fundamentals course, you can conveniently schedule yourself for our group classes via our website or mobile app.
+        Your trainer will know that it's your first day
+        and help you get settled in.
+      </p>
+      <p>
+        No need to be nervous.
+        The workout will be the right amount of difficult,
+        and you will feel accomplished for having
+        championed the workout.
+      </p>
+      <p className="text-warning">
+        <strong>
+          Classes will be held outdoors at Kane Stadium and
+          in front of the CrossFit Secaucus gym,
+          while gyms are not allowed to hold classes indoors.
+          See schedule below for details.
+        </strong>
       </p>
     </Step>
    </div>

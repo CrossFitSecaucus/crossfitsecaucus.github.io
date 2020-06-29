@@ -80,7 +80,7 @@ const Schedule = ({ heading }) => (
       <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
         <h2>Out-door Locations</h2>
         <p className="text-muted">
-          While gyms and fitness facilties are mandated to be close,
+          While gyms and fitness facilities are mandated to be close,
           classes will be held outdoors.
         </p>
 

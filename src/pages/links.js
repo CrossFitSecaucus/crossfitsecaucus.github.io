@@ -32,16 +32,13 @@ const LinksPage = () => (
       <meta property="og:image" content="https://crossfit-secaucus.com/img/athlete-3-center.jpg" />
     </Helmet>
 
-    <Button label="Equipment Rental" to="/rental" style="success" />
-    <Button label="CrossFit Online Competition" to="https://games.crossfit.com/" isExternal style="google" />
-    <Button label="Mobile App" to="/app" style="info"/>
+    <Button label="Schedule" to="/index.html#schedule" />
+    <Button label="Pricing" to="/index.html#pricing" />
+    <Button label="Contact Us" to="/index.html#contact" />
     <p>
       <hr/>
     </p>
-    <Button label="Book Trial Class" to="/trial-class" />
-    <Button label="Contact Us" to="/index.html#contact" />
-    <Button label="Schedule" to="/index.html#schedule" />
-    <Button label="Pricing" to="/index.html#pricing" />
+    <Button label="Mobile App" to="/app" style="info"/>
   </main>
 )
 
