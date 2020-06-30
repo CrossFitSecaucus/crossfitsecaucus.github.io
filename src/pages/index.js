@@ -198,7 +198,7 @@ const IndexPage = () => (
     <section className="section">
       <div className="row no-gutters">
         <Tile url="/img/athlete-3-center.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athletes-center.jpg" />
+        <Tile url="/img/athletes-center-outside.jpg" />
         <Tile url="/img/athlete-3-right.jpg" className="d-none d-lg-block" />
       </div>
     </section>
