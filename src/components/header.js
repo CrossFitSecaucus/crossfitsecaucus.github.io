@@ -49,17 +49,20 @@ const Header = ({ siteTitle }) => (
                           Getting Started
                         </a>
                         <div className="dropdown-menu dropdown-with-icons"  onClick={() => {$(".navbar-toggler").first().click()}}>
-                            <Link to="/index.html#how-it-works" className="dropdown-item">
-                                <i className="material-icons">&#xe896;</i> How it works
+                            <Link to="/index.html#pricing" className="dropdown-item">
+                                <i className="material-icons">&#xe263;</i> Pricing
                             </Link>
                             <Link to="/index.html#schedule" className="dropdown-item">
                                 <i className="material-icons">&#xe614;</i> Schedule
                             </Link>
-                            <Link to="/index.html#pricing" className="dropdown-item">
-                                <i className="material-icons">&#xe263;</i> Pricing
+                            <Link to="/index.html#what-is-crossfit" className="dropdown-item">
+                                <i className="material-icons">&#xe0f0;</i> What is CrossFit
+                            </Link>
+                            <Link to="/index.html#how-it-works" className="dropdown-item">
+                                <i className="material-icons">&#xe896;</i> How to get started
                             </Link>
                             <Link to="/index.html#contact" className="dropdown-item">
-                                <i className="material-icons">&#xe325;</i> Contact Us
+                                <i className="material-icons">&#xe325;</i> Contact us
                             </Link>
                         </div>
                     </li>
