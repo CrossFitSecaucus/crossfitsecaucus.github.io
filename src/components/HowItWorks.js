@@ -5,11 +5,11 @@ import Link from 'gatsby-link';
 const Step = ({ number, title, imageUrl, children }) => (
   <div className="row">
     <div className="col-1 offset-1 offset-md-0">
-      <span className="btn btn-just-icon btn-info">
+      <span className="btn btn-just-icon btn-info btn-round">
         <strong>{number}</strong>
       </span>
     </div>
-    <div className="col-9 col-md-6 col-lg-8">
+    <div className="col-10 col-md-6 col-lg-8">
       <h3 className="title">
         { ' ' + title}
       </h3>
@@ -25,7 +25,6 @@ const Step = ({ number, title, imageUrl, children }) => (
 const HowItworks = ({ heading }) => (
   <div className="container how-it-works">
     {heading}
-
     <Step
       number="1"
       title="Purchase a Membership or Punch Card"
@@ -35,7 +34,7 @@ const HowItworks = ({ heading }) => (
         So you have decided to start CrossFit with us.
         Select a pricing option that best suits your needs.
       </p>
-      <ul className="fa-ul">
+      <ul className="fa-ul" style={{marginLeft: 10}}>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>Membership (recommended)</strong>
           &mdash;
@@ -74,7 +73,7 @@ const HowItworks = ({ heading }) => (
       We seamlessly integrate with your digital lifestyle.
       For the best experience, download the following two apps from your phone's app store:
       </p>
-      <ul className="fa-ul">
+      <ul className="fa-ul" style={{marginLeft: 10}}>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>"Mindbody Connect" app</strong>
           &mdash;

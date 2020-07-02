@@ -5,9 +5,11 @@ import { Helmet } from "react-helmet"
 
 import Tile from '../components/Tile'
 import HowItWorks from '../components/HowItWorks'
+import WhatIsCrossFit from '../components/WhatIsCrossFit'
 import Schedule from '../components/Schedule'
 import Pricing from '../components/Pricing'
 import ContactSection from '../components/ContactSection'
+import Testimonials from '../components/Testimonials'
 
 const Quote = styled.div`
   padding: 0.7em;
@@ -140,29 +142,23 @@ const IndexPage = () => (
     </Helmet>
 
     <section className="section section-basic">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-10 ml-auto mr-auto">
-            <h1 className="title text-center">OPEN FOR BUSINESS</h1>
-          </div>
-          <div className="col-md-6 offset-md-3 ">
-
-            <div className="alert alert-warning">
-              <div className="container">
-                <div className="alert-icon">
-                  <i className="material-icons">error_outline</i>
-                </div>
-                <b>COVID19: </b>
-                <strong>
-                In compliance with the current requirements for gyms and fitness centers,
-                we are holding all classes outdoors.
-                </strong>
-              </div>
-            </div>
-          </div>
-
+      <div className="row">
+        <div className="col-md-10 ml-auto mr-auto">
+          <h1 className="title text-center">OPEN FOR BUSINESS</h1>
         </div>
+        <div className="col-md-6 offset-md-3 ">
 
+          <div className="alert alert-warning">
+            <div className="alert-icon">
+              <i className="material-icons">error_outline</i>
+            </div>
+            <b>COVID19: </b>
+            <strong>
+            In compliance with the current requirements for gyms and fitness centers,
+            we are holding all classes outdoors.
+            </strong>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -179,20 +175,8 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="how-it-works">
-      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
-    </section>
-
-    <section>
-      <div className="row no-gutters">
-        <Tile url="/img/athlete-2-left-outside.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athlete-2-center-outside.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athlete-2-right-outside.jpg" />
-      </div>
-    </section>
-
-    <section id="schedule">
-      <Schedule heading={ <Heading>Schedule</Heading> } />
+    <section id="pricing">
+      <Pricing />
     </section>
 
     <section className="section">
@@ -203,8 +187,37 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="pricing">
-      <Pricing />
+    <section id="schedule">
+      <Schedule heading={ <Heading>Schedule</Heading> } />
+    </section>
+
+    <section className="section">
+      <div className="row no-gutters">
+        <Tile url="/img/athlete-2-left-outside.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/athlete-2-center-outside.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/athlete-2-right-outside.jpg" />
+      </div>
+    </section>
+
+    <section id="what-is-crossfit">
+      <WhatIsCrossFit heading={ <Heading>What is CrossFit</Heading> } />
+    </section>
+
+    <section className="section">
+      <div className="row no-gutters">
+        <Tile url="/img/athlete-5-right.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/athlete-4-right.jpg" />
+        <Tile url="/img/athlete-6-right-outside.jpg" className="d-none d-lg-block" />
+      </div>
+    </section>
+
+
+    <section id="how-it-works">
+      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
+    </section>
+
+    <section id="testimonials" className="section-image" style={{backgroundImage: "url('/img/testimonials-bg.jpg')"}}>
+      <Testimonials/>
     </section>
 
     <section className="section">

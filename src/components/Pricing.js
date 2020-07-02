@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, sessionName, sessionsName, description, lastLine, buttonLabel, color, preferred}) => (
   <div className={`card card-pricing card-plain card-raised ${preferred ? 'bg-' + color : ''}`}>
       <div className="card-body">
-          <h6 className="card-category text-success text-capitalized">{label}</h6>
+          <h6 className="card-category text-success text-capitalized" style={{fontSize: `1rem`}}>{label}</h6>
           <h1 className="card-title">
               <small>$</small>{sessionPrice}
               <small>/{sessionName}</small>
@@ -73,7 +73,7 @@ class Pricing extends React.Component {
                   <div className="row">
                     <div className="col-md-6 col-lg-4 offset-lg-2">
                       <PricingOption
-                        label="Ready to Commit"
+                        label="Membership"
                         buttonLabel="Purchase"
                         url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40&prodid=161"
                         unitPrice={180}
@@ -82,14 +82,28 @@ class Pricing extends React.Component {
                         sessionName="class"
                         sessionsName="classes"
                         sessionPrice={15}
-                        description="Membership with Auto-Renewal"
+                        description={null}
                         lastLine="Renews every 4 weeks"
-                        color="warning"
+                        color="info"
                        />
+                      <div className="text-center" style={{padding: `0 15px 50px`}}>
+                        <p>
+                          <strong>
+                            Need more classes before the 4 weeks are over?
+                            Purchase extra credits at your locked-in rate of $15.
+                          </strong>
+                        </p>
+                        <p style={{fontSize: `0.9rem`, padding: 0}}>
+                          3-month commitment required.
+                          Automatic payments every 4 weeks until you cancel.
+                          30-day cancellation policy applies.
+                        </p>
+                      </div>
                     </div>
+
                     <div className="col-md-6 col-lg-4">
                       <PricingOption
-                        label="Keepin' It Casual"
+                        label="Punch Card"
                         buttonLabel="Purchase"
                         url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=24&prodId=10223"
                         unitPrice={199}
@@ -98,97 +112,15 @@ class Pricing extends React.Component {
                         sessionName="class"
                         sessionsName="classes"
                         sessionPrice="19.90"
-                        description="Punch Card"
+                        description={null}
                         lastLine="Valid for 3 months"
-                        color="info"
-                      />
-                    </div>
-                  </div>
-
-                  <hr style={{marginTop: 50, marginBottom: 50}} />
-
-                  <h2 className="title text-center">Personal Training</h2>
-
-                  <p id="personal-training">
-                    Personal training sessions are 1-hour long and they are designed specifically around your individual fitness goals.
-                    The schedule is flexible and sessions can be booked from 5:30am to 8:30pm.
-                    We will contact you for your first appointment after you purchased a personal training pack.
-                  </p>
-
-                  <div className="row">
-                    <div className="col-md-4">
-                      <PricingOption
-                        label="2 weekly sessions"
-                        buttonLabel="Get 2 sessions/week"
-                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40&prodId=156"
-                        unitPrice={160}
-                        unit="week"
-                        sessionName="session"
-                        sessionPrice={80}
-                        description="Customized Program"
-                        lastLine="Minimum 4 week commitment"
-                        color="primary"
-                      />
-                    </div>
-                    <div className="col-md-4">
-                      <PricingOption
-                        label="3 weekly sessions"
-                        buttonLabel="Get 3 sessions/week"
-                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40&prodId=157"
-                        unitPrice={180}
-                        unit="week"
-                        sessionName="session"
-                        sessionPrice={60}
-                        description="Customized Program"
-                        lastLine="Minimum 4 week commitment"
-                        color="primary"
-                        preferred
-                      />
-                    </div>
-                    <div className="col-md-4">
-                      <PricingOption
-                        label="5 session pack"
-                        buttonLabel="Buy 5 Session Pack"
-                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=5&prodId=10311"
-                        unitPrice={450}
-                        unit="session pack"
-                        sessionName="session"
-                        sessionPrice={90}
-                        description="Give Personal Training a Try"
-                        lastLine="One session is 60 minutes"
-                        color="primary"
-                      />
-                    </div>
-                  </div>
-
-                  <hr style={{marginTop: 50, marginBottom: 50}} />
-
-                  <p id="hybrid" className="d-none">
-                    The hybrid option combines 16 monthly group classes with 2 one-hour personal training sessions.
-                    As part of this bundle, we will develop a personal workout plan for you with a path to achieving your short and long term goals.
-                    youour trainer will provide support and accountability to ensure you will achieve them.
-                  </p>
-                  <div className="row d-none">
-                    <div className="col-md-4 offset-md-4">
-                      <PricingOption
-                        label="Hybrid"
-                        buttonLabel="Purchase"
-                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=5&prodId=10307"
-                        sessions={16}
-                        sessionName="month"
-                        sessionsName="group classes"
-                        sessionPrice={295}
-                        description="Combines group classes and personal training sessions"
-                        lastLine="2 one-hour personal training sessions included"
-                        color="success"
-                        preferred
+                        color="warning"
                       />
                     </div>
                   </div>
 
                 </div>
               </div>
-
           </div>
     );
   }

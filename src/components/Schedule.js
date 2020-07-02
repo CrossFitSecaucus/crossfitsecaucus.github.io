@@ -35,11 +35,11 @@ const Schedule = ({ heading }) => (
             </thead>
             <tbody>
               <tr>
-                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30am</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
@@ -48,25 +48,25 @@ const Schedule = ({ heading }) => (
                 <td rowSpan="2">&nbsp;</td>
                 <td rowSpan="2">&nbsp;</td>
                 <td rowSpan="2">&nbsp;</td>
-                <td><strong>8:00am</strong><br/><span className="badge badge-warning">@ Gym Parking Lot</span></td>
+                <td><strong>8:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
-                <td><strong>10:00am</strong><br/><span className="badge badge-warning">@ Gym Parking Lot</span></td>
+                <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">@ Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
                 <td>&nbsp;</td>
               </tr>
             </tbody>
@@ -78,7 +78,7 @@ const Schedule = ({ heading }) => (
 
     <div className="row" id="classes">
       <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-        <h2>Out-door Locations</h2>
+        <h2>Outdoor Locations</h2>
         <p className="text-muted">
           While gyms and fitness facilities are mandated to be close,
           classes will be held outdoors.

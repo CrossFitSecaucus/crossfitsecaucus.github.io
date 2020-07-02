@@ -9,10 +9,10 @@ import './index.scss'
 import styled from 'styled-components';
 
 const Cover = styled.div`
-  background-image: url("/img/cover-outside.jpg");
-  // transform: translate3d(0px, 0px, 0px);
-  height: 30vw;
-  max-height: 200px;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/img/cover-outside.jpg");
+  height: 28vw;
+  min-height: 75px;
+  max-height: 300px;
 `;
 
 class Layout extends React.Component {

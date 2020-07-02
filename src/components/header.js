@@ -3,25 +3,39 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 const Title = styled(Link)`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.6em !important;
+
+  margin: 10px;
+  width: 150px;
+  height: 50px;
 
   @media (min-width: 576px) {
-    font-size: 2em !important;
+    width: 170px;
+    height: 50px;
   }
 
   @media (min-width: 768px) {
-    font-size: 2.4em !important;
+    width: 180px;
+    height: 50px;
   }
+
+  background: url('/img/logo-grey.png');
+  background-size: cover;
+  background-position: center center;
+  display: block;
+
+  .navbar-transparent  & {
+    background: url('/img/logo-white.png');
+    background-size: cover;
+    background-position: center center;
+  }
+
 `;
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" data-color-on-scroll="50" id="sectionsNav">
         <div className="container">
             <div className="navbar-translate">
-                <Title  to="/" className="navbar-brand">
-                  {siteTitle}
-                </Title>
+                <Title  to="/"></Title>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                   <span className="navbar-toggler-icon"></span>
