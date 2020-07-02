@@ -3,21 +3,27 @@ import Link from 'gatsby-link';
 
 
 const Step = ({ number, title, imageUrl, children }) => (
-  <div className="row">
+  <div>
+  <div className="row" style={{marginBottom: `1em`}}>
     <div className="col-1 offset-1 offset-md-0">
       <span className="btn btn-just-icon btn-info btn-round">
         <strong>{number}</strong>
       </span>
     </div>
-    <div className="col-10 col-md-6 col-lg-8">
+    <div className="col-9 col-md-11 col-lg-8">
       <h3 className="title">
         { ' ' + title}
       </h3>
+    </div>
+  </div>
+  <div className="row" style={{marginTop: `1em`}}>
+    <div className="col-12 col-md-5 col-lg-9">
       {children}
     </div>
     <div className="d-none d-md-block col-md-5 col-lg-3">
       <img src={imageUrl} className="img-raised rounded img-fluid" />
     </div>
+  </div>
 
   </div>
 )

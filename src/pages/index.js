@@ -142,7 +142,7 @@ const IndexPage = () => (
     </Helmet>
 
     <section className="section section-basic">
-      <div className="row">
+      <div className="row no-gutters">
         <div className="col-md-10 ml-auto mr-auto">
           <h1 className="title text-center">OPEN FOR BUSINESS</h1>
         </div>

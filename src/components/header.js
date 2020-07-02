@@ -4,18 +4,13 @@ import styled from 'styled-components';
 
 const Title = styled(Link)`
 
-  margin: 10px;
+  margin: 5px 0;
   width: 150px;
-  height: 50px;
-
-  @media (min-width: 576px) {
-    width: 170px;
-    height: 50px;
-  }
+  height: 40px;
 
   @media (min-width: 768px) {
-    width: 180px;
-    height: 50px;
+    width: 250px;
+    height: 80px;
   }
 
   background: url('/img/logo-grey.png');
