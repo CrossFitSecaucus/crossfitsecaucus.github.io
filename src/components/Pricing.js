@@ -7,7 +7,9 @@ const PricingOption = ({label, url, unitPrice, unit, sessions, sessionPrice, ses
           <h6 className="card-category text-success text-capitalized" style={{fontSize: `1rem`}}>{label}</h6>
           <h1 className="card-title">
               <small>$</small>{sessionPrice}
-              <small>/{sessionName}</small>
+              { sessionName && (
+                <small>/{sessionName}</small>
+              )}
           </h1>
           <ul>
               <li><b>{description}</b></li>
@@ -71,7 +73,22 @@ class Pricing extends React.Component {
                     we have both options for you.
                   </p>
                   <div className="row">
-                    <div className="col-md-6 col-lg-4 offset-lg-2">
+                    <div className="col-md-6 col-lg-4">
+                      <PricingOption
+                        label="Trial"
+                        buttonLabel="Purchase"
+                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=24&prodId=10644"
+                        unitPrice={75}
+                        sessions={5}
+                        sessionsName="classes"
+                        sessionPrice="75"
+                        description="New Clients Only"
+                        lastLine="Valid for 3 months"
+                        color="info"
+                        preferred
+                      />
+                    </div>
+                    <div className="col-md-6 col-lg-4">
                       <PricingOption
                         label="Membership"
                         buttonLabel="Purchase"
