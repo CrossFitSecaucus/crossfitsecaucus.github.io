@@ -21,7 +21,7 @@ const Schedule = ({ heading }) => (
         </div>
 
 
-        <div className="table-responsive">
+        <div className="table-responsive d-none d-md-block">
           <table className="table table-bordered text-center">
             <thead>
               <tr className="table-active">
@@ -71,8 +71,40 @@ const Schedule = ({ heading }) => (
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div className="table-responsive d-md-none">
+          <table className="table table-bordered text-center">
+            <thead>
+              <tr className="table-active">
+                <th width="50%"><strong>Monday &mdash; Friday</strong></th>
+                <th width="50%"><strong>Saturday</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>6:30am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td rowSpan="2">&nbsp;</td>
+                <td><strong>8:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
+              </tr>
+              <tr>
+                <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
+              </tr>
+              <tr>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td rowSpan="2">&nbsp;</td>
+              </tr>
+              <tr>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+              </tr>
+            </tbody>
+          </table>
 
         </div>
+
       </div>
     </div>
 
