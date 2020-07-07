@@ -54,19 +54,19 @@ const Schedule = ({ heading }) => (
                 <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td>&nbsp;</td>
               </tr>
             </tbody>
@@ -94,11 +94,11 @@ const Schedule = ({ heading }) => (
                 <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
               </tr>
             </tbody>
           </table>
@@ -118,25 +118,36 @@ const Schedule = ({ heading }) => (
 
         <hr/>
 
-        <h3 className="text-info">Kane Stadium</h3>
+        <h3 className="text-info title" style={{marginBottom: 0}}>Kane Stadium</h3>
         <p>
           Workouts are conducted on the field, which offers artificial turf (surface of synthetic fibers and rubber granulate).
-          Plenty of parking spots are available.
+          Plenty of parking spots are available. All morning classes will be held here from Monday to Friday.
         </p>
         <address>
           Address: 100 Dorigo Ln, Secaucus, NJ 07094
-          (<a className="text-success" href="https://www.google.com/maps/dir//kane+stadium+secaucus/" target="_blank">Directions</a>)
+          (<a className="text-success" href="https://www.google.com/maps/search/?api=1&query=kane+stadium+secaucus" target="_blank">Directions</a>)
         </address>
 
         <hr/>
 
-        <h3 className="text-warning">Gym Parking Lot</h3>
+        <h3 className="text-success title" style={{marginBottom: 0}}>Buchmuller Park</h3>
+        <p>
+          The baseball field in the heart of Secaucus will be the site for evening workouts from Monday to Friday.
+        </p>
+        <address>
+          Address: Buchmuller Park, Secaucus, NJ 07094
+          (<a className="text-success" href="https://www.google.com/maps/search/?api=1&query=buchmuller+park+secaucus" target="_blank">Directions</a>)
+        </address>
+
+        <hr/>
+
+        <h3 className="text-warning title" style={{marginBottom: 0}}>Gym Parking Lot</h3>
         <p>
           On Saturdays, we hold classes right outside of the CrossFit Secaucus gym, where we have access to additional training equipment.
         </p>
         <address>
           Address: 333 Meadowlands Pkwy, Secaucus, NJ 07094
-          (<a className="text-success" href="https://www.google.com/maps/dir//crossfit+secaucus/" target="_blank">Directions</a>)
+          (<a className="text-success" href="https://www.google.com/maps/search/?api=1&query=crossfit+secaucus" target="_blank">Directions</a>)
         </address>
 
       </div>
