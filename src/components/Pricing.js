@@ -103,15 +103,28 @@ class Pricing extends React.Component {
                         lastLine="Renews every 4 weeks"
                         color="info"
                        />
+                      <PricingOption
+                        label="Membership"
+                        buttonLabel="Purchase"
+                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40&prodId=163"
+                        unitPrice={200}
+                        unit="4-weeks"
+                        sessions={16}
+                        sessionName="class"
+                        sessionsName="classes"
+                        sessionPrice="12.50"
+                        description={null}
+                        lastLine="Renews every 4 weeks"
+                        color="info"
+                       />
                       <div className="text-center" style={{padding: `0 15px 50px`}}>
                         <p>
                           <strong>
                             Need more classes before the 4 weeks are over?
-                            Purchase extra credits at your locked-in rate of $15.
+                            Purchase extra credits at your per-class rate.
                           </strong>
                         </p>
                         <p style={{fontSize: `0.9rem`, padding: 0}}>
-                          3-month commitment required.
                           Automatic payments every 4 weeks until you cancel.
                           30-day cancellation policy applies.
                         </p>
@@ -131,7 +144,8 @@ class Pricing extends React.Component {
                         sessionPrice="19.90"
                         description={null}
                         lastLine="Valid for 3 months"
-                        color="warning"
+                        color="success"
+                        preferred
                       />
                     </div>
                   </div>

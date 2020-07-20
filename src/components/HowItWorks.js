@@ -44,9 +44,8 @@ const HowItworks = ({ heading }) => (
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>Membership (recommended)</strong>
           &mdash;
-          With a membership, you may attend 12 classes within a 4 week period.
-          Typically, our athletes attend 3 classes per week, but you may split
-          up your 12 classes any way you see fit between the 4 weeks.
+          With a membership, you may attend a set number of classes within a 4 week period.
+          You have the option between 12 and 16 classes, which is 3 and 4 classes per week respectively.
           The membership automatically renews every 4 weeks, until you cancel.
           No annual or long term contracts. 30 day cancelation notice required.
         </li>
