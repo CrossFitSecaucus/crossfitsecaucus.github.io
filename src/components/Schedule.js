@@ -43,31 +43,33 @@ const Schedule = ({ heading }) => (
                 <td>&nbsp;</td>
               </tr>
               <tr>
+                <td rowSpan="3">&nbsp;</td>
+                <td rowSpan="3">&nbsp;</td>
                 <td rowSpan="2">&nbsp;</td>
-                <td rowSpan="2">&nbsp;</td>
-                <td rowSpan="2">&nbsp;</td>
-                <td rowSpan="2">&nbsp;</td>
-                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="3">&nbsp;</td>
+                <td rowSpan="3">&nbsp;</td>
                 <td><strong>8:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
                 <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td rowSpan="3">&nbsp;</td>
+              </tr>
+              <tr>
                 <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td>&nbsp;</td>
               </tr>
               <tr>
                 <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td>&nbsp;</td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
               </tr>
             </tbody>
           </table>
@@ -87,10 +89,11 @@ const Schedule = ({ heading }) => (
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td rowSpan="2">&nbsp;</td>
+                <td>&nbsp;</td>
                 <td><strong>8:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-success">Buchmuller Park</span><br/>Wednesdays Only</td>
                 <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
               </tr>
               <tr>
@@ -98,7 +101,7 @@ const Schedule = ({ heading }) => (
                 <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span><br/>Except Wednesdays</td>
               </tr>
             </tbody>
           </table>
