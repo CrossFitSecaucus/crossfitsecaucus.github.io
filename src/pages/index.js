@@ -181,9 +181,9 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/athlete-3-center.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/athlete-3-left-outside.jpg" className="d-none d-lg-block" />
         <Tile url="/img/athletes-center-outside.jpg" />
-        <Tile url="/img/athlete-3-right.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/athlete-3-right-outside.jpg" className="d-none d-lg-block" />
       </div>
     </section>
 
@@ -199,21 +199,20 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="what-is-crossfit">
-      <WhatIsCrossFit heading={ <Heading>What is CrossFit</Heading> } />
+    <section id="how-it-works">
+      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
     </section>
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/athlete-5-right.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athlete-4-right.jpg" />
+        <Tile url="/img/athlete-5-right-outside.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/athlete-4-right-outside.jpg" />
         <Tile url="/img/athlete-6-right-outside.jpg" className="d-none d-lg-block" />
       </div>
     </section>
 
-
-    <section id="how-it-works">
-      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
+    <section id="what-is-crossfit">
+      <WhatIsCrossFit heading={ <Heading>What is CrossFit</Heading> } />
     </section>
 
     <section id="testimonials" className="section-image" style={{backgroundImage: "url('/img/testimonials-bg.jpg')"}}>
