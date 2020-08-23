@@ -150,6 +150,16 @@ const IndexPage = () => (
     </section>
 
     <section className="section">
+      <div className="container">
+        <div className="row">
+          <YouTubeRow className="col-md-4 ml-auto mr-auto">
+            <YouTube width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/wq8nHWup8lA?modestbranding=1&rel=0&showsearch=0&list=PLW9CE60yLAx5HY37zx4a5fqjfGa1YK_X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></YouTube>
+          </YouTubeRow>
+        </div>
+      </div>
+    </section>
+
+    <section className="section">
       <div className="row no-gutters">
         <Tile url="/img/athlete-5-right-outside.jpg" className="d-none d-lg-block" />
         <Tile url="/img/athlete-4-right-outside.jpg" />
@@ -204,16 +214,6 @@ const IndexPage = () => (
 
     <section id="testimonials" className="section-image" style={{backgroundImage: "url('/img/testimonials-bg.jpg')"}}>
       <Testimonials/>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <div className="row">
-          <YouTubeRow className="col-md-4 ml-auto mr-auto">
-            <YouTube width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/U-a3vMFRlLA?modestbranding=1&rel=0&showsearch=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></YouTube>
-          </YouTubeRow>
-        </div>
-      </div>
     </section>
 
     <section id="contact">
