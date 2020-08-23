@@ -7,20 +7,6 @@ const Schedule = ({ heading }) => (
       <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
         {heading}
 
-        <div className="alert alert-danger">
-          <div className="container">
-            <div className="alert-icon">
-              <i className="material-icons">error_outline</i>
-            </div>
-            <b>COVID19: </b>
-
-            Temporarily reduced schedule due to mandated restrictions.
-            All classes will be held outside to ensure the safety of our athletes.
-
-          </div>
-        </div>
-
-
         <div className="table-responsive d-none d-md-block">
           <table className="table table-bordered text-center">
             <thead>

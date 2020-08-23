@@ -146,22 +146,21 @@ const IndexPage = () => (
         <div className="col-md-10 ml-auto mr-auto">
           <h1 className="title text-center">OPEN FOR BUSINESS</h1>
         </div>
-        <div className="col-md-6 offset-md-3 ">
-
-          <div className="alert alert-warning">
-            <div className="alert-icon">
-              <i className="material-icons">error_outline</i>
-            </div>
-            <b>COVID19: </b>
-            <strong>
-            In compliance with the current requirements for gyms and fitness centers,
-            we are holding all classes outdoors.
-            </strong>
-          </div>
-        </div>
-
       </div>
     </section>
+
+    <section className="section">
+      <div className="row no-gutters">
+        <Tile url="/img/athlete-5-right-outside.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/athlete-4-right-outside.jpg" />
+        <Tile url="/img/athlete-6-right-outside.jpg" className="d-none d-lg-block" />
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
+    </section>
+
 
     <section className="section">
       <div className="row no-gutters">
@@ -196,18 +195,6 @@ const IndexPage = () => (
         <Tile url="/img/athlete-2-left-outside.jpg" className="d-none d-lg-block" />
         <Tile url="/img/athlete-2-center-outside.jpg" className="d-none d-lg-block" />
         <Tile url="/img/athlete-2-right-outside.jpg" />
-      </div>
-    </section>
-
-    <section id="how-it-works">
-      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
-    </section>
-
-    <section className="section">
-      <div className="row no-gutters">
-        <Tile url="/img/athlete-5-right-outside.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athlete-4-right-outside.jpg" />
-        <Tile url="/img/athlete-6-right-outside.jpg" className="d-none d-lg-block" />
       </div>
     </section>
 
