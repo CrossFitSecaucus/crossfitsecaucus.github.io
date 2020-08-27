@@ -80,15 +80,36 @@ const HowItworks = ({ heading }) => (
       </p>
       <ul className="fa-ul" style={{marginLeft: 10}}>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
-        <strong>"Mindbody Connect" app</strong>
+        <div>
+          <strong>"Mindbody" app</strong>
           &mdash;
           Quickly and easily manage your class sign-ups.
+          <div>
+          <a href="https://itunes.apple.com/us/app/crossfit-secaucus/id689501356" className="text-success">
+            Download iOS App
+          </a>
+          <br/>
+          <a href="https://play.google.com/store/apps/details?id=com.mindbodyonline.connect" className="text-info">
+            Download Android App
+          </a>
+          </div>
+        </div>
         </li>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>"CrossFit Secaucus" app</strong>
           &mdash;
           Get a sneak preview of the day's workout, so you know what extra equipment to pack
           (i.e. jump rope, running sneakers)
+          <div>
+          <a href="https://itunes.apple.com/us/app/crossfit-secaucus/id1447284609" className="text-success">
+            Download iOS App
+          </a>
+          <br/>
+          <a href="https://play.google.com/store/apps/details?id=com.rokatu.burpee" className="text-info">
+            Download Android App
+          </a>
+          </div>
+
         </li>
       </ul>
     </Step>
