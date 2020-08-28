@@ -29,33 +29,45 @@ const Schedule = ({ heading }) => (
                 <td>&nbsp;</td>
               </tr>
               <tr>
-                <td rowSpan="3">&nbsp;</td>
-                <td rowSpan="3">&nbsp;</td>
-                <td rowSpan="2">&nbsp;</td>
-                <td rowSpan="3">&nbsp;</td>
-                <td rowSpan="3">&nbsp;</td>
-                <td><strong>8:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
-              </tr>
-              <tr>
-                <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
-              </tr>
-              <tr>
-                <td><strong>5:45pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td rowSpan="3">&nbsp;</td>
-              </tr>
-              <tr>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-              </tr>
-              <tr>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
                 <td>&nbsp;</td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td><strong>8:00am</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+              </tr>
+              <tr>
+                <td><strong>9am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>9am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>9am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>9am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td><strong>9am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td rowSpan="2">&nbsp;</td>
+                <td><strong>10:00am</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+              </tr>
+              <tr>
+                <td rowSpan="3">&nbsp;</td>
+              </tr>
+              <tr>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+              </tr>
+              <tr>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
               </tr>
             </tbody>
           </table>
@@ -76,18 +88,22 @@ const Schedule = ({ heading }) => (
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td><strong>8:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
+                <td><strong>8:00am</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
               </tr>
               <tr>
-                <td><strong>5:45pm</strong><br/><span className="badge badge-success">Buchmuller Park</span><br/>Wednesdays Only</td>
-                <td><strong>10:00am</strong><br/><span className="badge badge-warning">Gym Parking Lot</span></td>
+                <td><strong>9:00am</strong><br/><span className="badge badge-info">Kane Stadium</span></td>
+                <td>&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>6:30pm</strong><br/><span className="badge badge-success">Buchmuller Park</span></td>
+                <td>&nbsp;</td>
+                <td><strong>10:00am</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+              </tr>
+              <tr>
+                <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
                 <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-success">Buchmuller Park</span><br/>Except Wednesdays</td>
+                <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
               </tr>
             </tbody>
           </table>
@@ -99,13 +115,7 @@ const Schedule = ({ heading }) => (
 
     <div className="row" id="classes">
       <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-        <h2>Outdoor Locations</h2>
-        <p className="text-muted">
-          While gyms and fitness facilities are mandated to be close,
-          classes will be held outdoors.
-        </p>
-
-        <hr/>
+        <h2>Locations</h2>
 
         <h3 className="text-info title" style={{marginBottom: 0}}>Kane Stadium</h3>
         <p>
@@ -119,20 +129,10 @@ const Schedule = ({ heading }) => (
 
         <hr/>
 
-        <h3 className="text-success title" style={{marginBottom: 0}}>Buchmuller Park</h3>
+        <h3 className="text-warning title" style={{marginBottom: 0}}>Inside Gym</h3>
         <p>
-          The baseball field in the heart of Secaucus will be the site for evening workouts from Monday to Friday.
-        </p>
-        <address>
-          Address: Buchmuller Park, Secaucus, NJ 07094
-          (<a className="text-success" href="https://www.google.com/maps/search/?api=1&query=buchmuller+park+secaucus" target="_blank">Directions</a>)
-        </address>
-
-        <hr/>
-
-        <h3 className="text-warning title" style={{marginBottom: 0}}>Gym Parking Lot</h3>
-        <p>
-          On Saturdays, we hold classes right outside of the CrossFit Secaucus gym, where we have access to additional training equipment.
+          As of September 1, 2020, we are holding indoor classes at the CrossFit Secaucus facility. <br/>
+          Limited class size. Spaced out training stations. <strong>Face coverings must be worn at all times.</strong>
         </p>
         <address>
           Address: 333 Meadowlands Pkwy, Secaucus, NJ 07094

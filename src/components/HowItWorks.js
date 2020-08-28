@@ -134,14 +134,6 @@ const HowItworks = ({ heading }) => (
         and you will feel accomplished for having
         championed the workout.
       </p>
-      <p className="text-warning">
-        <strong>
-          Classes will be held outdoors at Kane Stadium and
-          in front of the CrossFit Secaucus gym,
-          while gyms are not allowed to hold classes indoors.
-          See schedule below for details.
-        </strong>
-      </p>
     </Step>
    </div>
 )
