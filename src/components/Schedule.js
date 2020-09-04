@@ -53,7 +53,14 @@ const Schedule = ({ heading }) => (
                 <td><strong>10:00am</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
               </tr>
               <tr>
-                <td rowSpan="3">&nbsp;</td>
+                <td rowSpan="4">&nbsp;</td>
+              </tr>
+              <tr>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
               </tr>
               <tr>
                 <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
@@ -99,8 +106,11 @@ const Schedule = ({ heading }) => (
                 <td><strong>10:00am</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
               </tr>
               <tr>
+                <td><strong>5:45pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td rowSpan="3">&nbsp;</td>
+              </tr>
+              <tr>
                 <td><strong>6:30pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
-                <td rowSpan="2">&nbsp;</td>
               </tr>
               <tr>
                 <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
