@@ -74,7 +74,7 @@ const Schedule = ({ heading }) => (
                 <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
                 <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
                 <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
-                <td><strong>7:15pm</strong><br/><span className="badge badge-warning">Inside Gym</span></td>
+                <td>&nbsp;</td>
               </tr>
             </tbody>
           </table>
