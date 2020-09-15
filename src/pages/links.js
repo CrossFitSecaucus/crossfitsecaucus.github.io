@@ -2,16 +2,16 @@ import React from 'react'
 import { Helmet } from "react-helmet"
 import Link from 'gatsby-link'
 
-const Button = ({label, to, isExternal = false, style = 'primary'}) => (
+const Button = ({label, to, isExternal = false, color = 'primary'}) => (
   <div className="row" style={{margin: 15, width: '100%'}}>
     <div className="col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
       {
         isExternal ? (
-          <a href={to} className={`btn btn-${style} btn-lg btn-block`} style={{margin: 'auto'}}>
+          <a href={to} className={`btn btn-${color} btn-lg btn-block`} style={{margin: 'auto'}}>
             {label}<div className="ripple-container"></div>
           </a>
         ) : (
-          <Link to={to} className={`btn btn-${style} btn-lg btn-block`} style={{margin: 'auto'}}>
+          <Link to={to} className={`btn btn-${color} btn-lg btn-block`} style={{margin: 'auto'}}>
             {label}
           </Link>
         )
@@ -32,13 +32,17 @@ const LinksPage = () => (
       <meta property="og:image" content="https://crossfit-secaucus.com/img/athlete-3-center.jpg" />
     </Helmet>
 
+    <Button label="Face Masks" to="http://apparel.crossfit-secaucus.com/" isExternal color="danger" />
+    <p>
+      <hr/>
+    </p>
     <Button label="Schedule" to="/index.html#schedule" />
     <Button label="Pricing" to="/index.html#pricing" />
     <Button label="Contact Us" to="/index.html#contact" />
     <p>
       <hr/>
     </p>
-    <Button label="Mobile App" to="/app" style="info"/>
+    <Button label="Mobile App" to="/app" color="info"/>
   </main>
 )
 
