@@ -52,6 +52,7 @@ module.exports = class HTML extends React.Component {
           <script src="/js/core/bootstrap-material-design.min.js" type="text/javascript" />
 
           <script src="js/plugins/nouislider.min.js" type="text/javascript" />
+          <script src="js/plugins/jquery.flexisel.js" type="text/javascript" />
 
           <script src="/js/material-kit.js?v=2.0.3" type="text/javascript" />
 
