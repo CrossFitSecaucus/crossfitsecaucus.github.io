@@ -57,6 +57,10 @@ const ApparelPage = () => (
             <div className="col-md-6">
               <h2 className="title"> Vintage T-shirt </h2>
               <h3 className="main-price">$25</h3>
+              <p>
+                <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&catid=26&prodGroupId=10668" className="btn btn-success">Pre-Order<div class="ripple-container"></div></a>
+              </p>
+
               <div id="tshirtAccordion" role="tablist">
                 <div className="card card-collapse">
                   <div className="card-header" role="tab">
@@ -116,6 +120,9 @@ const ApparelPage = () => (
             <div className="col-md-6">
               <h2 className="title"> Pull-Over Hoodie </h2>
               <h3 className="main-price">$40</h3>
+              <p>
+                <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&catid=26&prodGroupId=10660" className="btn btn-success">Pre-Order<div class="ripple-container"></div></a>
+              </p>
               <div id="pullOverAccordion" role="tablist">
                 <div className="card card-collapse">
                   <div className="card-header" role="tab">
@@ -199,6 +206,9 @@ const ApparelPage = () => (
             <div className="col-md-6">
               <h2 className="title"> Zip-Up Hoodie </h2>
               <h3 className="main-price">$45</h3>
+              <p>
+                <a href="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&catid=26&prodGroupId=10664" className="btn btn-success">Pre-Order<div class="ripple-container"></div></a>
+              </p>
               <div id="zipUpAccordion" role="tablist">
                 <div className="card card-collapse">
                   <div className="card-header" role="tab">
