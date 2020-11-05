@@ -8,10 +8,6 @@
       "path---90-day-full-body-transformation-a0e39f21c11f6a62c5ab.js",
       "path---90-day-full-body-transformation-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---aparell": [
-      "path---aparell-a0e39f21c11f6a62c5ab.js",
-      "path---aparell-a0e39f21c11f6a62c5ab.js.map"
-    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-0e4a55564f5f38ab7ec9.js",
       "component---src-pages-index-js-0e4a55564f5f38ab7ec9.js.map"
@@ -56,10 +52,6 @@
       "path---we-hire-a0e39f21c11f6a62c5ab.js",
       "path---we-hire-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "component---src-pages-aparell-js": [
-      "component---src-pages-aparell-js-f0d337d7dcdaa22d0ce2.js",
-      "component---src-pages-aparell-js-f0d337d7dcdaa22d0ce2.js.map"
-    ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
@@ -84,6 +76,10 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-apparel-js": [
+      "component---src-pages-apparel-js-f3570e422662c0e826c6.js",
+      "component---src-pages-apparel-js-f3570e422662c0e826c6.js.map"
+    ],
     "component---src-pages-wod-js": [
       "component---src-pages-wod-js-bccde959e4f87d99280b.js",
       "component---src-pages-wod-js-bccde959e4f87d99280b.js.map"
@@ -105,8 +101,8 @@
       "component---src-pages-app-js-39a2ff60f267799be063.js.map"
     ],
     "app": [
-      "app-fa04a83e7e3f274b95d8.js",
-      "app-fa04a83e7e3f274b95d8.js.map"
+      "app-a4a7b6db25d31b965f1e.js",
+      "app-a4a7b6db25d31b965f1e.js.map"
     ],
     "path---links": [
       "path---links-a0e39f21c11f6a62c5ab.js",
@@ -127,6 +123,10 @@
     "path---wod": [
       "path---wod-a0e39f21c11f6a62c5ab.js",
       "path---wod-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---apparel": [
+      "path---apparel-a0e39f21c11f6a62c5ab.js",
+      "path---apparel-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---rental": [
       "path---rental-a0e39f21c11f6a62c5ab.js",
