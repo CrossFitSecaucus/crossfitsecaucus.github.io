@@ -34,7 +34,7 @@ const HowItworks = ({ heading }) => (
     <Step
       number="1"
       title="Purchase a Membership or Punch Card"
-      imageUrl="/img/group-class-outside.jpg"
+      imageUrl="/img/group-class-outside-1.jpg"
     >
       <p>
         So you have decided to start CrossFit with us.
@@ -44,10 +44,9 @@ const HowItworks = ({ heading }) => (
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>Membership (recommended)</strong>
           &mdash;
-          With a membership, you may attend a set number of classes within a 4 week period.
-          You have the option between 12 and 16 classes, which is 3 and 4 classes per week respectively.
-          The membership automatically renews every 4 weeks, until you cancel.
-          No annual or long term contracts. 30 day cancelation notice required.
+          With a membership, you receive 12 class credits, which can be used to reserve your spot in class within 4 weeks.
+          The membership automatically renews every 4 weeks or when your 12 classes are used up, whichever happens first.
+          No annual or long term contracts. 28 day cancelation notice required.
         </li>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>Punch Card</strong>

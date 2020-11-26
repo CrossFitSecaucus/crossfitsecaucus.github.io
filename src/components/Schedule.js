@@ -132,23 +132,6 @@ const Schedule = ({ heading }) => (
 
       </div>
     </div>
-
-    <div className="row" id="classes">
-      <div className="col-10 offset-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-        <h3 className="text-warning title" style={{marginBottom: 0}}>Location</h3>
-        <p>
-          As of September 1, 2020, we are holding indoor classes at the CrossFit Secaucus facility. <br/>
-          For the safety of our athletes, we strictly follow the guidelines for sanitizing, 25% capacity and face coverings. <br/>
-          Furthermore, during class each athlete has their own properly-spaced workout station with their own
-          equipment and EPA-certified sanitizing wipes for their convenience.<br/>
-        </p>
-        <address>
-          Address: 333 Meadowlands Pkwy, Secaucus, NJ 07094
-          (<a className="text-success" href="https://www.google.com/maps/search/?api=1&query=crossfit+secaucus" target="_blank">Directions</a>)
-        </address>
-
-      </div>
-    </div>
   </div>
 )
 

@@ -10,6 +10,8 @@ import Schedule from '../components/Schedule'
 import Pricing from '../components/Pricing'
 import ContactSection from '../components/ContactSection'
 import Testimonials from '../components/Testimonials'
+import Offerings from '../components/Offerings'
+import Safety from '../components/Safety'
 
 const Quote = styled.div`
   padding: 0.7em;
@@ -142,21 +144,7 @@ const IndexPage = () => (
     </Helmet>
 
     <section className="section section-basic">
-      <div className="row no-gutters">
-        <div className="col-md-10 ml-auto mr-auto">
-          <h1 className="title text-center">OPEN FOR BUSINESS</h1>
-        </div>
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <div className="row">
-          <YouTubeRow className="col-md-4 ml-auto mr-auto">
-            <YouTube width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/wq8nHWup8lA?modestbranding=1&rel=0&showsearch=0&list=PLW9CE60yLAx5HY37zx4a5fqjfGa1YK_X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></YouTube>
-          </YouTubeRow>
-        </div>
-      </div>
+      <Offerings />
     </section>
 
     <section className="section">
@@ -168,7 +156,7 @@ const IndexPage = () => (
     </section>
 
     <section id="how-it-works">
-      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
+      <HowItWorks heading={ <Heading>Getting Started with Group Classes</Heading> } />
     </section>
 
 
@@ -200,11 +188,25 @@ const IndexPage = () => (
       <Schedule heading={ <Heading>Schedule</Heading> } />
     </section>
 
+    <section id="safety" style={{paddingTop: 50}}>
+      <Safety heading={ <Heading>COVID-19 Safety Protocol</Heading> } />
+    </section>
+
     <section className="section">
       <div className="row no-gutters">
         <Tile url="/img/athlete-2-left-outside.jpg" className="d-none d-lg-block" />
         <Tile url="/img/athlete-2-center-outside.jpg" className="d-none d-lg-block" />
         <Tile url="/img/athlete-2-right-outside.jpg" />
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="container">
+        <div className="row">
+          <YouTubeRow className="col-md-4 ml-auto mr-auto">
+            <YouTube width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/wq8nHWup8lA?modestbranding=1&rel=0&showsearch=0&list=PLW9CE60yLAx5HY37zx4a5fqjfGa1YK_X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></YouTube>
+          </YouTubeRow>
+        </div>
       </div>
     </section>
 
