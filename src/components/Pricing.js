@@ -140,7 +140,7 @@ class Pricing extends React.Component {
 
               <hr style={{padding: 25}}/>
 
-              <h2 className="text-center">At-Home Workouts</h2>
+              <h2 id="pricing-at-home-workouts" className="text-center">At-Home Workouts</h2>
               <div className="row">
                 <div className="col-sm-12">
                   <p id="group-classes" className="text-center">
@@ -178,7 +178,7 @@ class Pricing extends React.Component {
 
               <hr style={{padding: 25}}/>
 
-              <h2 className="text-center">Personal Training</h2>
+              <h2 id="pricing-personal-training" className="text-center">Personal Training</h2>
               <div className="row">
                 <div className="col-sm-12">
                   <p id="group-classes" className="text-center">

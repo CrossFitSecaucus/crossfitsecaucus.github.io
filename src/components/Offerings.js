@@ -13,11 +13,11 @@ const Offerings = ({ heading }) => (
         <div className="row">
             <div className="col-md-4">
                 <div className="card card-plain">
-                    <a href="http://www.creative-tim.com/product/material-kit" target="_blank">
+                    <Link to="/index.html#pricing-at-home-workouts">
                         <div className="card-header card-header-image">
                             <img src="/img/offerings/at-home-workouts-offering.jpg" />
                         <div className="colored-shadow" style={{ backgroundImage: 'url(/img/offerings/at-home-workouts-offering.jpg)', opacity: 1}}></div></div>
-                    </a>
+                    </Link>
                     <div className="card-body ">
                         <a href="http://www.creative-tim.com/product/material-kit" target="_blank">
                             <h4 className="card-title">At-Home Workouts</h4>
@@ -37,11 +37,11 @@ const Offerings = ({ heading }) => (
             </div>
             <div className="col-md-4">
                 <div className="card card-plain">
-                    <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank">
+                    <Link to="/index.html#pricing">
                         <div className="card-header card-header-image">
                             <img src="/img/offerings/group-class-offering.jpg" />
                         <div className="colored-shadow" style={{ backgroundImage: 'url(/img/offerings/group-class-offering.jpg)', opacity: 1}}></div></div>
-                    </a>
+                    </Link>
                     <div className="card-body ">
                         <a href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro" target="_blank">
                             <h4 className="card-title">CrossFit Group Classes</h4>
@@ -59,11 +59,11 @@ const Offerings = ({ heading }) => (
             </div>
             <div className="col-md-4">
                 <div className="card card-plain">
-                    <a href="http://www.creative-tim.com/product/get-shit-done-pro" target="_blank">
+                    <Link to="/index.html#pricing-personal-training">
                         <div className="card-header card-header-image">
                             <img src="/img/offerings/personal-training-offering.jpg" />
                         <div className="colored-shadow" style={{ backgroundImage: 'url(/img/offerings/personal-training-offering.jpg)', opacity: 1}}></div></div>
-                    </a>
+                    </Link>
                     <div className="card-body ">
                         <a href="http://www.creative-tim.com/product/get-shit-done-pro" target="_blank">
                             <h4 className="card-title">Personal Training</h4>
