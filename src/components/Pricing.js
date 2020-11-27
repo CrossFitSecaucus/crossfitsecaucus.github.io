@@ -155,8 +155,8 @@ class Pricing extends React.Component {
                         unitPrice={79}
                         unit="renewal"
                         sessions="unlimited"
-                        sessionName="class"
-                        sessionsName="classes"
+                        sessionName="workout"
+                        sessionsName="workouts"
                         sessionPrice={3.95}
                         description="includes equipment package"
                         lastLine="Renews every 4 weeks"
