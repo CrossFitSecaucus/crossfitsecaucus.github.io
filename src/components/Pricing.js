@@ -161,7 +161,7 @@ class Pricing extends React.Component {
                         description="includes equipment package"
                         lastLine="Renews every 4 weeks"
                         color="warning"
-                        badge="Black Friday Special"
+                        badge="Limited Time Special"
                         discountedFromPrice={159}
                         preferred
                        />
