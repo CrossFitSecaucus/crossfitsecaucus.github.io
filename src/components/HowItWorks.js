@@ -34,7 +34,7 @@ const HowItworks = ({ heading }) => (
     <Step
       number="1"
       title="Purchase a Membership or Punch Card"
-      imageUrl="/img/group-class-outside-1.jpg"
+      imageUrl="/img/group-class.jpg"
     >
       <p>
         So you have decided to start CrossFit with us.

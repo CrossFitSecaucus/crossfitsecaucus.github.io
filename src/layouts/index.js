@@ -9,9 +9,14 @@ import './index.scss'
 import styled from 'styled-components';
 
 const Cover = styled.div`
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/img/cover-outside.jpg");
+  /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/img/cover-outside.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  */
+
+  background-color #ff9900;
+  background-image linear-gradient(315deg, #ff6600 0%, #ff9900 74%);
+
   height: 70px;
 
   @media (min-width: 768px) {

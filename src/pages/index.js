@@ -149,9 +149,9 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/athlete-5-right-outside.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athlete-4-right-outside.jpg" />
-        <Tile url="/img/athlete-6-right-outside.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-1/1-1.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-1/1-2.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-1/1-3.jpg" />
       </div>
     </section>
 
@@ -159,16 +159,11 @@ const IndexPage = () => (
       <HowItWorks heading={ <Heading>Getting Started with Group Classes</Heading> } />
     </section>
 
-
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/athlete-left-outside.jpg" className="d-sm-none d-lg-block"/>
-        <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
-          <Quote>
-            It's time to get your <strong>training routine</strong> kick-started again with safety in mind.
-          </Quote>
-        </Tile>
-        <Tile url="/img/athlete-right-outside.jpg" />
+        <Tile url="/img/indoors/row-2/2-1.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-2/2-2.jpg" />
+        <Tile url="/img/indoors/row-2/2-3.jpg" className="d-none d-lg-block" />
       </div>
     </section>
 
@@ -178,9 +173,9 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/athlete-3-left-outside.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athletes-center-outside.jpg" />
-        <Tile url="/img/athlete-3-right-outside.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-4/4-1.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-4/4-2.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-4/4-3.jpg" />
       </div>
     </section>
 
@@ -194,9 +189,13 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/athlete-2-left-outside.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athlete-2-center-outside.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/athlete-2-right-outside.jpg" />
+        <Tile url="/img/indoors/row-3/3-1.jpg" className="d-sm-none d-lg-block"/>
+        <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
+          <Quote>
+            It's time to get your <strong>training routine</strong> kick-started again with safety in mind.
+          </Quote>
+        </Tile>
+        <Tile url="/img/indoors/row-3/3-3.jpg" />
       </div>
     </section>
 
