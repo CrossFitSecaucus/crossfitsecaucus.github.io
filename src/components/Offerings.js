@@ -11,28 +11,6 @@ const Offerings = ({ heading }) => (
     </div>
     <div className="row">
         <div className="col-md-4">
-            <div className="card card-blog bg-success">
-                <Link to="/index.html#pricing-at-home-workouts">
-                    <div className="card-header card-header-image">
-                        <img src="/img/offerings/at-home-workouts-offering.jpg" />
-                    </div>
-                </Link>
-                <div className="card-body">
-                    <h3 className="card-title">At-Home Workouts</h3>
-                    <h6 className="card-category">Make Your Own Schedule</h6>
-                    <p>
-                      Pick up your <em>CrossFit At-Home Kit</em> and perform the daily workout at home when it suits you.
-                      This option is ideal for beginners and advanced athletes alike.
-                    </p>
-                    <p>
-                      <strong>
-                        The At-Home workouts are by no means "watered down", so be ready to sweat.
-                      </strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div className="col-md-4">
             <div className="card card-blog bg-warning">
                 <Link to="/index.html#pricing">
                     <div className="card-header card-header-image">
@@ -65,6 +43,28 @@ const Offerings = ({ heading }) => (
                     <p>
                       <strong>
                         Personal training will be your fastest option to reach your fitness and physique goals.
+                      </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div className="col-md-4">
+            <div className="card card-blog bg-success">
+                <Link to="/index.html#pricing-at-home-workouts">
+                    <div className="card-header card-header-image">
+                        <img src="/img/offerings/at-home-workouts-offering.jpg" />
+                    </div>
+                </Link>
+                <div className="card-body">
+                    <h3 className="card-title">At-Home Workouts</h3>
+                    <h6 className="card-category">Make Your Own Schedule</h6>
+                    <p>
+                      Pick up your <em>CrossFit At-Home Kit</em> and perform the daily workout at home when it suits you.
+                      This option is ideal for beginners and advanced athletes alike.
+                    </p>
+                    <p>
+                      <strong>
+                        The At-Home workouts are by no means "watered down", so be ready to sweat.
                       </strong>
                     </p>
                 </div>
