@@ -161,8 +161,8 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/indoors/row-2/2-1.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/indoors/row-2/2-2.jpg" />
+        <Tile url="/img/indoors/row-2/2-1.jpg" />
+        <Tile url="/img/indoors/row-2/2-2.jpg" className="d-none d-lg-block" />
         <Tile url="/img/indoors/row-2/2-3.jpg" className="d-none d-lg-block" />
       </div>
     </section>
@@ -173,9 +173,9 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/indoors/row-4/4-1.jpg" className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-4/4-1.jpg" />
         <Tile url="/img/indoors/row-4/4-2.jpg" className="d-none d-lg-block" />
-        <Tile url="/img/indoors/row-4/4-3.jpg" />
+        <Tile url="/img/indoors/row-4/4-3.jpg" className="d-none d-lg-block" />
       </div>
     </section>
 
@@ -189,13 +189,13 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/indoors/row-3/3-1.jpg" className="d-sm-none d-lg-block"/>
+        <Tile url="/img/indoors/row-3/3-1.jpg" />
         <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
           <Quote>
             It's time to get your <strong>training routine</strong> kick-started again with safety in mind.
           </Quote>
         </Tile>
-        <Tile url="/img/indoors/row-3/3-3.jpg" />
+        <Tile url="/img/indoors/row-3/3-3.jpg" className="d-sm-none d-lg-block" />
       </div>
     </section>
 
