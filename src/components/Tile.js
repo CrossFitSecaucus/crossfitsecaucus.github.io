@@ -21,13 +21,13 @@ const Container = styled.div`
   }
 `
 
-const Tile = ({children, className, style, url, columnCount}) => {
+const Tile = ({children, className, style, url, columnCount, backgroundYPosition = 50}) => {
   style = style || {};
 
   if (url) {
     style.background = `url('${url}')`;
     style.backgroundSize = 'cover';
-    style.backgroundPosition = 'center center';
+    style.backgroundPosition = `center ${backgroundYPosition}%`;
     style.width = '100%';
   }
 
