@@ -27,11 +27,6 @@ const Footer = ({ children }) => (
               Service Agreement
             </Link>
           </li>
-          <li>
-            <Link to="/we-hire">
-              We're Hiring
-            </Link>
-          </li>
         </ul>
         <div className="copyright float-center">
           © {new Date().getFullYear()} Strength &amp; Conditioning Outlet, llc

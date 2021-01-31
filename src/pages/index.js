@@ -143,11 +143,7 @@ const IndexPage = () => (
       </script>
     </Helmet>
 
-    <section className="section section-basic">
-      <Offerings />
-    </section>
-
-    <section className="section">
+    <section>
       <div className="row no-gutters">
         <Tile url="/img/indoors/row-1/1-1.jpg" className="d-none d-lg-block" />
         <Tile url="/img/indoors/row-1/1-2.jpg" className="d-none d-lg-block" />
@@ -156,7 +152,7 @@ const IndexPage = () => (
     </section>
 
     <section id="how-it-works">
-      <HowItWorks heading={ <Heading>Getting Started with Group Classes</Heading> } />
+      <HowItWorks heading={ <Heading>How to Get Started</Heading> } />
     </section>
 
     <section className="section">

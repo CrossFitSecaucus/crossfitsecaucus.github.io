@@ -33,38 +33,34 @@ const HowItworks = ({ heading }) => (
     {heading}
     <Step
       number="1"
-      title="Purchase a Membership or Punch Card"
-      imageUrl="/img/group-class.jpg"
+      title="Get Your Membership or Punch Card"
+      imageUrl="/img/group-class-2-outside.jpg"
     >
-      <p>
-        So you have decided to start CrossFit with us.
-        Select a pricing option that best suits your needs.
-      </p>
       <ul className="fa-ul" style={{marginLeft: 10}}>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>Membership (recommended)</strong>
           &mdash;
-          With a membership, you receive 12 class credits, which can be used to reserve your spot in class within 4 weeks.
+          With a membership, you receive 12 class credits, which can be used to reserve your spot in class.
           The membership automatically renews every 4 weeks or when your 12 classes are used up, whichever happens first.
-          No annual or long term contracts. 28 day cancelation notice required.
+          <span className="text-muted"> No annual or long term contracts. 28 day cancelation notice required.</span>
         </li>
         <li><span className="fa-li"><i className="material-icons text-success">done</i></span>
         <strong>Punch Card</strong>
           &mdash;
-          A punch card is valid for 3 months or until all classes are used up,
-          and it does not automatically renew.
+          A punch card includes 10 class credits and is valid for 3 months or until all classes are used up.
+          It does not automatically renew.
         </li>
       </ul>
       <p>
         <Link to="/#pricing" className="text-info">
           <strong>
-            View more details about our pricing options.
+            View Pricing Information
           </strong>
         </Link>
       </p>
       <p>
         If you are unsure what's best for you, we'll gladly give you a recommendation
-        based on your fitness goals. Call us at 201-503-6326 for a chat.
+        based on your fitness goals. Call us at 201-503-6326.
       </p>
     </Step>
 
@@ -116,22 +112,22 @@ const HowItworks = ({ heading }) => (
     <Step
       number="3"
       title="Attend Your First Workout"
-      imageUrl="/img/group-class-2-outside.jpg"
+      imageUrl="/img/group-class.jpg"
     >
       <p>
-        It's finally here! Your first workout. Be sure to book yourself
-        for the desired class time in the <em>Mindbody Connect</em> app
-        and arrive at least 10 minutes before class start.
-      </p>
-      <p>
-        Your trainer will know that it's your first day
-        and help you get settled in.
+        Book your prefered class time via the <em>Mindbody Connect</em> app
+        and arrive at least 5 minutes before class start.
       </p>
       <p>
         No need to be nervous.
-        The workout will be the right amount of difficult,
-        and you will feel accomplished for having
-        championed the workout.
+        Your trainer will know that it's your first day and help you get settled in.
+      </p>
+      <p>
+        Many of our athletes have never done CrossFit before or were new to fitness,
+        and are now hooked because of the attentive trainering staff and rewarding workout experience.
+      </p>
+      <p>
+        See you in class soon!
       </p>
     </Step>
    </div>

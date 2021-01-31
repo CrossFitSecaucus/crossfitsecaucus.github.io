@@ -137,45 +137,6 @@ class Pricing extends React.Component {
                 </div>
               </div>
 
-
-              <hr style={{padding: 25}}/>
-
-              <h2 id="pricing-at-home-workouts" className="text-center">At-Home Workouts</h2>
-              <div className="row">
-                <div className="col-sm-12">
-                  <p id="group-classes" className="text-center">
-                    Get a <em>CrossFit At-Home Kit</em> from us, so you can do our workouts at home.
-                  </p>
-                  <div className="row">
-                    <div className="offset-md-3 col-md-6 offset-lg-4 col-lg-4">
-                      <PricingOption
-                        label="Membership"
-                        buttonLabel="Purchase"
-                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=43&catid=100016&prodGroupId=10686"
-                        unitPrice={79}
-                        unit="renewal"
-                        sessions="unlimited"
-                        sessionName="workout"
-                        sessionsName="workouts"
-                        sessionPrice={3.95}
-                        description="includes equipment package"
-                        lastLine="Renews every 4 weeks"
-                        color="warning"
-                        badge="Limited Time Special"
-                        discountedFromPrice={159}
-                        preferred
-                       />
-                      <div className="text-center" style={{padding: `0 15px 50px`}}>
-                        <p style={{fontSize: `0.9rem`, padding: 0}}>
-                          After signing up, we will contact you to schedule your equipment pick-up.<br/>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
               <hr style={{padding: 25}}/>
 
               <h2 id="pricing-personal-training" className="text-center">Personal Training</h2>
