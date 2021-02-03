@@ -1,8 +1,164 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import Recaptcha from './Recaptcha';
+
+class Membership extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      recaptcha: null,
+      recaptchaComplete: false,
+      inflight: false,
+      done: false,
+    };
+  }
+
+  render() {
+    const {firstName, lastName, email, phone, inflight, done, recaptcha, recaptchaComplete}  = this.state;
+    const formValid = recaptchaComplete && firstName.length > 1 && lastName.length > 1 && /^[^@]+@[^@]+$/.test(email) && phone.length >= 12;
+
+    return (
+      <div className="rotating-card-container manual-flip" style={{height: 520}}>
+        <div className="card card-rotate card-pricing">
+            <div className="front" style={{height: 520}}>
+                <div className="card-body" style={{justifyContent: 'space-between'}}>
+                  <h6 className="card-category text-success text-capitalized" style={{fontSize: `1rem`}}>Membership</h6>
+                  <div>
+                    <h4 className="card-title" style={{padding: `0 15px`}}>
+                      The membership is the most cost-effective option,
+                      and it is flexible enough to support even the most unpredictable schedule.
+                    </h4>
+                    <p className="card-description">
+                      Send us a request for more information, and we'll immediately email you pricing options for the membership option.
+                    </p>
+                  </div>
+                  <div className="stats text-center">
+                    <button type="button" name="button" className="btn btn-primary btn-fill btn-round btn-rotate">
+                      Request Pricing
+                    <div className="ripple-container"></div></button>
+                  </div>
+                </div>
+            </div>
+            <div className="back" style={{height: 520}}>
+              { done ? (
+                <div className="card-body">
+                  <h4 className="card-title">
+                      Request Sent!
+                  </h4>
+                  <p className="card-description">
+                    Check your inbox (and spam folder) now.
+                  </p>
+
+                </div>
+              ) : (
+                <div className="card-body">
+                    <h4 className="card-title">
+                        Request Pricing Information
+                    </h4>
+
+                    <form id="price-request-form" method="post">
+                      <div className="row">
+                        <div className="col-md-6">
+                          <div className={`label-floating is-filled bmd-form-group`}>
+                            <label className="bmd-label-floating" style={{left: 0}}>First name</label>
+                            <input type="text" name="name" className="form-control" value={firstName} onChange={e => this.setState({firstName: e.target.value})} disabled={inflight} />
+                            <span className="material-input"></span>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className={`label-floating is-filled bmd-form-group`}>
+                            <label className="bmd-label-floating" style={{left: 0}}>Last name</label>
+                            <input type="text" name="name" className="form-control" value={lastName} onChange={e => this.setState({lastName: e.target.value})} disabled={inflight} />
+                            <span className="material-input"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className={`label-floating is-filled bmd-form-group`}>
+                        <label className="bmd-label-floating" style={{left: 0}}>Email address</label>
+                        <input type="text" name="email" className="form-control" value={email} onChange={e => this.setState({email: e.target.value})} disabled={inflight} />
+                        <span className="material-input"></span>
+                      </div>
+                      <div className={`label-floating is-filled bmd-form-group`}>
+                        <label className="bmd-label-floating" style={{left: 0}}>Phone number</label>
+                        <input
+                          type="text"
+                          name="phone"
+                          className="form-control"
+                          value={phone}
+                          onChange={e => {
+                            let p = e.target.value.replace(/\D+/g, '');
+                            let phoneNumber = null;
+                            if (p.length > 0) {
+                              const matches = /(\d{3})?(\d{3})?(\d+)?/.exec(p);
+                              phoneNumber = matches[0].length === 12 ? p : null;
+                              p = matches.slice(1).filter(v => typeof v !== 'undefined').join(' ');
+                            }
+                            this.setState({phone: p});
+                          }}
+                          disabled={inflight}
+                        />
+                        <span className="material-input"></span>
+                      </div>
+                      <div className="row bmd-form-group">
+                        <Recaptcha
+                          formVersion={0}
+                          id="g-recaptcha-price-request"
+                          sitekey="6LcNJmUUAAAAAKJXj6v238WrsmD-Nf4au_XKmxF3"
+                          onRecaptchaChange={r => {
+                            this.setState({
+                              recaptcha: r,
+                              recaptchaComplete: r !== null
+                            });
+                          }} />
+                      </div>
+
+                      <button
+                        type="submit"
+                        className="btn btn-primary btn-round"
+                        disabled={!formValid || inflight}
+                        onClick={e => {
+                          e.preventDefault();
+                          this.setState({ inflight: true });
+                          $.ajax({
+                            type: "POST",
+                            url: 'https://us-central1-cs-site-209414.cloudfunctions.net/priceRequest',
+                            data: JSON.stringify({firstName, lastName, email, phone, recaptcha}),
+                            success: response => {
+                              this.setState({done: true});
+                            },
+                            dataType: 'json',
+                            contentType: 'application/json',
+                          }).fail(({responseJSON}) => {
+                            alert(responseJSON.message);
+                          })
+                          .always(() => this.setState({ inflight: false }));
+                        }}
+                      >
+                        {inflight ? 'Sending ...' : 'Send Request'}
+                      </button>
+                    </form>
+
+                    <button type="button" name="button" className="btn btn-link btn-round btn-rotate">
+                        <i className="material-icons">refresh</i> Back
+                    <div className="ripple-container"></div></button>
+                </div>
+              )}
+
+            </div>
+        </div>
+      </div>
+    );
+  }
+}
+
 const PricingOption = ({label, url, unitPrice, discountedFromPrice, unit, sessions, sessionPrice, sessionName, sessionsName, description, lastLine, buttonLabel, color, badge, preferred}) => (
-  <div className={`card card-pricing card-plain card-raised ${preferred ? 'bg-' + color : ''}`}>
+  <div className={`card card-pricing ${preferred ? 'bg-' + color : ''}`}>
       <div className="card-body">
           <h6 className="card-category text-success text-capitalized" style={{fontSize: `1rem`}}>{label}</h6>
           <h1 className="card-title">
@@ -61,19 +217,22 @@ class Pricing extends React.Component {
     }
   }
 
+
   render() {
+    const compactMode = true;
+
     return (
       <div className="container">
 
               <h1 className="title text-center">
-                  PRICING
+                PRICING
               </h1>
 
-              <h2 className="text-center">CrossFit Group Classes</h2>
+              { !compactMode && <h2 className="text-center">CrossFit Group Classes</h2> }
               <div className="row">
                 <div className="col-sm-12">
                   <p id="group-classes" className="text-center">
-                    Whether you are ready to commit or if you want to keep it casual,
+                    Whether you are ready to commit to a <strong>membership</strong> or if you want to keep it casual with a <strong>punch card</strong>,
                     we have both options for you.
                   </p>
                   <div className="row">
@@ -93,26 +252,7 @@ class Pricing extends React.Component {
                       />
                     </div>
                     <div className="col-md-6 col-lg-4">
-                      <PricingOption
-                        label="Membership"
-                        buttonLabel="Purchase"
-                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40&prodId=168"
-                        unitPrice={180}
-                        unit="renewal"
-                        sessions={12}
-                        sessionName="class"
-                        sessionsName="classes"
-                        sessionPrice={15}
-                        description={null}
-                        lastLine="Renews every 4 weeks or when all credits are used"
-                        color="info"
-                       />
-                      <div className="text-center" style={{padding: `0 15px 50px`}}>
-                        <p style={{fontSize: `0.9rem`, padding: 0}}>
-                          Automatic payments every 4 weeks until you cancel.
-                          28-day cancellation policy applies.
-                        </p>
-                      </div>
+                      <Membership />
                     </div>
 
                     <div className="col-md-6 col-lg-4">
@@ -137,8 +277,8 @@ class Pricing extends React.Component {
                 </div>
               </div>
 
+              {!compactMode && (<span>
               <hr style={{padding: 25}}/>
-
               <h2 id="pricing-personal-training" className="text-center">Personal Training</h2>
               <div className="row">
                 <div className="col-sm-12">
@@ -183,7 +323,7 @@ class Pricing extends React.Component {
 
                 </div>
               </div>
-
+              </span>)}
 
           </div>
     );
