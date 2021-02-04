@@ -24,28 +24,32 @@ class Membership extends React.Component {
     const formValid = recaptchaComplete && firstName.length > 1 && lastName.length > 1 && /^[^@]+@[^@]+$/.test(email) && phone.length >= 12;
 
     return (
-      <div className="rotating-card-container manual-flip" style={{height: 520}}>
+      <div className="rotating-card-container manual-flip" style={{height: 550}}>
         <div className="card card-rotate card-pricing">
-            <div className="front" style={{height: 520}}>
+            <div className="front" style={{height: 550}}>
                 <div className="card-body" style={{justifyContent: 'space-between'}}>
                   <h6 className="card-category text-success text-capitalized" style={{fontSize: `1rem`}}>Membership</h6>
                   <div>
                     <h4 className="card-title" style={{padding: `0 15px`}}>
-                      The membership is the most cost-effective option,
-                      and it is flexible enough to support even the most unpredictable schedule.
+                      The membership is the most popular and cost-effective choice,
+                      to get access to the CrossFit group classes.<br/><br/>
+                      It offers enough flexible to support even the most unpredictable schedule.
                     </h4>
                     <p className="card-description">
-                      Send us a request for more information, and we'll immediately email you pricing options for the membership option.
+                      Send us a request for more information, and we'll immediately email you pricing options for the membership.
                     </p>
                   </div>
                   <div className="stats text-center">
                     <button type="button" name="button" className="btn btn-primary btn-fill btn-round btn-rotate">
                       Request Pricing
                     <div className="ripple-container"></div></button>
+                  <ul>
+                    <li>Get membership pricing instantly!</li>
+                  </ul>
                   </div>
                 </div>
             </div>
-            <div className="back" style={{height: 520}}>
+            <div className="back" style={{height: 550}}>
               { done ? (
                 <div className="card-body">
                   <h4 className="card-title">

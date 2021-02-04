@@ -77,10 +77,9 @@ exports.priceRequest = (req, res) => {
           from: 'CrossFit Secaucus <trainers@crossfit-secaucus.com>',
           subject: 'Membership Pricing',
           templateId: 'd-5b25bc80f4ed4723a6515539b6c7d89a',
-          substitutions: {
+          dynamic_template_data: {
             firstName: firstName || '',
           },
-          substitutionWrappers: ['{{', '}}'],
         };
 
         return sendgrid.send(message);
