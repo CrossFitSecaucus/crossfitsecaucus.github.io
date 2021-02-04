@@ -191,7 +191,7 @@ const IndexPage = () => (
             It's time to get your <strong>training routine</strong> kick-started again with safety in mind.
           </Quote>
         </Tile>
-        <Tile url="/img/indoors/row-3/3-3.jpg" backgroundYPosition={30} className="d-sm-none d-lg-block" />
+        <Tile url="/img/indoors/row-3/3-3.jpg" backgroundYPosition={10} className="d-sm-none d-lg-block" />
       </div>
     </section>
 
