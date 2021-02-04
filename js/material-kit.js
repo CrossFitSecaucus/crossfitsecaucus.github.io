@@ -74,16 +74,16 @@ $(document).ready(function() {
             var a = $(this),
                 b = $(this).parent().width(),
                 c = $(this).find('.front .card-body').outerHeight();
-            a.parent().css({
-                height: c + 'px',
-                "margin-bottom": '30px'
-            }), a.find('.front').css({
-                height: c + 35 + 'px',
-                width: b + 'px'
-            }), a.find('.back').css({
-                height: c + 35 + 'px',
-                width: b + 'px'
-            })
+            // a.parent().css({
+            //     height: c + 'px',
+            //     "margin-bottom": '30px'
+            // }), a.find('.front').css({
+            //     height: c + 35 + 'px',
+            //     width: b + 'px'
+            // }), a.find('.back').css({
+            //     height: c + 35 + 'px',
+            //     width: b + 'px'
+            // })
         })
     }, 50),
     checkScrollForTransparentNavbar: debounce(function() {
