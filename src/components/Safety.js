@@ -15,9 +15,9 @@ const Safety = ({ heading }) => (
 
         <h3>Arriving to Class</h3>
         <p>
-          Reserve your class spot no later then 30 minutes before it starts. You may enter the facility 5 minutes prior to class time.
-          A <strong className="text-success">green light</strong> next to the entrace will indicate that we're ready to welcome you into the gym and take your temperature.
-          If the light is off or <strong className="text-danger">red</strong>, please patiently wait outside or in the warm comfort of your car.
+          Reserve your class spot no later than 30 minutes before it starts. You may enter the facility 5 minutes prior to class time.
+          A <strong className="text-success">green light</strong> next to the entrance will indicate that we're ready to welcome you into the gym and take your temperature.
+          If the light is off or <strong className="text-danger">red</strong>, please patiently wait outside or in the comfort of your car.
         </p>
         <p>
           Upon entering the facility, you will have the option to change into your gym sneakers and hang your jacket on a rack.
