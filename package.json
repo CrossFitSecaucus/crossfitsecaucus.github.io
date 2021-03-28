@@ -10,7 +10,6 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "moment": "^2.22.2",
-    "node-sass": "^4.11.0",
     "react-helmet": "^5.2.0",
     "styled-components": "^3.2.6",
     "whatwg-fetch": "^3.0.0"
@@ -30,6 +29,8 @@
   "devDependencies": {
     "gatsby-plugin-sass": "^1.0.26",
     "gh-pages": "^1.1.0",
-    "prettier": "^1.12.0"
+    "prettier": "^1.12.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^4.1.1"
   }
 }
