@@ -63,24 +63,24 @@ const Schedule = ({ heading }) => (
                 <td rowSpan="4">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>5:45 pm</strong></td>
-                <td><strong>5:45 pm</strong></td>
-                <td><strong>5:45 pm</strong></td>
-                <td><strong>5:45 pm</strong></td>
-                <td><strong>5:45 pm</strong></td>
+                <td><strong>5:15 pm</strong></td>
+                <td><strong>5:15 pm</strong></td>
+                <td><strong>5:15 pm</strong></td>
+                <td><strong>5:15 pm</strong></td>
+                <td><strong>5:15 pm</strong></td>
               </tr>
               <tr>
-                <td><strong>6:30 pm</strong></td>
-                <td><strong>6:30 pm</strong></td>
-                <td><strong>6:30 pm</strong></td>
-                <td><strong>6:30 pm</strong></td>
-                <td><strong>6:30 pm</strong></td>
+                <td><strong>6:00 pm</strong></td>
+                <td><strong>6:00 pm</strong></td>
+                <td><strong>6:00 pm</strong></td>
+                <td><strong>6:00 pm</strong></td>
+                <td><strong>6:00 pm</strong></td>
               </tr>
               <tr>
-                <td><strong>7:15 pm</strong></td>
-                <td><strong>7:15 pm</strong></td>
-                <td><strong>7:15 pm</strong></td>
-                <td><strong>7:15 pm</strong></td>
+                <td><strong>6:45 pm</strong></td>
+                <td><strong>6:45 pm</strong></td>
+                <td><strong>6:45 pm</strong></td>
+                <td><strong>6:45 pm</strong></td>
                 <td>&nbsp;</td>
               </tr>
             </tbody>
@@ -116,14 +116,14 @@ const Schedule = ({ heading }) => (
                 <td><strong>10:00 am</strong></td>
               </tr>
               <tr>
-                <td><strong>5:45 pm</strong></td>
+                <td><strong>5:15 pm</strong></td>
                 <td rowSpan="3">&nbsp;</td>
               </tr>
               <tr>
-                <td><strong>6:30 pm</strong></td>
+                <td><strong>6:00 pm</strong></td>
               </tr>
               <tr>
-                <td><strong>7:15 pm</strong></td>
+                <td><strong>6:45 pm</strong></td>
               </tr>
             </tbody>
           </table>
