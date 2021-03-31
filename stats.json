@@ -45,12 +45,16 @@
       "component---src-pages-links-js-9e650eea259171b3b405.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-2e2f26c82cb2c5323936.js",
-      "component---src-layouts-index-js-2e2f26c82cb2c5323936.js.map"
+      "component---src-layouts-index-js-143d0ea08291c1431878.js",
+      "component---src-layouts-index-js-143d0ea08291c1431878.js.map"
     ],
     "path---we-hire": [
       "path---we-hire-a0e39f21c11f6a62c5ab.js",
       "path---we-hire-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-newsletter-js": [
+      "component---src-pages-newsletter-js-d13fc12e8f342539c79e.js",
+      "component---src-pages-newsletter-js-d13fc12e8f342539c79e.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -67,6 +71,10 @@
     "component---src-pages-404-js": [
       "component---src-pages-404-js-b241f28503c6b7ff2cb0.js",
       "component---src-pages-404-js-b241f28503c6b7ff2cb0.js.map"
+    ],
+    "path---newsletter": [
+      "path---newsletter-a0e39f21c11f6a62c5ab.js",
+      "path---newsletter-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
       "commons-84dbfb72ec357a97dbf3.js",
@@ -101,8 +109,8 @@
       "component---src-pages-app-js-39a2ff60f267799be063.js.map"
     ],
     "app": [
-      "app-82e4ea19376355c372ec.js",
-      "app-82e4ea19376355c372ec.js.map"
+      "app-7e6c62b56d49283cb7ca.js",
+      "app-7e6c62b56d49283cb7ca.js.map"
     ],
     "path---links": [
       "path---links-a0e39f21c11f6a62c5ab.js",
