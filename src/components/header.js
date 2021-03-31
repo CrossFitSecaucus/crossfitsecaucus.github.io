@@ -85,6 +85,12 @@ const Header = ({ siteTitle }) => (
                             </a>
                         </div>
                     </li>
+
+                    <li className="nav-item">
+                      <a href="http://eepurl.com/hju69X" target="_blank" className="nav-link">
+                        Newsletter
+                      </a>
+                    </li>
                 </ul>
 
                 <h4 style={{paddingLeft: 30}}><strong>Call or Text:</strong> 201-503-6326</h4>
