@@ -179,10 +179,6 @@ const IndexPage = () => (
       <Schedule heading={ <Heading>Schedule</Heading> } />
     </section>
 
-    <section id="safety" style={{paddingTop: 50}}>
-      <Safety heading={ <Heading>COVID-19 Safety Protocol</Heading> } />
-    </section>
-
     <section className="section">
       <div className="row no-gutters">
         <Tile url="/img/indoors/row-3/3-1.jpg" backgroundYPosition={70} />
