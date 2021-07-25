@@ -145,9 +145,9 @@ const IndexPage = () => (
 
     <section>
       <div className="row no-gutters">
-        <Tile url="/img/indoors/row-1/1-1.jpg" backgroundYPosition={60} className="d-none d-lg-block" />
-        <Tile url="/img/indoors/row-1/1-2.jpg" backgroundYPosition={5} className="d-none d-lg-block" />
-        <Tile url="/img/indoors/row-1/1-3.jpg" backgroundYPosition={10} />
+        <Tile url="/img/indoors/row-1/1-1.jpg" backgroundYPosition={0} className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-1/1-2.jpg" backgroundYPosition={65} />
+        <Tile url="/img/indoors/row-1/1-3.jpg" backgroundYPosition={55} className="d-none d-lg-block" />
       </div>
     </section>
 
@@ -157,9 +157,9 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/indoors/row-2/2-1.jpg" backgroundYPosition={45} />
+        <Tile url="/img/indoors/row-2/2-1.jpg" backgroundYPosition={60} />
         <Tile url="/img/indoors/row-2/2-2.jpg" backgroundYPosition={85} className="d-none d-lg-block" />
-        <Tile url="/img/indoors/row-2/2-3.jpg" backgroundYPosition={55} className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-2/2-3.jpg" backgroundYPosition={20} className="d-none d-lg-block" />
       </div>
     </section>
 
@@ -175,11 +175,11 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="schedule">
+    <section id="schedule" className="section">
       <Schedule heading={ <Heading>Schedule</Heading> } />
     </section>
 
-    <section className="section">
+    { false && (<section className="section">
       <div className="row no-gutters">
         <Tile url="/img/indoors/row-3/3-1.jpg" backgroundYPosition={70} />
         <Tile className="" style={{background: 'linear-gradient(60deg, #26c6da, #0097a7)'}}>
@@ -189,9 +189,9 @@ const IndexPage = () => (
         </Tile>
         <Tile url="/img/indoors/row-3/3-3.jpg" backgroundYPosition={10} className="d-sm-none d-lg-block" />
       </div>
-    </section>
+    </section>)}
 
-    <section className="section">
+    { false && (<section className="section">
       <div className="container">
         <div className="row">
           <YouTubeRow className="col-md-4 ml-auto mr-auto">
@@ -199,13 +199,13 @@ const IndexPage = () => (
           </YouTubeRow>
         </div>
       </div>
-    </section>
+    </section>)}
 
-    <section id="what-is-crossfit">
+    { false && (<section id="what-is-crossfit">
       <WhatIsCrossFit heading={ <Heading>What is CrossFit</Heading> } />
-    </section>
+    </section>)}
 
-    <section id="testimonials" className="section-image" style={{backgroundImage: "url('/img/testimonials-bg.jpg')"}}>
+    <section id="testimonials" className="section section-image" style={{backgroundImage: "url('/img/testimonials-bg.jpg')"}}>
       <Testimonials/>
     </section>
 

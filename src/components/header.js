@@ -50,9 +50,9 @@ const Header = ({ siteTitle }) => (
                             <Link to="/index.html#schedule" className="dropdown-item">
                                 <i className="material-icons">&#xe614;</i> Schedule
                             </Link>
-                            <Link to="/index.html#what-is-crossfit" className="dropdown-item">
+                            { false && (<Link to="/index.html#what-is-crossfit" className="dropdown-item">
                                 <i className="material-icons">&#xe0f0;</i> What is CrossFit
-                            </Link>
+                            </Link>)}
                             <Link to="/index.html#how-it-works" className="dropdown-item">
                                 <i className="material-icons">&#xe896;</i> How to get started
                             </Link>
