@@ -157,9 +157,9 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/indoors/row-2/2-1.jpg" backgroundYPosition={60} />
+        <Tile url="/img/indoors/row-2/2-1.jpg" backgroundYPosition={60} className="d-none d-lg-block" />
         <Tile url="/img/indoors/row-2/2-2.jpg" backgroundYPosition={85} className="d-none d-lg-block" />
-        <Tile url="/img/indoors/row-2/2-3.jpg" backgroundYPosition={20} className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-2/2-3.jpg" backgroundYPosition={40} />
       </div>
     </section>
 
@@ -169,8 +169,8 @@ const IndexPage = () => (
 
     <section className="section">
       <div className="row no-gutters">
-        <Tile url="/img/indoors/row-4/4-1.jpg" backgroundYPosition={30} />
-        <Tile url="/img/indoors/row-4/4-2.jpg" backgroundYPosition={40} className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-4/4-1.jpg" backgroundYPosition={30} className="d-none d-lg-block" />
+        <Tile url="/img/indoors/row-4/4-2.jpg" backgroundYPosition={40} />
         <Tile url="/img/indoors/row-4/4-3.jpg" backgroundYPosition={40} className="d-none d-lg-block" />
       </div>
     </section>
