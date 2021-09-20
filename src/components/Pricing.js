@@ -33,7 +33,7 @@ class Membership extends React.Component {
                     <h4 className="card-title" style={{padding: `0 15px`}}>
                       The membership is the most popular and cost-effective choice,
                       to get access to the CrossFit group classes.<br/><br/>
-                      It offers enough flexible to support even the most unpredictable schedule.
+                      It offers enough flexibility to support even the most unpredictable schedule.
                     </h4>
                     <p className="card-description">
                       Send us a request for more information, and we'll immediately email you pricing options for the membership.
