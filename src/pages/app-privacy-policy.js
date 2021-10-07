@@ -15,8 +15,8 @@ const AppPrivacyPolicyPage = () => (
     <div className="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
       <h2>Privacy Policy</h2>
 
-      <p>Manuel Neuhauser built the CrossFit Secaucus app as a Free app. This SERVICE is provided by
-        Manuel Neuhauser at no cost and is intended for use as is.
+      <p>
+        The CrossFit Secaucus app as a Free app. This SERVICE is provided at no cost and is intended for use as is.
       </p>
 
       <p>This page is used to inform visitors regarding my policies with the collection, use, and disclosure
