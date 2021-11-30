@@ -264,12 +264,12 @@ class Pricing extends React.Component {
                         label="Punch Card"
                         buttonLabel="Purchase"
                         url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=24&prodId=10223"
-                        unitPrice={199}
+                        unitPrice={219}
                         unit="punch card"
                         sessions={10}
                         sessionName="class"
                         sessionsName="classes"
-                        sessionPrice="19.90"
+                        sessionPrice="21.90"
                         description={null}
                         lastLine="Valid for 3 months"
                         color="success"
@@ -312,7 +312,7 @@ class Pricing extends React.Component {
                         label="Personal Training"
                         buttonLabel="Purchase"
                         url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=40&prodId=157"
-                        unitPrice={180}
+                        unitPrice={192}
                         unit="week"
                         sessions="3"
                         sessionName="session"
