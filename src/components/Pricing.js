@@ -166,7 +166,7 @@ const PricingOption = ({label, url, unitPrice, discountedFromPrice, unit, sessio
       <div className="card-body">
           <h6 className="card-category text-success text-capitalized" style={{fontSize: `1rem`}}>{label}</h6>
           <h1 className="card-title">
-            <small>$</small>{sessionPrice}
+            <small></small>{sessionPrice}
             { sessionName && (
               <small>/{sessionName}</small>
             )}
@@ -184,7 +184,7 @@ const PricingOption = ({label, url, unitPrice, discountedFromPrice, unit, sessio
                   <li>
                     {discountedFromPrice && <span style={{textDecoration: 'line-through'}}>${discountedFromPrice}</span> }
                     {' '}
-                    <b>${unitPrice}</b> per {unit}
+                    <b>{unitPrice}</b> per {unit}
                   </li>
               }
               {
