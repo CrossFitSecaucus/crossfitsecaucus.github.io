@@ -32,7 +32,8 @@ const LinksPage = () => (
       <meta property="og:image" content="https://crossfit-secaucus.com/img/athlete-3-center.jpg" />
     </Helmet>
 
-    <Button label="Face Masks" to="http://apparel.crossfit-secaucus.com/" isExternal color="danger" />
+    <Button label="5-Class Trial" to="http://try.crossfit-secaucus.com/" isExternal color="danger" />
+
     <p>
       <hr/>
     </p>
