@@ -38,7 +38,7 @@ const ServiceAgreementPage = () => (
 
         <p style={{paddingTop: 200, marginBottom: -200}}>
           <strong>Pricing Option: </strong>
-          A pricing option costs $180 and it includes 12 Class Reservation Credits per Term. A Term is four (4) consecutive weeks. Class Reservation Credits expire four (4) weeks after the date of purchase or the date of renewal of the pricing option. Pricing options are non-transferable.
+          A pricing option includes 12 Class Reservation Credits per Term. A Term is four (4) consecutive weeks. Class Reservation Credits expire four (4) weeks after the date of purchase or the date of renewal of the pricing option. Pricing options are non-transferable.
         </p>
 
         <p style={{paddingTop: 200, marginBottom: -200}}>
