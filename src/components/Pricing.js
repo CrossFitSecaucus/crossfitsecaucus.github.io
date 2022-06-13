@@ -244,13 +244,13 @@ class Pricing extends React.Component {
                       <PricingOption
                         label="Trial"
                         buttonLabel="Purchase"
-                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=24&prodId=10644"
-                        unitPrice={75}
-                        sessions={5}
+                        url="https://clients.mindbodyonline.com/classic/ws?studioid=40911&stype=41&sTG=24&prodId=10702"
+                        unitPrice={59}
+                        sessions={3}
                         sessionsName="classes"
-                        sessionPrice="75"
+                        sessionPrice="59"
                         description="New Clients Only"
-                        lastLine="Valid for 3 months"
+                        lastLine="Valid for 1 month"
                         color="info"
                         preferred
                       />
