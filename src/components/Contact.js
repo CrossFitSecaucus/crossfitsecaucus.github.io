@@ -6,6 +6,7 @@ import Recaptcha from './Recaptcha';
 class Contact extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       firstName: '',
       firstNameValid: false,
@@ -16,13 +17,17 @@ class Contact extends React.Component {
       phone: '',
       phoneValid: false,
       text: '',
-      textValid: false,
+      textValid: props.hideMessageField,
       recaptchaComplete: false,
       inflight: false,
       successMessage: null,
       errorMessage: null,
       formVersion: 0,
-    };
+      template: props.template,
+      additionalFields: props.additionalFields,
+      additionalFieldsValid: props.additionalFieldsValid,
+    }
+
     this.successMessageTimeout = null;
     this.errorMessageTimeout = null;
     this.successMessage = this.successMessage.bind(this);
@@ -48,7 +53,7 @@ class Contact extends React.Component {
       phone: '',
       phoneValid: false,
       text: '',
-      textValid: false,
+      textValid: this.props.hideMessageField,
       recaptchaComplete: false,
       inflight: false,
       formVersion: this.state.formVersion + 1,
@@ -115,14 +120,29 @@ class Contact extends React.Component {
   handleFormSubmission(event) {
     event.preventDefault();
     this.setState({ inflight: true });
-    const { firstName, lastName, email, phone, text, recaptcha } = this.state;
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      text,
+      template,
+      additionalFields,
+      recaptcha,
+    } = this.state;
 
     $.ajax({
       type: "POST",
       url: 'https://us-central1-cs-site-209414.cloudfunctions.net/contactUsEmail',
-      data: JSON.stringify({
-        firstName, lastName, email, phone, text: (text || '') + "\n\n\n" + (this.props.messageAddition || ''), recaptcha
-      }),
+      data: JSON.stringify(Object.assign({}, additionalFields, {
+        firstName,
+        lastName,
+        email,
+        phone,
+        text: (text || '') + "\n\n\n" + (this.props.messageAddition || ''),
+        recaptcha,
+        template,
+      })),
       success: response => {
         this.resetForm();
         this.successMessage('Your message was successfully sent!');
@@ -137,6 +157,18 @@ class Contact extends React.Component {
 
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    const { additionalFields, additionalFieldsValid } = this.props
+
+    if (JSON.stringify(additionalFields) !== JSON.stringify(this.state.additionalFields)) {
+      this.setState({additionalFields})
+    }
+
+    if (additionalFieldsValid !== this.state.additionalFieldsValid) {
+      this.setState({additionalFieldsValid})
+    }
+  }
+
   render() {
     const {
       firstName, firstNameValid,
@@ -144,11 +176,12 @@ class Contact extends React.Component {
       email, emailValid,
       phone, phoneValid,
       text, textValid,
+      additionalFieldsValid,
       recaptchaComplete, inflight, successMessage, errorMessage
     } = this.state;
 
     const formValid = firstNameValid && lastNameValid && emailValid &&
-      phoneValid && textValid && recaptchaComplete;
+      phoneValid && textValid && additionalFieldsValid && recaptchaComplete;
 
     return (
       <div className={this.props.noCard ? "": "card card-contact"}>
@@ -193,11 +226,13 @@ class Contact extends React.Component {
                   <input type="text" name="phone" className="form-control" value={phone} onChange={this.handlePhoneChange} disabled={inflight} />
                   <span className="material-input"></span>
                 </div>
-                <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && text.length > 0 ? (textValid ? 'has-success' : 'has-danger') : ''}`}>
-                  <label htmlFor="exampleMessage1" className="bmd-label-floating">Your Message {text.length > 0 && !textValid && ' - Please elaborate on your request.' }</label>
-                  <textarea name="message" className="form-control" id="exampleMessage1" rows="6" value={text} onChange={this.handleTextChange} disabled={inflight}></textarea>
-                  <span className="material-input"></span>
-                </div>
+                {!this.props.hideMessageField && (
+                  <div className={`form-group label-floating is-filled bmd-form-group ${!inflight && text.length > 0 ? (textValid ? 'has-success' : 'has-danger') : ''}`}>
+                    <label htmlFor="exampleMessage1" className="bmd-label-floating">Your Message {text.length > 0 && !textValid && ' - Please elaborate on your request.' }</label>
+                    <textarea name="message" className="form-control" id="exampleMessage1" rows="6" value={text} onChange={this.handleTextChange} disabled={inflight}></textarea>
+                    <span className="material-input"></span>
+                  </div>
+                )}
                 <div className="row bmd-form-group">
                   <Recaptcha
                     formVersion={this.state.formVersion}
@@ -229,15 +264,24 @@ class Contact extends React.Component {
                 )}
               </div>
 
-              <div className="card-footer pull-right">
-                <button type="submit" className="btn btn-primary pull-right" disabled={!formValid || inflight} onClick={this.handleFormSubmission}>
-                  {!inflight ? (this.props.submitLabel || 'Send Message') : 'Sending ...'}
-                </button>
+              <div className="card-footer">
+                <div className="pull-right">
+                  <button type="submit" className="btn btn-primary pull-right" disabled={!formValid || inflight} onClick={this.handleFormSubmission}>
+                    {!inflight ? (this.props.submitLabel || 'Send Message') : 'Sending ...'}
+                  </button>
+                </div>
               </div>
           </form>
       </div>
     )
   }
+}
+
+Contact.defaultProps = {
+  template: 'contactUs',
+  additionalFields: {},
+  additionalFieldsValid: true,
+  hideMessageField: false
 }
 
 

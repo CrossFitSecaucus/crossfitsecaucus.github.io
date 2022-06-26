@@ -24,7 +24,9 @@
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r https://github.com/CrossFitSecaucus/crossfitsecaucus.github.io",
-    "deploy-func": "gcloud auth login && gcloud config set project cs-site-209414 && gcloud beta functions deploy trialClassEmail --trigger-http --source ./functions/trialClassEmail --env-vars-file env.yml"
+    "deploy-func-preflight": "gcloud auth login && gcloud config set project cs-site-209414",
+    "deploy-func-trial-class": "gcloud functions deploy trialClassEmail --trigger-http --source ./functions/trialClassEmail --env-vars-file env.yml",
+    "deploy-func-contact-us": "gcloud functions deploy contactUsEmail --trigger-http --source ./functions/contactUsEmail --runtime=nodejs16 --env-vars-file ./functions/contactUsEmail/env.yml"
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^1.0.26",
