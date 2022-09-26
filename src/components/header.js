@@ -80,9 +80,11 @@ const Header = ({ siteTitle }) => (
                             <a href="http://schedule.crossfit-secaucus.com" target="_blank" className="dropdown-item">
                                 <i className="material-icons">&#xe614;</i> Book Class
                             </a>
-                            <Link to="/apparel" className="dropdown-item">
-                                <i className="material-icons">&#xe54e;</i> Apparel
-                            </Link>
+                            {false && (
+                                <Link to="/apparel" className="dropdown-item">
+                                    <i className="material-icons">&#xe54e;</i> Apparel
+                                </Link>
+                            )}
                             <Link to="/hold-request" className="dropdown-item">
                                 <i className="material-icons">&#xe1a2;</i> Hold Request
                             </Link>
